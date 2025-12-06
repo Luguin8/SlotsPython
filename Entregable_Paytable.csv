@@ -1,0 +1,12 @@
+Symbol ID;Name;3 of a Kind;4 of a Kind;5 of a Kind
+1;Low 1;5;10;25
+2;Low 2;5;10;30
+3;Low 3;10;20;50
+4;Low 4;10;25;60
+5;High 1 (Wild x1);20;50;150
+6;High 2 (Wild x2);30;75;250
+7;High 3 (Wild x2);40;100;500
+8;High 4 (Wild x3);50;150;1000
+9;WILD BASE;0;0;3000
+10;SCATTER;0;0;0
+11;SCATTER JP;0;0;0
