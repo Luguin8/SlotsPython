@@ -22,6 +22,8 @@ BASE_GAME_SYMBOLS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ROWS = 3
 COLS = 5
 
+PAYLINES_COUNT = 25
+
 # --- 3. PROBABILIDADES DE SELECCIÓN (FEATURE) ---
 # Probabilidad de que cada símbolo High se convierta en Wild al entrar al bono.
 # Formato: (ID_Simbolo, Multiplicador, Peso_Porcentual)
