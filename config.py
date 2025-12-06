@@ -92,3 +92,27 @@ def generate_dummy_strips():
         strip = [random.choice(BASE_GAME_SYMBOLS) for _ in range(100)]
         strips.append(strip)
     return strips
+
+# IDs para los Wilds Especiales de Free Spins
+# Esto nos permite saber por cuánto multiplicar la ganancia
+SYM_WILD_X1 = 12  # Viene del H1 (ID 5)
+SYM_WILD_X2 = 13  # Viene del H2 (ID 6) o H3 (ID 7)
+SYM_WILD_X3 = 14  # Viene del H4 (ID 8)
+
+# Mapeo: Qué Wild corresponde a qué Símbolo original (Para la regla de 5 Wilds)
+WILD_ORIGIN_MAP = {
+    SYM_WILD_X1: SYM_H1,
+    SYM_WILD_X2: SYM_H2, # Nota: H2 y H3 comparten multiplicador pero quizás queramos trackear origen
+    SYM_WILD_X3: SYM_H4
+}
+
+# Mapeo de Multiplicadores: Cuánto multiplica cada Wild especial
+WILD_MULTIPLIERS = {
+    SYM_WILD_X1: 1,
+    SYM_WILD_X2: 2,
+    SYM_WILD_X3: 3,
+    SYM_WILD: 1 # El Wild base multiplica x1
+}
+
+# Cantidad de Free Spins por Scatters (Estándar de industria, ajustable)
+FREE_SPINS_AWARDED = {3: 10, 4: 15, 5: 20}
