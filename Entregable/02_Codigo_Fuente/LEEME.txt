@@ -1,0 +1,19 @@
+PROYECTO: Slot Math Model (Python)
+VERSION: Final (V19) - RTP 96.08%
+
+--- ARCHIVOS ---
+1. config.py:     Configuración matemática (Rieles, Tabla de Pagos, Pesos).
+2. main.py:       Lógica del motor de juego (Reglas, Wilds, Jackpots).
+3. simulation.py: Script para correr simulaciones de Monte Carlo (1M giros).
+4. export.py:     Script para exportar los Rieles y Tablas a Excel/CSV.
+
+--- COMO EJECUTAR ---
+Requisitos: Tener Python 3.x instalado.
+
+1. Para validar matemáticas (Simulación):
+   Ejecutar: python simulation.py
+   (Esto correrá 1 millón de giros y mostrará el RTP teórico).
+
+2. Para generar los entregables (Excel):
+   Ejecutar: python export.py
+   (Esto creará los archivos CSV en la carpeta).
