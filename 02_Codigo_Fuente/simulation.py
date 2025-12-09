@@ -1,113 +1,74 @@
-# simulation.py
 import time
 import random
-import math  # Para raiz cuadrada
+import math
+import statistics
 import config
 from main import SlotMachine
 
-def run_simulation(num_spins=1000000):
-    # --- 1. CONFIGURACIÓN CIENTÍFICA (SEMILLA FIJA) ---
-    SEED_VALUE = 777
-    random.seed(SEED_VALUE)
+def run_simulation_batch():
+    SEED_BASE = 777
+    random.seed(SEED_BASE)
+    # --- CONFIGURACIÓN ESTADÍSTICA ---
+    NUM_SESSIONS = 50        # Cantidad de sesiones independientes
+    SPINS_PER_SESSION = 200000 # Giros por sesión (Total = 10M giros)
+    # Nota: 50 x 200k = 10 Millones de giros total. Es un buen balance velocidad/precisión.
     
-    print(f"--- INICIANDO SIMULACIÓN CIENTÍFICA ---")
-    print(f"Giros: {num_spins:,}")
-    print(f"Semilla Fija (Seed): {SEED_VALUE} (Resultados reproducibles)")
+    print(f"--- INICIANDO SIMULACIÓN ESTADÍSTICA POR LOTES ---")
+    print(f"Sesiones: {NUM_SESSIONS}")
+    print(f"Giros/Sesión: {SPINS_PER_SESSION:,}")
+    print(f"Total Giros: {NUM_SESSIONS * SPINS_PER_SESSION:,}")
+    print("-" * 60)
     
-    start_time = time.time()
-    slot = SlotMachine()
+    session_rtps = []
+    start_global = time.time()
     
-    # --- VARIABLES ACUMULADORAS ---
-    total_bet = 0
-    total_won = 0
-    
-    # Desglose de RTP (CORRECCIÓN AQUI)
-    total_base_won = 0      
-    total_feature_won = 0   
+    # Ejecutamos las sesiones
+    for session_idx in range(1, NUM_SESSIONS + 1):
+        slot = SlotMachine()
+        total_bet = 0
+        total_won = 0
+        
+        # Loop de giros de esta sesión
+        for _ in range(SPINS_PER_SESSION):
+            res = slot.spin_base_game()
+            total_bet += config.PAYLINES_COUNT
+            total_won += res['total_win']
+        
+        # RTP de esta sesión
+        session_rtp = (total_won / total_bet) * 100
+        session_rtps.append(session_rtp)
+        
+        # Progreso visual simple
+        if session_idx % 5 == 0:
+            print(f"Sesión {session_idx}/{NUM_SESSIONS} completada -> RTP: {session_rtp:.2f}%")
 
-    base_hits = 0       
-    feature_hits = 0    
-    jp_hits = {"MINI": 0, "MINOR": 0, "MAJOR": 0}
+    duration = time.time() - start_global
     
-    # Usamos PAYLINES_COUNT para el calculo, asumiendo apuesta de 1 credito por linea
-    bet_per_spin = config.PAYLINES_COUNT * 1 
-
-    # Para cálculo de Varianza/Desviación
-    sum_x = 0.0      # Suma de premios
-    sum_x_sq = 0.0   # Suma de premios al cuadrado
-
-    for i in range(1, num_spins + 1):
-        result = slot.spin_base_game()
-        
-        win = result['total_win']
-        base_win = result.get('base_win', 0) # Usamos .get por seguridad
-        feature_win = win - base_win         # El resto es ganancia de bonos/jackpots
-        
-        total_bet += bet_per_spin
-        total_won += win
-        
-        # Acumular desglose
-        total_base_won += base_win
-        total_feature_won += feature_win
-        
-        # Estadística al vuelo
-        sum_x += win
-        sum_x_sq += (win * win)
-        
-        if base_win > 0:
-            base_hits += 1
-            
-        if result['feature_data']:
-            feature_hits += 1
-            feats = result['feature_data'].get('jackpots_hit', {})
-            for k in jp_hits:
-                if k in feats:
-                    jp_hits[k] += feats[k]
-            
-        # Progreso cada 10%
-        if i % (num_spins // 10) == 0:
-            progress = (i / num_spins) * 100
-            current_rtp = (total_won / total_bet) * 100
-            elapsed = time.time() - start_time
-            print(f"{int(progress)}% | RTP Global: {current_rtp:.2f}% | Bonos: {feature_hits} | Tiempo: {elapsed:.1f}s")
-
-    elapsed_time = time.time() - start_time
+    # --- ANÁLISIS ESTADÍSTICO ---
+    mean_rtp = statistics.mean(session_rtps)
+    stdev_rtp = statistics.stdev(session_rtps)
     
-    # --- CÁLCULOS ESTADÍSTICOS FINALES ---
-    mean_win = sum_x / num_spins
-    # Varianza = (Mean of squares) - (Square of mean)
-    mean_sq = sum_x_sq / num_spins
-    variance = mean_sq - (mean_win * mean_win)
-    std_dev = math.sqrt(variance) if variance > 0 else 0
+    # Margen de error (95% confianza, Z=1.96)
+    # Error estándar de la media = stdev / sqrt(n)
+    standard_error = stdev_rtp / math.sqrt(NUM_SESSIONS)
+    margin_error = 1.96 * standard_error
     
-    # Intervalo de Confianza 95% (Z = 1.96)
-    margin_error_abs = 1.96 * (std_dev / math.sqrt(num_spins))
-    
-    # Convertir a % sobre la apuesta
-    rtp_final = (total_won / total_bet) * 100
-    rtp_base = (total_base_won / total_bet) * 100
-    rtp_feature = (total_feature_won / total_bet) * 100
-    
-    margin_error_rtp = (margin_error_abs / bet_per_spin) * 100
+    ci_lower = mean_rtp - margin_error
+    ci_upper = mean_rtp + margin_error
     
     print("\n" + "="*60)
-    print("      RESULTADOS DE SIMULACIÓN CIENTÍFICA      ")
+    print("      RESULTADOS DE VALIDACIÓN ESTADÍSTICA      ")
     print("============================================================")
-    print(f"Semilla Utilizada: {SEED_VALUE}")
+    print(f"Tiempo Total:     {duration:.1f} segundos")
     print("-" * 60)
-    print(f"RTP FINAL:        {rtp_final:.2f}%")
-    print(f"  > RTP Base:     {rtp_base:.2f}%")
-    print(f"  > RTP Bonos:    {rtp_feature:.2f}%")
-    print(f"Intervalo 95%:    [{rtp_final - margin_error_rtp:.2f}%, {rtp_final + margin_error_rtp:.2f}%]")
+    print(f"RTP PROMEDIO (Simulado):  {mean_rtp:.4f}%")
+    print(f"Desviación Estándar:      {stdev_rtp:.4f}")
+    print(f"Intervalo Confianza (95%): [{ci_lower:.4f}%, {ci_upper:.4f}%]")
     print("-" * 60)
-    print(f"Volatilidad (SD): {std_dev:.2f}")
-    print(f"Varianza:         {variance:.2f}")
-    print("-" * 60)
-    print(f"Hit Frequency:    {(base_hits / num_spins) * 100:.2f}%")
-    print(f"Frecuencia Bono:  1 cada {num_spins // feature_hits if feature_hits else 0} giros")
-    print(f"Jackpots:         {jp_hits}")
+    print("CONCLUSIÓN:")
+    print("Si el RTP TEÓRICO cae dentro del intervalo anterior,")
+    print("el modelo matemático está VALIDADO.")
     print("="*60)
 
 if __name__ == "__main__":
-    # Puedes cambiar a 5000000 aquí si quieres una prueba más larga
-    run_simulation(1000000)
+    run_simulation_batch()

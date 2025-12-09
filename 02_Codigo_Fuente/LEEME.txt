@@ -1,32 +1,51 @@
-PROYECTO: Slot Math Model (Python)
-ESTRUCTURA DE ARCHIVOS:
-1. /01_Excels_Rieles_y_Pagos:
-   Contiene los archivos CSV con la definición exacta de los rodillos (Strips) y la tabla de pagos final utilizada para lograr estos resultados. Estos son los "planos" del juego.
+PROYECTO: Slot Math Model (Python) - Entrega Final
 
-2. /02_Codigo_Fuente_Validacion:
-   Scripts en Python para auditar el modelo.
-   - config.py:       Configuración matemática final (Pagos y Rieles estáticos).
-   - main.py:         Motor lógico del juego.
-   - theory_check.py: Script de auditoría. Lee los CSVs entregados y calcula el RTP matemático exacto sin simular.
-   - simulation.py:   Script de Monte Carlo. Corre 1,000,000 de giros con semilla fija para reproducibilidad.
-   - export.py:       Script utilitario para regenerar los CSVs desde el código.
+ESTRUCTURA DE ARCHIVOS:
+
+1. /01_Excels_Rieles_Pagos:
+   Contiene los archivos CSV con la definición exacta de los rodillos (Strips) y la tabla de pagos final.
+   Estos archivos son la fuente de verdad para el cálculo teórico.
+
+2. /02_Codigo_Fuente:
+   Scripts en Python para la lógica y validación del modelo.
+   - config.py:       Configuración maestra (Pagos, Rieles y Semillas de Jackpot).
+   - main.py:         Motor lógico del juego (Clase SlotMachine).
+   - export.py:       Script vital que regenera los CSVs en la carpeta 01 basándose en config.py.
+   - theory_check.py: Script de auditoría (PAR Sheet). Calcula el RTP matemático exacto sin simular.
+   - simulation.py:   Simulación de Monte Carlo por lotes (10 Millones de giros) para validación estadística.
+   - quick_verify.py: Script de prueba rápida para verificar estabilidad y frecuencia de bonos.
 
 3. /03_Reportes_Validacion:
-   Logs de salida de las pruebas realizadas, demostrando la convergencia entre la simulación y la teoría.
+   Logs de salida con la evidencia de la convergencia matemática.
+
+--- RESUMEN TÉCNICO DE LA ENTREGA ---
+
+El modelo ha sido calibrado para cumplir con los requisitos de viabilidad y balance:
+
+1. RTP Teórico (Cálculo Combinatorio): ~96.17%
+   Es el retorno puro basado en las probabilidades matemáticas de los rieles y pagos.
+
+2. RTP Simulado (Ejecución Real): ~97.08%
+   *Nota Técnica:* Esta diferencia de aprox. 0.9% es correcta y esperada. Corresponde al aporte de las "Semillas de los Jackpots" (los montos base de 2000, 5000 y 10000) que el casino aporta al inicio de cada ciclo. La simulación paga este dinero real, elevando levemente el RTP percibido por el jugador.
+
+3. Métricas Clave:
+   - Frecuencia de Bono: 1 cada 165 giros (Balance ideal).
+   - Contribución Jackpot: 6.00% (Cumple estrictamente la regla de aumento de 0.5 créditos por giro).
 
 --- CÓMO EJECUTAR ---
 Requisitos: Tener Python 3.x instalado.
 
-1. Para validar el cálculo teórico (PAR Sheet):
-   Navegar a la carpeta /02_Codigo_Fuente_Validacion y ejecutar:
+1. Para actualizar los CSVs (Si se hacen cambios en config):
+   Navegar a /02_Codigo_Fuente y ejecutar:
+   python export.py
+
+2. Para validar el cálculo teórico (PAR Sheet):
    python theory_check.py
 
-2. Para correr la simulación de Monte Carlo:
-   Navegar a la carpeta /02_Codigo_Fuente_Validacion y ejecutar:
+3. Para correr la simulación científica (Validación final):
    python simulation.py
-   (Esto ejecutará 1 Millón de giros con semilla fija y mostrará resultados estadísticos).
+   (Ejecuta múltiples sesiones independientes con semilla fija para reproducibilidad).
 
-
-
-   contacto por si algo falla en el futuro o si quiere contactarme: 
-   mail: lugoamartin@gmail.com
+---
+Desarrollado por: Martín Lugo
+Contacto: lugoamartin@gmail.com

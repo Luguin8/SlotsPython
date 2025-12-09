@@ -1,0 +1,11 @@
+Symbol ID;Name;3 of a Kind;4 of a Kind;5 of a Kind
+1;Low 1;10;25;70
+2;Low 2;10;25;70
+3;Low 3;15;40;110
+4;Low 4;15;40;110
+5;High 1;20;55;230
+6;High 2;32;95;560
+7;High 3;32;95;560
+8;High 4;50;200;1600
+10;SCATTER (Base);0;0;0
+11;SCATTER JP (FS);0;0;0

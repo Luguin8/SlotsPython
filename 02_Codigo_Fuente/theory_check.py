@@ -1,169 +1,222 @@
-# theory_check_final.py
 import csv
 import config
 
-# --- FUNCIÓN DE CARGA DE CSV ---
 def load_strips_from_csv(filename):
+    """Lee los rieles del CSV para asegurar que validamos lo entregado."""
     strips = [[], [], [], [], []]
     try:
         with open(filename, 'r', encoding='utf-8') as f:
             reader = csv.reader(f, delimiter=';')
-            start = False
+            start_reading = False
             for row in reader:
                 if not row: continue
-                if "Pos" in row[0] or "Position" in row[0]:
-                    start = True
+                if "Position" in row[0]:
+                    start_reading = True
                     continue
-                if start and len(row) > 1:
-                    # R1 ID está en col 1, R2 ID en col 3, etc.
-                    for reel_idx in range(5):
-                        col_idx = 1 + (reel_idx * 2)
-                        if col_idx < len(row):
+                if start_reading and len(row) >= 6:
+                    for i in range(5):
+                        cell = row[i+1]
+                        if cell and "-" in cell:
                             try:
-                                val = int(row[col_idx])
-                                strips[reel_idx].append(val)
+                                sym_id = int(cell.split("-")[0].strip())
+                                strips[i].append(sym_id)
                             except: pass
-    except Exception as e:
-        print(f"Error cargando CSV: {e}")
+    except FileNotFoundError:
+        print(f"[ERROR] No se encontró {filename}. Ejecuta export.py primero.")
         return []
     return strips
 
-# --- LÓGICA MATEMÁTICA ---
-def calculate_base_rtp(strips):
-    print("[CALCULANDO RTP JUEGO BASE DESDE CSV]")
+def calculate_rtp_base(strips, paytable):
+    """Calcula el RTP del Juego Base (Sin Wilds)."""
     reel_lengths = [len(s) for s in strips]
-    print(f"Longitud Rieles Base: {reel_lengths}")
+    total_combinations = reel_lengths[0] * reel_lengths[1] * reel_lengths[2] * reel_lengths[3] * reel_lengths[4]
+    total_ev = 0.0
     
-    counts = []
+    # Probabilidad de cada símbolo por riel
+    sym_probs = []
     for col in range(5):
-        c = {}
-        for s in strips[col]: c[s] = c.get(s, 0) + 1
-        counts.append(c)
+        counts = {}
+        for s in strips[col]:
+            counts[s] = counts.get(s, 0) + 1
+        probs = {k: v / reel_lengths[col] for k, v in counts.items()}
+        sym_probs.append(probs)
+
+    # Sumar EV de cada símbolo pagador
+    for sym_id, payouts in paytable.items():
+        if sym_id in [config.SYM_SCATTER, config.SYM_SCATTER_JP]: continue
         
-    total_ev = 0
-    for sym_id, payouts in config.PAYTABLE.items():
-        if sym_id in [10, 11]: continue
+        # Probabilidades de que aparezca el símbolo en cada riel
+        p = [sym_probs[i].get(sym_id, 0) for i in range(5)]
         
-        p = [counts[i].get(sym_id, 0) / reel_lengths[i] for i in range(5)]
+        # Probabilidad exacta de 5, 4 y 3 en línea
+        prob_5 = p[0] * p[1] * p[2] * p[3] * p[4]
+        prob_4 = p[0] * p[1] * p[2] * p[3] * (1 - p[4])
+        prob_3 = p[0] * p[1] * p[2] * (1 - p[3])
         
-        p5 = p[0]*p[1]*p[2]*p[3]*p[4]
-        p4 = p[0]*p[1]*p[2]*p[3]*(1-p[4])
-        p3 = p[0]*p[1]*p[2]*(1-p[3])
-        
-        ev = (p5 * payouts.get(5,0)) + (p4 * payouts.get(4,0)) + (p3 * payouts.get(3,0))
+        ev = (prob_5 * payouts.get(5,0)) + (prob_4 * payouts.get(4,0)) + (prob_3 * payouts.get(3,0))
         total_ev += ev
-        
-    rtp_base = total_ev * 100 # Multiplicado por lineas y dividido por apuesta se cancelan
-    print(f"RTP Base: {rtp_base:.2f}%")
-    return rtp_base
 
-def calculate_fg_ev(strips, special_sym, multiplier):
+    # El EV total se multiplica por líneas activas (25) pero se divide por la apuesta total (25)
+    # Matemáticamente se cancelan, así que total_ev * 100 es el RTP directo.
+    return total_ev * 100
+
+def calculate_rtp_fs_scenario(strips, paytable, wild_transform_id, wild_multiplier):
+    """
+    Calcula el RTP de un ESCENARIO específico de Free Spins.
+    Regla: El 'wild_transform_id' desaparece y se vuelve Wild.
+    """
     reel_lengths = [len(s) for s in strips]
-    counts = []
+    
+    # 1. Mapear probabilidades considerando la transformación a Wild
+    sym_probs = []
+    wild_probs = [] # Probabilidad de Wild por riel
+    
     for col in range(5):
-        c = {}
-        for s in strips[col]: c[s] = c.get(s, 0) + 1
-        counts.append(c)
-        
-    scenario_ev = 0
-    for sym_id, payouts in config.PAYTABLE.items():
-        if sym_id in [10, 11]: continue
-        is_wild = (sym_id == special_sym)
-        p_hit = []
-        p_pure = []
-        
-        for i in range(5):
-            c_sym = counts[i].get(sym_id, 0)
-            c_wild = counts[i].get(special_sym, 0)
-            L = reel_lengths[i]
-            if is_wild:
-                p_hit.append(c_wild / L)
-                p_pure.append(0)
+        counts = {}
+        w_count = 0
+        for s in strips[col]:
+            # Si es el símbolo elegido, cuenta como Wild
+            if s == wild_transform_id:
+                w_count += 1
             else:
-                p_hit.append((c_sym + c_wild) / L)
-                p_pure.append(c_sym / L)
+                counts[s] = counts.get(s, 0) + 1
         
-        p5_tot = p_hit[0]*p_hit[1]*p_hit[2]*p_hit[3]*p_hit[4]
-        p5_pur = p_pure[0]*p_pure[1]*p_pure[2]*p_pure[3]*p_pure[4] if not is_wild else 0
-        p5_mix = p5_tot - p5_pur
-        
-        p4_tot = p_hit[0]*p_hit[1]*p_hit[2]*p_hit[3]*(1-p_hit[4])
-        p4_pur = p_pure[0]*p_pure[1]*p_pure[2]*p_pure[3]*(1-p_pure[4]) if not is_wild else 0
-        p4_mix = p4_tot - p4_pur
-        
-        p3_tot = p_hit[0]*p_hit[1]*p_hit[2]*(1-p_hit[3])
-        p3_pur = p_pure[0]*p_pure[1]*p_pure[2]*(1-p_pure[3]) if not is_wild else 0
-        p3_mix = p3_tot - p3_pur
-        
-        pay = 0
-        if is_wild:
-            pay += p5_tot * payouts.get(5,0) * multiplier
-            pay += p4_tot * payouts.get(4,0) * multiplier
-            pay += p3_tot * payouts.get(3,0) * multiplier
-        else:
-            pay += (p5_pur * payouts.get(5,0)) + (p5_mix * payouts.get(5,0) * multiplier)
-            pay += (p4_pur * payouts.get(4,0)) + (p4_mix * payouts.get(4,0) * multiplier)
-            pay += (p3_pur * payouts.get(3,0)) + (p3_mix * payouts.get(3,0) * multiplier)
-        scenario_ev += pay
-        
-    return scenario_ev * config.PAYLINES_COUNT
+        probs = {k: v / reel_lengths[col] for k, v in counts.items()}
+        sym_probs.append(probs)
+        wild_probs.append(w_count / reel_lengths[col])
 
-def calculate_trigger(strips):
-    probs = []
-    for col in range(5):
-        L = len(strips[col])
-        C = strips[col].count(config.SYM_SCATTER)
-        p_none = ((L-C)/L) * ((L-C-1)/(L-1)) * ((L-C-2)/(L-2))
-        probs.append(1.0 - p_none)
+    scenario_ev = 0.0
+    
+    # 2. Calcular pagos para cada símbolo (incluyendo pagos mixtos con Wild)
+    for sym_id, payouts in paytable.items():
+        # Ignoramos Scatters y el símbolo que se convirtió en Wild (ya no existe como tal)
+        if sym_id in [config.SYM_SCATTER, config.SYM_SCATTER_JP, wild_transform_id]: continue
         
+        p_sym = [sym_probs[i].get(sym_id, 0) for i in range(5)]
+        p_wild = wild_probs 
+        
+        # Probabilidad de HIT (Símbolo O Wild)
+        p_hit = [(p_sym[i] + p_wild[i]) for i in range(5)]
+        # Probabilidad PURA (Solo Símbolo, sin Wild) -> Para pagar x1
+        p_pure = [p_sym[i] for i in range(5)]
+        
+        # 5 of a kind
+        prob5_total = p_hit[0]*p_hit[1]*p_hit[2]*p_hit[3]*p_hit[4]
+        prob5_pure  = p_pure[0]*p_pure[1]*p_pure[2]*p_pure[3]*p_pure[4]
+        prob5_wild  = prob5_total - prob5_pure # Combinaciones que usan al menos 1 wild
+        
+        # 4 of a kind
+        prob4_total = p_hit[0]*p_hit[1]*p_hit[2]*p_hit[3]*(1-p_hit[4])
+        prob4_pure  = p_pure[0]*p_pure[1]*p_pure[2]*p_pure[3]*(1-p_pure[4])
+        prob4_wild  = prob4_total - prob4_pure
+        
+        # 3 of a kind
+        prob3_total = p_hit[0]*p_hit[1]*p_hit[2]*(1-p_hit[3])
+        prob3_pure  = p_pure[0]*p_pure[1]*p_pure[2]*(1-p_pure[3])
+        prob3_wild  = prob3_total - prob3_pure
+        
+        # EV del Símbolo = (Pagos Puros) + (Pagos con Wild * Multiplicador)
+        term5 = (prob5_pure * payouts.get(5,0)) + (prob5_wild * payouts.get(5,0) * wild_multiplier)
+        term4 = (prob4_pure * payouts.get(4,0)) + (prob4_wild * payouts.get(4,0) * wild_multiplier)
+        term3 = (prob3_pure * payouts.get(3,0)) + (prob3_wild * payouts.get(3,0) * wild_multiplier)
+        
+        scenario_ev += (term5 + term4 + term3)
+        
+    # 3. Calcular pago de línea de SOLO WILDS (5 Wilds)
+    # Regla: 5 Wilds pagan como el símbolo transformado original * Multiplicador
+    original_payout_5 = paytable[wild_transform_id][5]
+    prob_5_wilds = wild_probs[0]*wild_probs[1]*wild_probs[2]*wild_probs[3]*wild_probs[4]
+    
+    wild_line_ev = prob_5_wilds * original_payout_5 * wild_multiplier
+    scenario_ev += wild_line_ev
+
+    return scenario_ev * 100
+
+def main():
+    print("=== VALIDACIÓN MATEMÁTICA TEÓRICA (PAR SHEET) ===")
+    
+    # 1. Cargar Rieles
+    strips_base = load_strips_from_csv("../01_Excels_Rieles_Pagos/Entregable_Reel_Strips_BASE.csv")
+    strips_fs = load_strips_from_csv("../01_Excels_Rieles_Pagos/Entregable_Reel_Strips_FS.csv")
+    
+    if not strips_base or not strips_fs: return
+
+    # 2. RTP JUEGO BASE
+    rtp_base = calculate_rtp_base(strips_base, config.PAYTABLE)
+    print(f"\n[1] RTP JUEGO BASE (Combinatorio): {rtp_base:.4f}%")
+    
+    # 3. FRECUENCIA DE BONO (SCATTERS BASE)
+    # Calculamos prob de 3, 4, 5 Scatters para saber cuan seguido entramos a FS
+    l_base = [len(s) for s in strips_base]
+    sc_counts = [s.count(config.SYM_SCATTER) for s in strips_base]
+    
+    # CORRECCIÓN: El Scatter sirve si cae en CUALQUIER fila de la ventana visible (ROWS=3)
+    # Probabilidad de NO sacar scatter en una posición = 1 - (count/len)
+    # Probabilidad de NO sacar scatter en 3 posiciones = (1 - p)^3
+    # Probabilidad de SÍ sacar al menos 1 scatter en la ventana = 1 - (1 - p)^3
+    sc_probs = []
+    for c, l in zip(sc_counts, l_base):
+        p_single = c / l
+        p_window = 1 - (1 - p_single) ** config.ROWS
+        sc_probs.append(p_window)
+
+    # Probabilidad de trigger (3 o más scatters en cualquier posicion - simplificado binomial/convolucion)
+    # Usamos método iterativo de polinomios para exactitud
     dist = {0: 1.0}
-    for p in probs:
+    for p in sc_probs:
         new_dist = {}
-        for k, val in dist.items():
-            new_dist[k] = new_dist.get(k, 0) + val * (1-p)
-            new_dist[k+1] = new_dist.get(k+1, 0) + val * p
+        for k, prob_val in dist.items():
+            # Caso no sale scatter
+            new_dist[k] = new_dist.get(k, 0) + prob_val * (1-p)
+            # Caso sale scatter
+            new_dist[k+1] = new_dist.get(k+1, 0) + prob_val * p
         dist = new_dist
         
-    prob = dist.get(3,0) + dist.get(4,0) + dist.get(5,0)
-    avg_spins = 0
-    if prob > 0:
-        avg_spins = (dist.get(3,0)*10 + dist.get(4,0)*15 + dist.get(5,0)*20) / prob
-    print(f"Prob Trigger (Desde CSV): {prob:.6f}")
-    return prob, avg_spins
+    prob_trigger = sum(v for k,v in dist.items() if k >= 3)
+    avg_fs_awarded = 0
+    if prob_trigger > 0:
+        w_sum = sum(v * config.FREE_SPINS_AWARDED.get(k, 0) for k,v in dist.items() if k >= 3)
+        avg_fs_awarded = w_sum / prob_trigger
+        
+    print(f"[2] TRIGGER INFO:")
+    print(f"    - Probabilidad Entrada: {prob_trigger:.6f} (1 en {1/prob_trigger:.1f})")
+    print(f"    - Promedio Giros Gratis: {avg_fs_awarded:.2f}")
 
-def run():
-    print("=== VALIDACIÓN FINAL (CSVs + MATH V3) ===")
+    # 4. RTP FREE SPINS (PONDERADO - LA RECETA DE JONATAN)
+    print(f"\n[3] RTP FREE SPINS (Modelos Ponderados):")
+    weighted_fs_rtp = 0
     
-    # 1. Cargar CSVs
-    base_strips = load_strips_from_csv("Entregable_Reel_Strips_BASE.csv")
-    fs_strips = load_strips_from_csv("Entregable_Reel_Strips_FS.csv")
-    
-    if not base_strips or not fs_strips:
-        print("ERROR: No se encontraron los CSV. Ejecuta export.py primero.")
-        return
-
-    # 2. Calcular
-    rtp_base = calculate_base_rtp(base_strips)
-    
-    weighted_ev = 0
-    print("-" * 40)
     for feat in config.FEATURE_WEIGHTS:
-        sym_id, mult, prob_pct = feat
-        ev = calculate_fg_ev(fs_strips, sym_id, mult)
-        weighted_ev += ev * (prob_pct/100)
+        sym_id, mult, weight_pct = feat
+        probability = weight_pct / 100.0
+        
+        # RTP de este escenario individual
+        rtp_scenario = calculate_rtp_fs_scenario(strips_fs, config.PAYTABLE, sym_id, mult)
+        
+        contribution = rtp_scenario * probability
+        weighted_fs_rtp += contribution
+        
+        print(f"    - Escenario {sym_id} (Wild x{mult}) [Peso {weight_pct}%]: RTP = {rtp_scenario:.2f}% -> Aporte: {contribution:.2f}%")
+        
+    # El RTP del Feature es: (RTP_Por_Giro * Giros_Promedio) / Apuesta_Base * Prob_Trigger
+    # Pero RTP_Scenario ya está en %, así que:
+    # EV_Total_Bonus = (Weighted_RTP / 100 * Bet) * Avg_Spins
+    # RTP_Contribution = EV_Total_Bonus * Prob_Trigger / Bet * 100
+    # Simplificando: Weighted_RTP * Avg_Spins * Prob_Trigger
     
-    print(f"EV Ponderado FS: {weighted_ev:.2f}")
+    rtp_bonus_total = weighted_fs_rtp * avg_fs_awarded * prob_trigger
+    print(f"    -> RTP TOTAL DEL BONUS (Base trigger): {rtp_bonus_total:.4f}%")
+
+    # 5. RTP JACKPOT (CONTRIBUCIÓN FIJA)
+    # En slots progresivos, el RTP del jackpot es la contribución configurada (lo que se saca de la apuesta)
+    rtp_jackpot = ((config.JP_CONTRIBUTION * 3) / config.PAYLINES_COUNT) * 100
+    print(f"\n[4] RTP JACKPOT (Contribución): {rtp_jackpot:.2f}%")
     
-    p_trig, avg_spins = calculate_trigger(base_strips)
-    rtp_feature = (p_trig * avg_spins * weighted_ev / config.PAYLINES_COUNT) * 100
-    print(f"RTP Feature: {rtp_feature:.2f}%")
-    
-    rtp_jp = (config.JP_CONTRIBUTION / config.PAYLINES_COUNT) * 100
-    
-    total = rtp_base + rtp_feature + rtp_jp
-    print("="*40)
-    print(f"RTP TOTAL: {total:.2f}%")
-    print("="*40)
+    # 6. TOTAL
+    rtp_final = rtp_base + rtp_bonus_total + rtp_jackpot
+    print("-" * 40)
+    print(f"RTP TEÓRICO FINAL: {rtp_final:.2f}%")
+    print("-" * 40)
 
 if __name__ == "__main__":
-    run()
+    main()

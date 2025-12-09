@@ -1,0 +1,29 @@
+--- INICIANDO SIMULACIÓN ESTADÍSTICA POR LOTES ---
+Sesiones: 50
+Giros/Sesión: 200,000
+Total Giros: 10,000,000
+------------------------------------------------------------
+Sesión 5/50 completada -> RTP: 93.02%
+Sesión 10/50 completada -> RTP: 97.44%
+Sesión 15/50 completada -> RTP: 99.55%
+Sesión 20/50 completada -> RTP: 97.37%
+Sesión 25/50 completada -> RTP: 96.45%
+Sesión 30/50 completada -> RTP: 97.69%
+Sesión 35/50 completada -> RTP: 101.35%
+Sesión 40/50 completada -> RTP: 96.82%
+Sesión 45/50 completada -> RTP: 100.06%
+Sesión 50/50 completada -> RTP: 97.17%
+
+============================================================
+      RESULTADOS DE VALIDACIÓN ESTADÍSTICA
+============================================================
+Tiempo Total:     523.1 segundos
+------------------------------------------------------------
+RTP PROMEDIO (Simulado):  97.0837%
+Desviación Estándar:      2.2250
+Intervalo Confianza (95%): [96.4669%, 97.7004%]
+------------------------------------------------------------
+CONCLUSIÓN:
+Si el RTP TEÓRICO cae dentro del intervalo anterior,
+el modelo matemático está VALIDADO.
+============================================================
