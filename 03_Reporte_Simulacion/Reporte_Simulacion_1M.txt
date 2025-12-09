@@ -1,0 +1,31 @@
+--- INICIANDO SIMULACIÓN CIENTÍFICA ---
+Giros: 1,000,000
+Semilla Fija (Seed): 777 (Resultados reproducibles)
+10% | RTP Global: 96.05% | Bonos: 634 | Tiempo: 5.1s
+20% | RTP Global: 96.45% | Bonos: 1243 | Tiempo: 9.8s
+30% | RTP Global: 97.39% | Bonos: 1880 | Tiempo: 14.8s
+40% | RTP Global: 96.65% | Bonos: 2464 | Tiempo: 19.4s
+50% | RTP Global: 96.64% | Bonos: 3091 | Tiempo: 24.0s
+60% | RTP Global: 96.67% | Bonos: 3682 | Tiempo: 28.6s
+70% | RTP Global: 96.27% | Bonos: 4304 | Tiempo: 33.2s
+80% | RTP Global: 96.19% | Bonos: 4918 | Tiempo: 37.9s
+90% | RTP Global: 96.69% | Bonos: 5560 | Tiempo: 42.6s
+100% | RTP Global: 96.84% | Bonos: 6167 | Tiempo: 47.6s
+
+============================================================
+      RESULTADOS DE SIMULACIÓN CIENTÍFICA
+============================================================
+Semilla Utilizada: 777
+------------------------------------------------------------
+RTP FINAL:        96.84%
+  > RTP Base:     47.19%
+  > RTP Bonos:    49.64%
+Intervalo 95%:    [94.61%, 99.06%]
+------------------------------------------------------------
+Volatilidad (SD): 284.02
+Varianza:         80668.65
+------------------------------------------------------------
+Hit Frequency:    36.20%
+Frecuencia Bono:  1 cada 162 giros
+Jackpots:         {'MINI': 331, 'MINOR': 13, 'MAJOR': 0}
+============================================================

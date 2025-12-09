@@ -1,19 +1,32 @@
 PROYECTO: Slot Math Model (Python)
-VERSION: Final (V19) - RTP 96.08%
+ESTRUCTURA DE ARCHIVOS:
+1. /01_Excels_Rieles_y_Pagos:
+   Contiene los archivos CSV con la definición exacta de los rodillos (Strips) y la tabla de pagos final utilizada para lograr estos resultados. Estos son los "planos" del juego.
 
---- ARCHIVOS ---
-1. config.py:     Configuración matemática (Rieles, Tabla de Pagos, Pesos).
-2. main.py:       Lógica del motor de juego (Reglas, Wilds, Jackpots).
-3. simulation.py: Script para correr simulaciones de Monte Carlo (1M giros).
-4. export.py:     Script para exportar los Rieles y Tablas a Excel/CSV.
+2. /02_Codigo_Fuente_Validacion:
+   Scripts en Python para auditar el modelo.
+   - config.py:       Configuración matemática final (Pagos y Rieles estáticos).
+   - main.py:         Motor lógico del juego.
+   - theory_check.py: Script de auditoría. Lee los CSVs entregados y calcula el RTP matemático exacto sin simular.
+   - simulation.py:   Script de Monte Carlo. Corre 1,000,000 de giros con semilla fija para reproducibilidad.
+   - export.py:       Script utilitario para regenerar los CSVs desde el código.
 
---- COMO EJECUTAR ---
+3. /03_Reportes_Validacion:
+   Logs de salida de las pruebas realizadas, demostrando la convergencia entre la simulación y la teoría.
+
+--- CÓMO EJECUTAR ---
 Requisitos: Tener Python 3.x instalado.
 
-1. Para validar matemáticas (Simulación):
-   Ejecutar: python simulation.py
-   (Esto correrá 1 millón de giros y mostrará el RTP teórico).
+1. Para validar el cálculo teórico (PAR Sheet):
+   Navegar a la carpeta /02_Codigo_Fuente_Validacion y ejecutar:
+   python theory_check.py
 
-2. Para generar los entregables (Excel):
-   Ejecutar: python export.py
-   (Esto creará los archivos CSV en la carpeta).
+2. Para correr la simulación de Monte Carlo:
+   Navegar a la carpeta /02_Codigo_Fuente_Validacion y ejecutar:
+   python simulation.py
+   (Esto ejecutará 1 Millón de giros con semilla fija y mostrará resultados estadísticos).
+
+
+
+   contacto por si algo falla en el futuro o si quiere contactarme: 
+   mail: lugoamartin@gmail.com
