@@ -21,10 +21,7 @@ def export_project():
             writer = csv.writer(file, delimiter=';')
             writer.writerow([f"--- {title} ---"])
             
-            # FORMATO SOLICITADO: ID y NOMBRE en columnas separadas o juntas
-            # El cliente dijo: "otras 5 columnas los simbolos solo como numeracion"
-            # Haremos: R1_ID, R1_Name, R2_ID, R2_Name...
-            
+            # FORMATO SOLICITADO: ID y NOMBRE separados
             header = []
             for i in range(1, 6):
                 header.append(f"R{i} ID")
