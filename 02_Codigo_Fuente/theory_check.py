@@ -132,6 +132,7 @@ def calculate_rtp_fs_scenario(strips, paytable, wild_transform_id, wild_multipli
 
     return scenario_ev * 100
 
+# --- MODIFICACIÓN CLAVE EN MAIN ---
 def main():
     print("=== VALIDACIÓN MATEMÁTICA TEÓRICA (PAR SHEET) ===")
     
@@ -143,32 +144,23 @@ def main():
 
     # 2. RTP JUEGO BASE
     rtp_base = calculate_rtp_base(strips_base, config.PAYTABLE)
-    print(f"\n[1] RTP JUEGO BASE (Combinatorio): {rtp_base:.4f}%")
+    print(f"\n[1] RTP JUEGO BASE: {rtp_base:.4f}%")
     
-    # 3. FRECUENCIA DE BONO (SCATTERS BASE)
-    # Calculamos prob de 3, 4, 5 Scatters para saber cuan seguido entramos a FS
+    # 3. FRECUENCIA DE BONO
     l_base = [len(s) for s in strips_base]
     sc_counts = [s.count(config.SYM_SCATTER) for s in strips_base]
-    
-    # CORRECCIÓN: El Scatter sirve si cae en CUALQUIER fila de la ventana visible (ROWS=3)
-    # Probabilidad de NO sacar scatter en una posición = 1 - (count/len)
-    # Probabilidad de NO sacar scatter en 3 posiciones = (1 - p)^3
-    # Probabilidad de SÍ sacar al menos 1 scatter en la ventana = 1 - (1 - p)^3
     sc_probs = []
     for c, l in zip(sc_counts, l_base):
         p_single = c / l
         p_window = 1 - (1 - p_single) ** config.ROWS
         sc_probs.append(p_window)
 
-    # Probabilidad de trigger (3 o más scatters en cualquier posicion - simplificado binomial/convolucion)
-    # Usamos método iterativo de polinomios para exactitud
+    # Probabilidad Trigger
     dist = {0: 1.0}
     for p in sc_probs:
         new_dist = {}
         for k, prob_val in dist.items():
-            # Caso no sale scatter
             new_dist[k] = new_dist.get(k, 0) + prob_val * (1-p)
-            # Caso sale scatter
             new_dist[k+1] = new_dist.get(k+1, 0) + prob_val * p
         dist = new_dist
         
@@ -178,39 +170,40 @@ def main():
         w_sum = sum(v * config.FREE_SPINS_AWARDED.get(k, 0) for k,v in dist.items() if k >= 3)
         avg_fs_awarded = w_sum / prob_trigger
         
-    print(f"[2] TRIGGER INFO:")
-    print(f"    - Probabilidad Entrada: {prob_trigger:.6f} (1 en {1/prob_trigger:.1f})")
-    print(f"    - Promedio Giros Gratis: {avg_fs_awarded:.2f}")
+    print(f"[2] PROBABILIDAD DE BONO: {prob_trigger:.6f} (1 en {1/prob_trigger:.1f})")
 
-    # 4. RTP FREE SPINS (PONDERADO - LA RECETA DE JONATAN)
-    print(f"\n[3] RTP FREE SPINS (Modelos Ponderados):")
+    # 4. RTP FREE SPINS - AQUÍ ESTÁ EL CAMBIO DE ETIQUETAS
+    print(f"\n[3] ANÁLISIS DE GIROS GRATIS (EV y Contribución):")
     weighted_fs_rtp = 0
     
     for feat in config.FEATURE_WEIGHTS:
         sym_id, mult, weight_pct = feat
         probability = weight_pct / 100.0
         
-        # RTP de este escenario individual
-        rtp_scenario = calculate_rtp_fs_scenario(strips_fs, config.PAYTABLE, sym_id, mult)
+        # Este valor (ej: 532%) es el Retorno por cada 100 apostados DENTRO del bono
+        rtp_scenario_ev = calculate_rtp_fs_scenario(strips_fs, config.PAYTABLE, sym_id, mult)
         
-        contribution = rtp_scenario * probability
+        contribution = rtp_scenario_ev * probability
         weighted_fs_rtp += contribution
         
-        print(f"    - Escenario {sym_id} (Wild x{mult}) [Peso {weight_pct}%]: RTP = {rtp_scenario:.2f}% -> Aporte: {contribution:.2f}%")
+        # CAMBIO DE TEXTO: Clarificar que es EV (Expected Value) por Escenario
+        print(f"    - Escenario {sym_id} (x{mult}): EV Interno = {rtp_scenario_ev:.2f}% (Peso: {weight_pct}%)")
         
-    # El RTP del Feature es: (RTP_Por_Giro * Giros_Promedio) / Apuesta_Base * Prob_Trigger
-    # Pero RTP_Scenario ya está en %, así que:
-    # EV_Total_Bonus = (Weighted_RTP / 100 * Bet) * Avg_Spins
-    # RTP_Contribution = EV_Total_Bonus * Prob_Trigger / Bet * 100
-    # Simplificando: Weighted_RTP * Avg_Spins * Prob_Trigger
+    # Cálculo Final Explicado
+    # RTP_Contribution = (EV_Promedio_Bono * Giros_Promedio) * Probabilidad_Entrada
+    # Nota: weighted_fs_rtp ya es % de retorno por giro.
     
     rtp_bonus_total = weighted_fs_rtp * avg_fs_awarded * prob_trigger
-    print(f"    -> RTP TOTAL DEL BONUS (Base trigger): {rtp_bonus_total:.4f}%")
+    
+    print(f"    --------------------------------------------------")
+    print(f"    EV Promedio por Giro Gratis: {weighted_fs_rtp:.2f}% (Pay per Spin)")
+    print(f"    Giros Promedio por Bono:     {avg_fs_awarded:.2f}")
+    print(f"    Probabilidad de Entrada:     {prob_trigger:.6f}")
+    print(f"    -> CONTRIBUCIÓN RTP BONUS:   {rtp_bonus_total:.4f}%")
 
-    # 5. RTP JACKPOT (CONTRIBUCIÓN FIJA)
-    # En slots progresivos, el RTP del jackpot es la contribución configurada (lo que se saca de la apuesta)
+    # 5. RTP JACKPOT
     rtp_jackpot = ((config.JP_CONTRIBUTION * 3) / config.PAYLINES_COUNT) * 100
-    print(f"\n[4] RTP JACKPOT (Contribución): {rtp_jackpot:.2f}%")
+    print(f"\n[4] RTP JACKPOT (3 x {config.JP_CONTRIBUTION}): {rtp_jackpot:.2f}%")
     
     # 6. TOTAL
     rtp_final = rtp_base + rtp_bonus_total + rtp_jackpot
