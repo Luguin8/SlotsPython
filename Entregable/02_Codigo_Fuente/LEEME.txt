@@ -1,0 +1,63 @@
+PROYECTO: Slot Math Model (Python) - Entrega Final
+
+ESTRUCTURA DE ARCHIVOS:
+
+1. /01_Excels_Rieles_Pagos:
+   Contiene los archivos CSV con la definición exacta de los rodillos (Strips) y la tabla de pagos final.
+   También contiene el "Slot_Parsheet_Teorico.xlsx", el archivo Excel con fórmulas matemáticas generado automáticamente.
+
+2. /02_Codigo_Fuente:
+   Scripts en Python para la lógica, validación y generación de entregables.
+   - config.py:            Configuración maestra (Pagos, Rieles y Semillas de Jackpot).
+   - main.py:              Motor lógico del juego (Clase SlotMachine).
+   - export.py:            Script que regenera los CSVs en la carpeta 01 basándose en config.py.
+   - theory_check.py:      Script de auditoría matemática. Calcula el RTP exacto y desglosa el EV de los Free Spins.
+   - simulation.py:        Simulación Científica. Ejecuta 150 sesiones con semillas variables para medir la varianza real.
+                           Incluye modo de verificación para auditar una semilla específica.
+   - generate_parsheet.py: Genera el archivo Excel (.xlsx) con las fórmulas de combinatoria y pagos incrustadas.
+   - quick_verify.py:      Script de prueba rápida para verificar estabilidad.
+
+3. /03_Reportes_Validacion:
+   Logs de salida con la evidencia de la convergencia matemática y el log detallado de semillas (simulation_log.json).
+
+--- RESUMEN TÉCNICO DE LA ENTREGA ---
+
+El modelo ha sido calibrado para cumplir con los requisitos de viabilidad y balance:
+
+1. RTP Teórico (Cálculo Combinatorio): 96.17%
+   Es el retorno puro basado en las probabilidades matemáticas de los rieles y pagos.
+
+2. RTP Simulado (Promedio de 150 Sesiones): ~96.85%
+   *Nota Técnica:* Esta diferencia positiva (aprox. +0.7%) es correcta y esperada.
+   Corresponde al aporte de las "Semillas de los Jackpots" (los montos base de 1000, 2000 y 3000) que el casino aporta al inicio de cada ciclo.
+   El cálculo teórico asume el RTP de contribución pura (lo que paga el jugador), mientras que la simulación paga el pozo completo (contribución + semilla real), elevando el retorno real percibido.
+
+3. Métricas Clave:
+   - Frecuencia de Bono: 1 cada 165 giros (Balance ideal).
+   - Contribución Jackpot: 6.00% (Cumple estrictamente la regla de aumento de 0.5 créditos por giro).
+   - Desglose Free Spins: Se incluye el cálculo de EV por giro y su ponderación por probabilidad en el Excel teórico.
+
+--- CÓMO EJECUTAR ---
+Requisitos: Tener Python 3.x instalado.
+(Opcional: pip install xlsxwriter para generar el Excel, aunque el archivo ya se incluye generado).
+
+1. Para generar el Excel Teórico con Fórmulas:
+   Navegar a /02_Codigo_Fuente y ejecutar:
+   python generate_parsheet.py
+   (Esto crea "Slot_Parsheet_Teorico.xlsx" en la carpeta 01 con todas las fórmulas desglosadas).
+
+2. Para validar el cálculo teórico (Consola):
+   python theory_check.py
+
+3. Para correr la Simulación Científica (Semilla Variable):
+   python simulation.py
+   (Ejecuta 150 sesiones independientes con semillas aleatorias, guarda los resultados en simulation_log.json y calcula el intervalo de confianza).
+
+4. Para verificar una sesión específica (Auditoría):
+   python simulation.py --verify [SEMILLA]
+   Ejemplo: python simulation.py --verify 123456789
+   (Esto replicará exactamente los resultados de esa sesión para su validación).
+
+---
+Desarrollado por: Martín Lugo
+Contacto: lugoamartin@gmail.com

@@ -1,0 +1,18 @@
+=== VALIDACIÓN MATEMÁTICA TEÓRICA (PAR SHEET) ===
+
+[1] RTP JUEGO BASE (Combinatorio): 46.3384%
+[2] TRIGGER INFO:
+    - Probabilidad Entrada: 0.006050 (1 en 165.3)
+    - Promedio Giros Gratis: 10.24
+
+[3] RTP FREE SPINS (Modelos Ponderados):
+    - Escenario 5 (Wild x1) [Peso 32.53%]: RTP = 532.01% -> Aporte: 173.06%
+    - Escenario 6 (Wild x2) [Peso 27.47%]: RTP = 905.02% -> Aporte: 248.61%
+    - Escenario 7 (Wild x2) [Peso 30.0%]: RTP = 748.61% -> Aporte: 224.58%
+    - Escenario 8 (Wild x3) [Peso 10.0%]: RTP = 612.80% -> Aporte: 61.28%
+    -> RTP TOTAL DEL BONUS (Base trigger): 43.8340%
+
+[4] RTP JACKPOT (Contribución): 6.00%
+----------------------------------------
+RTP TEÓRICO FINAL: 96.17%
+----------------------------------------
