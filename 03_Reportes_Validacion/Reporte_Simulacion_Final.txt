@@ -27,3 +27,39 @@ CONCLUSIÓN:
 Si el RTP TEÓRICO cae dentro del intervalo anterior,
 el modelo matemático está VALIDADO.
 ============================================================
+
+
+--- INICIANDO SIMULACIÓN CIENTÍFICA (400 MUESTRAS) ---
+Total Giros: 80,000,000
+------------------------------------------------------------
+Sesión 20/400 | RTP: 97.00%
+Sesión 40/400 | RTP: 97.75%
+Sesión 60/400 | RTP: 93.84%
+Sesión 80/400 | RTP: 101.35%
+Sesión 100/400 | RTP: 98.88%
+Sesión 120/400 | RTP: 96.92%
+Sesión 140/400 | RTP: 95.17%
+Sesión 160/400 | RTP: 93.83%
+Sesión 180/400 | RTP: 96.55%
+Sesión 200/400 | RTP: 99.45%
+Sesión 220/400 | RTP: 100.18%
+Sesión 240/400 | RTP: 97.90%
+Sesión 260/400 | RTP: 100.81%
+Sesión 280/400 | RTP: 96.02%
+Sesión 300/400 | RTP: 98.85%
+Sesión 320/400 | RTP: 96.39%
+Sesión 340/400 | RTP: 98.95%
+Sesión 360/400 | RTP: 96.87%
+Sesión 380/400 | RTP: 95.15%
+Sesión 400/400 | RTP: 94.67%
+
+============================================================
+      RESULTADOS ESTADÍSTICOS FINALES
+============================================================
+Tiempo Total:     3694.4 segundos
+------------------------------------------------------------
+RTP PROMEDIO:     97.0438%
+Desviación Std:   1.9601 (Normal para Slots con Multiplicador)
+Margen de Error:  0.1921%
+Intervalo 95%:    [96.8517%, 97.2358%]
+============================================================

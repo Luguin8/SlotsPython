@@ -1,37 +1,24 @@
 [
     {
         "session_id": 1,
-        "seed": 9689681869,
-        "rtp": 96.9399,
+        "seed": 6547684754,
+        "rtp": 96.93572,
         "total_bet": 5000000,
-        "total_won": 4846995.0,
-        "bonuses": 1304,
+        "total_won": 4846786.0,
+        "bonuses": 1296,
         "jackpots": {
-            "MINI": 80,
-            "MINOR": 4,
+            "MINI": 64,
+            "MINOR": 3,
             "MAJOR": 0
         }
     },
     {
         "session_id": 2,
-        "seed": 1191531958,
-        "rtp": 95.36223,
+        "seed": 7179938442,
+        "rtp": 98.90131,
         "total_bet": 5000000,
-        "total_won": 4768111.5,
-        "bonuses": 1353,
-        "jackpots": {
-            "MINI": 54,
-            "MINOR": 1,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 3,
-        "seed": 1404369846,
-        "rtp": 96.49327,
-        "total_bet": 5000000,
-        "total_won": 4824663.5,
-        "bonuses": 1312,
+        "total_won": 4945065.5,
+        "bonuses": 1341,
         "jackpots": {
             "MINI": 74,
             "MINOR": 4,
@@ -39,506 +26,129 @@
         }
     },
     {
-        "session_id": 4,
-        "seed": 6266247287,
-        "rtp": 94.07206000000001,
+        "session_id": 3,
+        "seed": 5279357076,
+        "rtp": 93.86846,
         "total_bet": 5000000,
-        "total_won": 4703603.0,
-        "bonuses": 1295,
+        "total_won": 4693423.0,
+        "bonuses": 1269,
         "jackpots": {
-            "MINI": 71,
-            "MINOR": 2,
+            "MINI": 74,
+            "MINOR": 6,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 4,
+        "seed": 1723875161,
+        "rtp": 96.76496999999999,
+        "total_bet": 5000000,
+        "total_won": 4838248.5,
+        "bonuses": 1348,
+        "jackpots": {
+            "MINI": 85,
+            "MINOR": 1,
             "MAJOR": 0
         }
     },
     {
         "session_id": 5,
-        "seed": 4502765875,
-        "rtp": 95.01631,
+        "seed": 7129075481,
+        "rtp": 93.22297,
         "total_bet": 5000000,
-        "total_won": 4750815.5,
-        "bonuses": 1331,
+        "total_won": 4661148.5,
+        "bonuses": 1260,
         "jackpots": {
-            "MINI": 67,
-            "MINOR": 0,
+            "MINI": 73,
+            "MINOR": 1,
             "MAJOR": 0
         }
     },
     {
         "session_id": 6,
-        "seed": 5768829728,
-        "rtp": 95.64036999999999,
+        "seed": 1952367636,
+        "rtp": 96.29303999999999,
         "total_bet": 5000000,
-        "total_won": 4782018.5,
-        "bonuses": 1285,
+        "total_won": 4814652.0,
+        "bonuses": 1343,
         "jackpots": {
-            "MINI": 66,
-            "MINOR": 4,
+            "MINI": 69,
+            "MINOR": 2,
             "MAJOR": 0
         }
     },
     {
         "session_id": 7,
-        "seed": 5335996152,
-        "rtp": 96.41913,
+        "seed": 5313845163,
+        "rtp": 100.31178999999999,
         "total_bet": 5000000,
-        "total_won": 4820956.5,
-        "bonuses": 1317,
+        "total_won": 5015589.5,
+        "bonuses": 1369,
         "jackpots": {
-            "MINI": 81,
-            "MINOR": 4,
+            "MINI": 70,
+            "MINOR": 5,
             "MAJOR": 0
         }
     },
     {
         "session_id": 8,
-        "seed": 7388342787,
-        "rtp": 99.46462,
+        "seed": 4323865824,
+        "rtp": 98.10247,
         "total_bet": 5000000,
-        "total_won": 4973231.0,
-        "bonuses": 1300,
+        "total_won": 4905123.5,
+        "bonuses": 1344,
         "jackpots": {
-            "MINI": 80,
+            "MINI": 65,
             "MINOR": 6,
             "MAJOR": 0
         }
     },
     {
         "session_id": 9,
-        "seed": 4418487253,
-        "rtp": 94.73814,
+        "seed": 5898057329,
+        "rtp": 96.05967,
         "total_bet": 5000000,
-        "total_won": 4736907.0,
-        "bonuses": 1291,
+        "total_won": 4802983.5,
+        "bonuses": 1290,
         "jackpots": {
             "MINI": 52,
-            "MINOR": 3,
+            "MINOR": 2,
             "MAJOR": 0
         }
     },
     {
         "session_id": 10,
-        "seed": 6508138000,
-        "rtp": 94.66044,
+        "seed": 4945513383,
+        "rtp": 93.72867000000001,
         "total_bet": 5000000,
-        "total_won": 4733022.0,
-        "bonuses": 1289,
+        "total_won": 4686433.5,
+        "bonuses": 1247,
         "jackpots": {
-            "MINI": 67,
-            "MINOR": 3,
+            "MINI": 62,
+            "MINOR": 2,
             "MAJOR": 0
         }
     },
     {
         "session_id": 11,
-        "seed": 7409883924,
-        "rtp": 98.84439,
+        "seed": 2034082770,
+        "rtp": 96.62195,
         "total_bet": 5000000,
-        "total_won": 4942219.5,
-        "bonuses": 1357,
+        "total_won": 4831097.5,
+        "bonuses": 1325,
         "jackpots": {
-            "MINI": 68,
-            "MINOR": 2,
+            "MINI": 74,
+            "MINOR": 3,
             "MAJOR": 0
         }
     },
     {
         "session_id": 12,
-        "seed": 2226119844,
-        "rtp": 97.04895,
+        "seed": 7131091983,
+        "rtp": 96.44629,
         "total_bet": 5000000,
-        "total_won": 4852447.5,
-        "bonuses": 1356,
-        "jackpots": {
-            "MINI": 74,
-            "MINOR": 2,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 13,
-        "seed": 9841348601,
-        "rtp": 95.03734,
-        "total_bet": 5000000,
-        "total_won": 4751867.0,
-        "bonuses": 1301,
-        "jackpots": {
-            "MINI": 69,
-            "MINOR": 3,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 14,
-        "seed": 7308442235,
-        "rtp": 95.48917,
-        "total_bet": 5000000,
-        "total_won": 4774458.5,
-        "bonuses": 1365,
-        "jackpots": {
-            "MINI": 73,
-            "MINOR": 2,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 15,
-        "seed": 7631591431,
-        "rtp": 94.72254,
-        "total_bet": 5000000,
-        "total_won": 4736127.0,
-        "bonuses": 1310,
-        "jackpots": {
-            "MINI": 82,
-            "MINOR": 1,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 16,
-        "seed": 6741820282,
-        "rtp": 97.18257,
-        "total_bet": 5000000,
-        "total_won": 4859128.5,
-        "bonuses": 1278,
-        "jackpots": {
-            "MINI": 62,
-            "MINOR": 2,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 17,
-        "seed": 1441071498,
-        "rtp": 95.10515000000001,
-        "total_bet": 5000000,
-        "total_won": 4755257.5,
-        "bonuses": 1281,
-        "jackpots": {
-            "MINI": 78,
-            "MINOR": 5,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 18,
-        "seed": 9510309959,
-        "rtp": 96.94096,
-        "total_bet": 5000000,
-        "total_won": 4847048.0,
-        "bonuses": 1340,
-        "jackpots": {
-            "MINI": 62,
-            "MINOR": 2,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 19,
-        "seed": 2224809348,
-        "rtp": 96.93267,
-        "total_bet": 5000000,
-        "total_won": 4846633.5,
-        "bonuses": 1375,
-        "jackpots": {
-            "MINI": 78,
-            "MINOR": 4,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 20,
-        "seed": 8361724421,
-        "rtp": 96.32328,
-        "total_bet": 5000000,
-        "total_won": 4816164.0,
-        "bonuses": 1310,
-        "jackpots": {
-            "MINI": 83,
-            "MINOR": 2,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 21,
-        "seed": 2117249343,
-        "rtp": 100.27602,
-        "total_bet": 5000000,
-        "total_won": 5013801.0,
-        "bonuses": 1349,
-        "jackpots": {
-            "MINI": 86,
-            "MINOR": 10,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 22,
-        "seed": 4897026629,
-        "rtp": 98.35212,
-        "total_bet": 5000000,
-        "total_won": 4917606.0,
-        "bonuses": 1336,
-        "jackpots": {
-            "MINI": 86,
-            "MINOR": 1,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 23,
-        "seed": 4676632503,
-        "rtp": 96.06779,
-        "total_bet": 5000000,
-        "total_won": 4803389.5,
-        "bonuses": 1288,
-        "jackpots": {
-            "MINI": 71,
-            "MINOR": 4,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 24,
-        "seed": 4633785770,
-        "rtp": 99.68882,
-        "total_bet": 5000000,
-        "total_won": 4984441.0,
-        "bonuses": 1329,
-        "jackpots": {
-            "MINI": 67,
-            "MINOR": 2,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 25,
-        "seed": 3992338607,
-        "rtp": 95.37748,
-        "total_bet": 5000000,
-        "total_won": 4768874.0,
-        "bonuses": 1254,
-        "jackpots": {
-            "MINI": 68,
-            "MINOR": 5,
-            "MAJOR": 1
-        }
-    },
-    {
-        "session_id": 26,
-        "seed": 3528991507,
-        "rtp": 97.87006000000001,
-        "total_bet": 5000000,
-        "total_won": 4893503.0,
-        "bonuses": 1314,
-        "jackpots": {
-            "MINI": 85,
-            "MINOR": 4,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 27,
-        "seed": 4438359117,
-        "rtp": 96.23190000000001,
-        "total_bet": 5000000,
-        "total_won": 4811595.0,
-        "bonuses": 1303,
-        "jackpots": {
-            "MINI": 64,
-            "MINOR": 8,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 28,
-        "seed": 9199774850,
-        "rtp": 98.30133,
-        "total_bet": 5000000,
-        "total_won": 4915066.5,
-        "bonuses": 1344,
-        "jackpots": {
-            "MINI": 64,
-            "MINOR": 3,
-            "MAJOR": 1
-        }
-    },
-    {
-        "session_id": 29,
-        "seed": 2684898674,
-        "rtp": 101.20233,
-        "total_bet": 5000000,
-        "total_won": 5060116.5,
-        "bonuses": 1345,
-        "jackpots": {
-            "MINI": 67,
-            "MINOR": 5,
-            "MAJOR": 1
-        }
-    },
-    {
-        "session_id": 30,
-        "seed": 1216119034,
-        "rtp": 98.79142,
-        "total_bet": 5000000,
-        "total_won": 4939571.0,
-        "bonuses": 1279,
-        "jackpots": {
-            "MINI": 48,
-            "MINOR": 6,
-            "MAJOR": 1
-        }
-    },
-    {
-        "session_id": 31,
-        "seed": 3497363668,
-        "rtp": 97.16021,
-        "total_bet": 5000000,
-        "total_won": 4858010.5,
-        "bonuses": 1321,
-        "jackpots": {
-            "MINI": 75,
-            "MINOR": 8,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 32,
-        "seed": 3541448028,
-        "rtp": 96.628,
-        "total_bet": 5000000,
-        "total_won": 4831400.0,
-        "bonuses": 1342,
-        "jackpots": {
-            "MINI": 74,
-            "MINOR": 3,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 33,
-        "seed": 8238111321,
-        "rtp": 97.66228,
-        "total_bet": 5000000,
-        "total_won": 4883114.0,
-        "bonuses": 1299,
-        "jackpots": {
-            "MINI": 83,
-            "MINOR": 6,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 34,
-        "seed": 3767110234,
-        "rtp": 96.40532,
-        "total_bet": 5000000,
-        "total_won": 4820266.0,
-        "bonuses": 1319,
-        "jackpots": {
-            "MINI": 76,
-            "MINOR": 3,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 35,
-        "seed": 7456855720,
-        "rtp": 93.01357,
-        "total_bet": 5000000,
-        "total_won": 4650678.5,
-        "bonuses": 1282,
-        "jackpots": {
-            "MINI": 73,
-            "MINOR": 1,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 36,
-        "seed": 6022936415,
-        "rtp": 96.34895999999999,
-        "total_bet": 5000000,
-        "total_won": 4817448.0,
-        "bonuses": 1292,
-        "jackpots": {
-            "MINI": 69,
-            "MINOR": 5,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 37,
-        "seed": 3429629305,
-        "rtp": 90.41597999999999,
-        "total_bet": 5000000,
-        "total_won": 4520799.0,
-        "bonuses": 1300,
-        "jackpots": {
-            "MINI": 62,
-            "MINOR": 0,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 38,
-        "seed": 6972790684,
-        "rtp": 97.01255,
-        "total_bet": 5000000,
-        "total_won": 4850627.5,
-        "bonuses": 1351,
-        "jackpots": {
-            "MINI": 68,
-            "MINOR": 1,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 39,
-        "seed": 8424459965,
-        "rtp": 99.46483,
-        "total_bet": 5000000,
-        "total_won": 4973241.5,
-        "bonuses": 1324,
-        "jackpots": {
-            "MINI": 72,
-            "MINOR": 7,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 40,
-        "seed": 4707469781,
-        "rtp": 94.40425,
-        "total_bet": 5000000,
-        "total_won": 4720212.5,
-        "bonuses": 1305,
-        "jackpots": {
-            "MINI": 55,
-            "MINOR": 3,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 41,
-        "seed": 5052718660,
-        "rtp": 94.10963,
-        "total_bet": 5000000,
-        "total_won": 4705481.5,
-        "bonuses": 1242,
-        "jackpots": {
-            "MINI": 52,
-            "MINOR": 4,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 42,
-        "seed": 8731653920,
-        "rtp": 97.58693000000001,
-        "total_bet": 5000000,
-        "total_won": 4879346.5,
-        "bonuses": 1311,
+        "total_won": 4822314.5,
+        "bonuses": 1280,
         "jackpots": {
             "MINI": 70,
             "MINOR": 2,
@@ -546,25 +156,103 @@
         }
     },
     {
-        "session_id": 43,
-        "seed": 1323790822,
-        "rtp": 95.87868,
+        "session_id": 13,
+        "seed": 2542042764,
+        "rtp": 97.63294,
         "total_bet": 5000000,
-        "total_won": 4793934.0,
-        "bonuses": 1328,
+        "total_won": 4881647.0,
+        "bonuses": 1399,
+        "jackpots": {
+            "MINI": 58,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 14,
+        "seed": 3059363976,
+        "rtp": 97.5549,
+        "total_bet": 5000000,
+        "total_won": 4877745.0,
+        "bonuses": 1335,
+        "jackpots": {
+            "MINI": 78,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 15,
+        "seed": 7935744269,
+        "rtp": 95.28568,
+        "total_bet": 5000000,
+        "total_won": 4764284.0,
+        "bonuses": 1287,
         "jackpots": {
             "MINI": 61,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 16,
+        "seed": 1059177468,
+        "rtp": 98.63235999999999,
+        "total_bet": 5000000,
+        "total_won": 4931618.0,
+        "bonuses": 1295,
+        "jackpots": {
+            "MINI": 77,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 17,
+        "seed": 3258028073,
+        "rtp": 98.23353999999999,
+        "total_bet": 5000000,
+        "total_won": 4911677.0,
+        "bonuses": 1324,
+        "jackpots": {
+            "MINI": 85,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 18,
+        "seed": 5054124737,
+        "rtp": 98.99822999999999,
+        "total_bet": 5000000,
+        "total_won": 4949911.5,
+        "bonuses": 1339,
+        "jackpots": {
+            "MINI": 69,
+            "MINOR": 3,
+            "MAJOR": 2
+        }
+    },
+    {
+        "session_id": 19,
+        "seed": 5396398027,
+        "rtp": 95.13042,
+        "total_bet": 5000000,
+        "total_won": 4756521.0,
+        "bonuses": 1286,
+        "jackpots": {
+            "MINI": 73,
             "MINOR": 6,
             "MAJOR": 0
         }
     },
     {
-        "session_id": 44,
-        "seed": 9061268951,
-        "rtp": 97.95914,
+        "session_id": 20,
+        "seed": 3725089456,
+        "rtp": 97.00253,
         "total_bet": 5000000,
-        "total_won": 4897957.0,
-        "bonuses": 1313,
+        "total_won": 4850126.5,
+        "bonuses": 1368,
         "jackpots": {
             "MINI": 77,
             "MINOR": 1,
@@ -572,38 +260,350 @@
         }
     },
     {
-        "session_id": 45,
-        "seed": 3385745540,
-        "rtp": 92.72101,
+        "session_id": 21,
+        "seed": 6001618639,
+        "rtp": 101.32007999999999,
         "total_bet": 5000000,
-        "total_won": 4636050.5,
-        "bonuses": 1260,
+        "total_won": 5066004.0,
+        "bonuses": 1359,
         "jackpots": {
-            "MINI": 64,
+            "MINI": 81,
             "MINOR": 3,
             "MAJOR": 0
         }
     },
     {
-        "session_id": 46,
-        "seed": 1908887482,
-        "rtp": 100.56963999999999,
+        "session_id": 22,
+        "seed": 2830142050,
+        "rtp": 94.79638,
         "total_bet": 5000000,
-        "total_won": 5028482.0,
-        "bonuses": 1357,
+        "total_won": 4739819.0,
+        "bonuses": 1312,
         "jackpots": {
-            "MINI": 66,
+            "MINI": 69,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 23,
+        "seed": 1346750015,
+        "rtp": 102.09259,
+        "total_bet": 5000000,
+        "total_won": 5104629.5,
+        "bonuses": 1378,
+        "jackpots": {
+            "MINI": 73,
             "MINOR": 8,
             "MAJOR": 0
         }
     },
     {
-        "session_id": 47,
-        "seed": 8954924822,
-        "rtp": 96.6456,
+        "session_id": 24,
+        "seed": 5997705944,
+        "rtp": 96.13346,
         "total_bet": 5000000,
-        "total_won": 4832280.0,
-        "bonuses": 1315,
+        "total_won": 4806673.0,
+        "bonuses": 1330,
+        "jackpots": {
+            "MINI": 56,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 25,
+        "seed": 2340571291,
+        "rtp": 96.32886,
+        "total_bet": 5000000,
+        "total_won": 4816443.0,
+        "bonuses": 1305,
+        "jackpots": {
+            "MINI": 69,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 26,
+        "seed": 9292376776,
+        "rtp": 99.90446,
+        "total_bet": 5000000,
+        "total_won": 4995223.0,
+        "bonuses": 1373,
+        "jackpots": {
+            "MINI": 72,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 27,
+        "seed": 6761590715,
+        "rtp": 96.70296,
+        "total_bet": 5000000,
+        "total_won": 4835148.0,
+        "bonuses": 1299,
+        "jackpots": {
+            "MINI": 75,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 28,
+        "seed": 4429056468,
+        "rtp": 93.81159,
+        "total_bet": 5000000,
+        "total_won": 4690579.5,
+        "bonuses": 1281,
+        "jackpots": {
+            "MINI": 48,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 29,
+        "seed": 8018537856,
+        "rtp": 98.29504999999999,
+        "total_bet": 5000000,
+        "total_won": 4914752.5,
+        "bonuses": 1351,
+        "jackpots": {
+            "MINI": 77,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 30,
+        "seed": 1345510825,
+        "rtp": 97.64725,
+        "total_bet": 5000000,
+        "total_won": 4882362.5,
+        "bonuses": 1389,
+        "jackpots": {
+            "MINI": 68,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 31,
+        "seed": 3253090919,
+        "rtp": 99.55973,
+        "total_bet": 5000000,
+        "total_won": 4977986.5,
+        "bonuses": 1291,
+        "jackpots": {
+            "MINI": 54,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 32,
+        "seed": 4734755191,
+        "rtp": 97.29239,
+        "total_bet": 5000000,
+        "total_won": 4864619.5,
+        "bonuses": 1304,
+        "jackpots": {
+            "MINI": 86,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 33,
+        "seed": 5362597595,
+        "rtp": 96.65843,
+        "total_bet": 5000000,
+        "total_won": 4832921.5,
+        "bonuses": 1319,
+        "jackpots": {
+            "MINI": 62,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 34,
+        "seed": 3587047260,
+        "rtp": 96.97884,
+        "total_bet": 5000000,
+        "total_won": 4848942.0,
+        "bonuses": 1346,
+        "jackpots": {
+            "MINI": 79,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 35,
+        "seed": 7352930906,
+        "rtp": 98.39515,
+        "total_bet": 5000000,
+        "total_won": 4919757.5,
+        "bonuses": 1386,
+        "jackpots": {
+            "MINI": 88,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 36,
+        "seed": 7095524302,
+        "rtp": 98.53293,
+        "total_bet": 5000000,
+        "total_won": 4926646.5,
+        "bonuses": 1331,
+        "jackpots": {
+            "MINI": 85,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 37,
+        "seed": 3085350922,
+        "rtp": 97.60844,
+        "total_bet": 5000000,
+        "total_won": 4880422.0,
+        "bonuses": 1351,
+        "jackpots": {
+            "MINI": 83,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 38,
+        "seed": 5792930111,
+        "rtp": 96.17895,
+        "total_bet": 5000000,
+        "total_won": 4808947.5,
+        "bonuses": 1310,
+        "jackpots": {
+            "MINI": 75,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 39,
+        "seed": 2136182705,
+        "rtp": 98.7051,
+        "total_bet": 5000000,
+        "total_won": 4935255.0,
+        "bonuses": 1347,
+        "jackpots": {
+            "MINI": 71,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 40,
+        "seed": 4876109495,
+        "rtp": 97.75197,
+        "total_bet": 5000000,
+        "total_won": 4887598.5,
+        "bonuses": 1348,
+        "jackpots": {
+            "MINI": 81,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 41,
+        "seed": 5412690145,
+        "rtp": 100.53047,
+        "total_bet": 5000000,
+        "total_won": 5026523.5,
+        "bonuses": 1337,
+        "jackpots": {
+            "MINI": 63,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 42,
+        "seed": 8792476330,
+        "rtp": 97.78055,
+        "total_bet": 5000000,
+        "total_won": 4889027.5,
+        "bonuses": 1327,
+        "jackpots": {
+            "MINI": 88,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 43,
+        "seed": 5531232879,
+        "rtp": 97.64966000000001,
+        "total_bet": 5000000,
+        "total_won": 4882483.0,
+        "bonuses": 1390,
+        "jackpots": {
+            "MINI": 64,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 44,
+        "seed": 4408188569,
+        "rtp": 96.29921999999999,
+        "total_bet": 5000000,
+        "total_won": 4814961.0,
+        "bonuses": 1319,
+        "jackpots": {
+            "MINI": 63,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 45,
+        "seed": 5356422475,
+        "rtp": 96.18325,
+        "total_bet": 5000000,
+        "total_won": 4809162.5,
+        "bonuses": 1332,
+        "jackpots": {
+            "MINI": 76,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 46,
+        "seed": 3118632084,
+        "rtp": 99.94771,
+        "total_bet": 5000000,
+        "total_won": 4997385.5,
+        "bonuses": 1328,
+        "jackpots": {
+            "MINI": 93,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 47,
+        "seed": 9884111200,
+        "rtp": 97.66616,
+        "total_bet": 5000000,
+        "total_won": 4883308.0,
+        "bonuses": 1342,
         "jackpots": {
             "MINI": 76,
             "MINOR": 2,
@@ -612,102 +612,154 @@
     },
     {
         "session_id": 48,
-        "seed": 2315926495,
-        "rtp": 98.47369,
+        "seed": 7827517443,
+        "rtp": 94.89735,
         "total_bet": 5000000,
-        "total_won": 4923684.5,
-        "bonuses": 1367,
+        "total_won": 4744867.5,
+        "bonuses": 1290,
         "jackpots": {
-            "MINI": 63,
-            "MINOR": 6,
+            "MINI": 71,
+            "MINOR": 3,
             "MAJOR": 0
         }
     },
     {
         "session_id": 49,
-        "seed": 6964619444,
-        "rtp": 97.02937,
+        "seed": 8705408239,
+        "rtp": 96.15418,
         "total_bet": 5000000,
-        "total_won": 4851468.5,
-        "bonuses": 1357,
+        "total_won": 4807709.0,
+        "bonuses": 1370,
         "jackpots": {
-            "MINI": 58,
-            "MINOR": 4,
+            "MINI": 69,
+            "MINOR": 3,
             "MAJOR": 0
         }
     },
     {
         "session_id": 50,
-        "seed": 3407453988,
-        "rtp": 95.30874,
+        "seed": 1273731506,
+        "rtp": 98.76316,
         "total_bet": 5000000,
-        "total_won": 4765437.0,
-        "bonuses": 1310,
+        "total_won": 4938158.0,
+        "bonuses": 1345,
         "jackpots": {
-            "MINI": 82,
+            "MINI": 65,
             "MINOR": 3,
             "MAJOR": 0
         }
     },
     {
         "session_id": 51,
-        "seed": 7594719170,
-        "rtp": 93.16408,
+        "seed": 9261866075,
+        "rtp": 92.92223,
         "total_bet": 5000000,
-        "total_won": 4658204.0,
-        "bonuses": 1298,
+        "total_won": 4646111.5,
+        "bonuses": 1228,
         "jackpots": {
-            "MINI": 58,
-            "MINOR": 0,
+            "MINI": 65,
+            "MINOR": 5,
             "MAJOR": 0
         }
     },
     {
         "session_id": 52,
-        "seed": 9885834676,
-        "rtp": 98.97291,
+        "seed": 3398086851,
+        "rtp": 98.45469,
         "total_bet": 5000000,
-        "total_won": 4948645.5,
-        "bonuses": 1355,
+        "total_won": 4922734.5,
+        "bonuses": 1344,
         "jackpots": {
-            "MINI": 75,
+            "MINI": 68,
             "MINOR": 3,
             "MAJOR": 0
         }
     },
     {
         "session_id": 53,
-        "seed": 7861773428,
-        "rtp": 94.71885,
+        "seed": 8124860289,
+        "rtp": 95.22838,
         "total_bet": 5000000,
-        "total_won": 4735942.5,
-        "bonuses": 1281,
+        "total_won": 4761419.0,
+        "bonuses": 1283,
         "jackpots": {
-            "MINI": 66,
+            "MINI": 76,
             "MINOR": 2,
             "MAJOR": 0
         }
     },
     {
         "session_id": 54,
-        "seed": 1227113554,
-        "rtp": 99.33077999999999,
+        "seed": 1531786467,
+        "rtp": 97.05721,
         "total_bet": 5000000,
-        "total_won": 4966539.0,
-        "bonuses": 1360,
+        "total_won": 4852860.5,
+        "bonuses": 1340,
         "jackpots": {
-            "MINI": 73,
-            "MINOR": 6,
+            "MINI": 69,
+            "MINOR": 5,
             "MAJOR": 0
         }
     },
     {
         "session_id": 55,
-        "seed": 3963742059,
-        "rtp": 97.7623,
+        "seed": 5543264009,
+        "rtp": 98.93823,
         "total_bet": 5000000,
-        "total_won": 4888115.0,
-        "bonuses": 1337,
+        "total_won": 4946911.5,
+        "bonuses": 1367,
+        "jackpots": {
+            "MINI": 79,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 56,
+        "seed": 9000065961,
+        "rtp": 100.13898999999999,
+        "total_bet": 5000000,
+        "total_won": 5006949.5,
+        "bonuses": 1368,
+        "jackpots": {
+            "MINI": 87,
+            "MINOR": 6,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 57,
+        "seed": 2594956458,
+        "rtp": 98.86809,
+        "total_bet": 5000000,
+        "total_won": 4943404.5,
+        "bonuses": 1361,
+        "jackpots": {
+            "MINI": 61,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 58,
+        "seed": 3057372064,
+        "rtp": 100.44614,
+        "total_bet": 5000000,
+        "total_won": 5022307.0,
+        "bonuses": 1370,
+        "jackpots": {
+            "MINI": 69,
+            "MINOR": 6,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 59,
+        "seed": 5588973271,
+        "rtp": 94.73208,
+        "total_bet": 5000000,
+        "total_won": 4736604.0,
+        "bonuses": 1264,
         "jackpots": {
             "MINI": 74,
             "MINOR": 2,
@@ -715,1077 +767,115 @@
         }
     },
     {
-        "session_id": 56,
-        "seed": 8025380507,
-        "rtp": 96.51472,
+        "session_id": 60,
+        "seed": 1652397718,
+        "rtp": 93.84242,
         "total_bet": 5000000,
-        "total_won": 4825736.0,
-        "bonuses": 1299,
+        "total_won": 4692121.0,
+        "bonuses": 1256,
         "jackpots": {
             "MINI": 80,
-            "MINOR": 0,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 57,
-        "seed": 8285358829,
-        "rtp": 97.65774,
-        "total_bet": 5000000,
-        "total_won": 4882887.0,
-        "bonuses": 1346,
-        "jackpots": {
-            "MINI": 52,
             "MINOR": 3,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 58,
-        "seed": 7612367337,
-        "rtp": 94.58212,
-        "total_bet": 5000000,
-        "total_won": 4729106.0,
-        "bonuses": 1384,
-        "jackpots": {
-            "MINI": 75,
-            "MINOR": 1,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 59,
-        "seed": 8384242675,
-        "rtp": 96.23012,
-        "total_bet": 5000000,
-        "total_won": 4811506.0,
-        "bonuses": 1315,
-        "jackpots": {
-            "MINI": 75,
-            "MINOR": 5,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 60,
-        "seed": 2522200065,
-        "rtp": 95.64538999999999,
-        "total_bet": 5000000,
-        "total_won": 4782269.5,
-        "bonuses": 1308,
-        "jackpots": {
-            "MINI": 62,
-            "MINOR": 4,
             "MAJOR": 0
         }
     },
     {
         "session_id": 61,
-        "seed": 6258723098,
-        "rtp": 96.38633,
+        "seed": 2087317266,
+        "rtp": 97.8431,
         "total_bet": 5000000,
-        "total_won": 4819316.5,
-        "bonuses": 1340,
+        "total_won": 4892155.0,
+        "bonuses": 1345,
         "jackpots": {
-            "MINI": 79,
-            "MINOR": 2,
+            "MINI": 67,
+            "MINOR": 6,
             "MAJOR": 0
         }
     },
     {
         "session_id": 62,
-        "seed": 8053972561,
-        "rtp": 91.50654,
+        "seed": 4645862731,
+        "rtp": 99.38399,
         "total_bet": 5000000,
-        "total_won": 4575327.0,
-        "bonuses": 1291,
+        "total_won": 4969199.5,
+        "bonuses": 1341,
         "jackpots": {
-            "MINI": 62,
-            "MINOR": 1,
+            "MINI": 81,
+            "MINOR": 5,
             "MAJOR": 0
         }
     },
     {
         "session_id": 63,
-        "seed": 7724792371,
-        "rtp": 95.1396,
+        "seed": 6216376534,
+        "rtp": 97.49239,
         "total_bet": 5000000,
-        "total_won": 4756980.0,
-        "bonuses": 1288,
+        "total_won": 4874619.5,
+        "bonuses": 1315,
         "jackpots": {
-            "MINI": 68,
-            "MINOR": 3,
+            "MINI": 70,
+            "MINOR": 5,
             "MAJOR": 0
         }
     },
     {
         "session_id": 64,
-        "seed": 4156798182,
-        "rtp": 97.41163,
+        "seed": 9951729879,
+        "rtp": 101.01328000000001,
         "total_bet": 5000000,
-        "total_won": 4870581.5,
-        "bonuses": 1326,
+        "total_won": 5050664.0,
+        "bonuses": 1395,
         "jackpots": {
-            "MINI": 62,
-            "MINOR": 2,
-            "MAJOR": 0
+            "MINI": 75,
+            "MINOR": 3,
+            "MAJOR": 1
         }
     },
     {
         "session_id": 65,
-        "seed": 4385518172,
-        "rtp": 96.38051,
+        "seed": 6885856657,
+        "rtp": 97.43637000000001,
         "total_bet": 5000000,
-        "total_won": 4819025.5,
-        "bonuses": 1319,
+        "total_won": 4871818.5,
+        "bonuses": 1300,
         "jackpots": {
-            "MINI": 69,
-            "MINOR": 3,
+            "MINI": 76,
+            "MINOR": 4,
             "MAJOR": 0
         }
     },
     {
         "session_id": 66,
-        "seed": 6104622512,
-        "rtp": 97.40726,
+        "seed": 2085406494,
+        "rtp": 97.07135,
         "total_bet": 5000000,
-        "total_won": 4870363.0,
-        "bonuses": 1361,
+        "total_won": 4853567.5,
+        "bonuses": 1299,
         "jackpots": {
-            "MINI": 72,
+            "MINI": 75,
             "MINOR": 3,
             "MAJOR": 0
         }
     },
     {
         "session_id": 67,
-        "seed": 5356233331,
-        "rtp": 98.11583,
+        "seed": 9971895360,
+        "rtp": 94.99014,
         "total_bet": 5000000,
-        "total_won": 4905791.5,
-        "bonuses": 1339,
+        "total_won": 4749507.0,
+        "bonuses": 1290,
         "jackpots": {
-            "MINI": 70,
+            "MINI": 58,
             "MINOR": 2,
             "MAJOR": 0
         }
     },
     {
         "session_id": 68,
-        "seed": 7901827531,
-        "rtp": 96.99959,
+        "seed": 1990555345,
+        "rtp": 96.19145,
         "total_bet": 5000000,
-        "total_won": 4849979.5,
-        "bonuses": 1327,
-        "jackpots": {
-            "MINI": 72,
-            "MINOR": 3,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 69,
-        "seed": 1399534017,
-        "rtp": 98.32807,
-        "total_bet": 5000000,
-        "total_won": 4916403.5,
-        "bonuses": 1392,
-        "jackpots": {
-            "MINI": 63,
-            "MINOR": 2,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 70,
-        "seed": 4293825188,
-        "rtp": 95.71185,
-        "total_bet": 5000000,
-        "total_won": 4785592.5,
-        "bonuses": 1347,
-        "jackpots": {
-            "MINI": 67,
-            "MINOR": 1,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 71,
-        "seed": 3046414463,
-        "rtp": 96.87299,
-        "total_bet": 5000000,
-        "total_won": 4843649.5,
-        "bonuses": 1310,
-        "jackpots": {
-            "MINI": 63,
-            "MINOR": 2,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 72,
-        "seed": 2993047788,
-        "rtp": 97.33927999999999,
-        "total_bet": 5000000,
-        "total_won": 4866964.0,
-        "bonuses": 1318,
-        "jackpots": {
-            "MINI": 68,
-            "MINOR": 4,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 73,
-        "seed": 6112102250,
-        "rtp": 96.756,
-        "total_bet": 5000000,
-        "total_won": 4837800.0,
-        "bonuses": 1303,
-        "jackpots": {
-            "MINI": 80,
-            "MINOR": 4,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 74,
-        "seed": 9921157811,
-        "rtp": 97.58861,
-        "total_bet": 5000000,
-        "total_won": 4879430.5,
-        "bonuses": 1340,
-        "jackpots": {
-            "MINI": 74,
-            "MINOR": 0,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 75,
-        "seed": 3958376813,
-        "rtp": 95.11557,
-        "total_bet": 5000000,
-        "total_won": 4755778.5,
-        "bonuses": 1303,
-        "jackpots": {
-            "MINI": 70,
-            "MINOR": 1,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 76,
-        "seed": 2324297286,
-        "rtp": 93.94742000000001,
-        "total_bet": 5000000,
-        "total_won": 4697371.0,
-        "bonuses": 1292,
-        "jackpots": {
-            "MINI": 73,
-            "MINOR": 3,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 77,
-        "seed": 5620087311,
-        "rtp": 96.74529,
-        "total_bet": 5000000,
-        "total_won": 4837264.5,
-        "bonuses": 1312,
-        "jackpots": {
-            "MINI": 78,
-            "MINOR": 3,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 78,
-        "seed": 9362363474,
-        "rtp": 95.8094,
-        "total_bet": 5000000,
-        "total_won": 4790470.0,
-        "bonuses": 1264,
-        "jackpots": {
-            "MINI": 63,
-            "MINOR": 1,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 79,
-        "seed": 7837380087,
-        "rtp": 101.16277,
-        "total_bet": 5000000,
-        "total_won": 5058138.5,
-        "bonuses": 1387,
-        "jackpots": {
-            "MINI": 83,
-            "MINOR": 5,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 80,
-        "seed": 8901264030,
-        "rtp": 92.46035,
-        "total_bet": 5000000,
-        "total_won": 4623017.5,
-        "bonuses": 1245,
-        "jackpots": {
-            "MINI": 62,
-            "MINOR": 2,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 81,
-        "seed": 3723122916,
-        "rtp": 96.9598,
-        "total_bet": 5000000,
-        "total_won": 4847990.0,
-        "bonuses": 1343,
-        "jackpots": {
-            "MINI": 79,
-            "MINOR": 2,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 82,
-        "seed": 1748703215,
-        "rtp": 96.36901,
-        "total_bet": 5000000,
-        "total_won": 4818450.5,
-        "bonuses": 1327,
-        "jackpots": {
-            "MINI": 72,
-            "MINOR": 2,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 83,
-        "seed": 2165485266,
-        "rtp": 98.76536999999999,
-        "total_bet": 5000000,
-        "total_won": 4938268.5,
-        "bonuses": 1333,
-        "jackpots": {
-            "MINI": 73,
-            "MINOR": 7,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 84,
-        "seed": 6029646508,
-        "rtp": 100.85538999999999,
-        "total_bet": 5000000,
-        "total_won": 5042769.5,
-        "bonuses": 1332,
-        "jackpots": {
-            "MINI": 69,
-            "MINOR": 3,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 85,
-        "seed": 9685519452,
-        "rtp": 99.60633,
-        "total_bet": 5000000,
-        "total_won": 4980316.5,
-        "bonuses": 1363,
-        "jackpots": {
-            "MINI": 75,
-            "MINOR": 1,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 86,
-        "seed": 5474276403,
-        "rtp": 96.40393,
-        "total_bet": 5000000,
-        "total_won": 4820196.5,
-        "bonuses": 1304,
-        "jackpots": {
-            "MINI": 58,
-            "MINOR": 3,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 87,
-        "seed": 7457185614,
-        "rtp": 98.94,
-        "total_bet": 5000000,
-        "total_won": 4947000.0,
-        "bonuses": 1307,
-        "jackpots": {
-            "MINI": 82,
-            "MINOR": 4,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 88,
-        "seed": 8438719214,
-        "rtp": 97.58316,
-        "total_bet": 5000000,
-        "total_won": 4879158.0,
-        "bonuses": 1312,
-        "jackpots": {
-            "MINI": 75,
-            "MINOR": 4,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 89,
-        "seed": 8739123427,
-        "rtp": 96.08937,
-        "total_bet": 5000000,
-        "total_won": 4804468.5,
-        "bonuses": 1297,
-        "jackpots": {
-            "MINI": 69,
-            "MINOR": 6,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 90,
-        "seed": 7890448834,
-        "rtp": 97.84926,
-        "total_bet": 5000000,
-        "total_won": 4892463.0,
-        "bonuses": 1336,
-        "jackpots": {
-            "MINI": 67,
-            "MINOR": 3,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 91,
-        "seed": 8654409739,
-        "rtp": 99.60652,
-        "total_bet": 5000000,
-        "total_won": 4980326.0,
-        "bonuses": 1387,
-        "jackpots": {
-            "MINI": 92,
-            "MINOR": 2,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 92,
-        "seed": 1328692659,
-        "rtp": 92.91986,
-        "total_bet": 5000000,
-        "total_won": 4645993.0,
-        "bonuses": 1259,
-        "jackpots": {
-            "MINI": 66,
-            "MINOR": 5,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 93,
-        "seed": 5692990292,
-        "rtp": 98.685,
-        "total_bet": 5000000,
-        "total_won": 4934250.0,
-        "bonuses": 1361,
-        "jackpots": {
-            "MINI": 57,
-            "MINOR": 4,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 94,
-        "seed": 2620019377,
-        "rtp": 97.13242,
-        "total_bet": 5000000,
-        "total_won": 4856621.0,
-        "bonuses": 1314,
-        "jackpots": {
-            "MINI": 74,
-            "MINOR": 3,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 95,
-        "seed": 1630956593,
-        "rtp": 98.99742,
-        "total_bet": 5000000,
-        "total_won": 4949871.0,
-        "bonuses": 1322,
-        "jackpots": {
-            "MINI": 78,
-            "MINOR": 3,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 96,
-        "seed": 7523823243,
-        "rtp": 98.53075,
-        "total_bet": 5000000,
-        "total_won": 4926537.5,
-        "bonuses": 1330,
-        "jackpots": {
-            "MINI": 73,
-            "MINOR": 2,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 97,
-        "seed": 7897616958,
-        "rtp": 99.30059,
-        "total_bet": 5000000,
-        "total_won": 4965029.5,
-        "bonuses": 1338,
-        "jackpots": {
-            "MINI": 73,
-            "MINOR": 6,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 98,
-        "seed": 6147259312,
-        "rtp": 97.29464,
-        "total_bet": 5000000,
-        "total_won": 4864732.0,
-        "bonuses": 1329,
-        "jackpots": {
-            "MINI": 80,
-            "MINOR": 3,
-            "MAJOR": 1
-        }
-    },
-    {
-        "session_id": 99,
-        "seed": 8540011706,
-        "rtp": 96.33887,
-        "total_bet": 5000000,
-        "total_won": 4816943.5,
-        "bonuses": 1355,
-        "jackpots": {
-            "MINI": 87,
-            "MINOR": 4,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 100,
-        "seed": 4964117768,
-        "rtp": 96.99668,
-        "total_bet": 5000000,
-        "total_won": 4849834.0,
-        "bonuses": 1319,
-        "jackpots": {
-            "MINI": 57,
-            "MINOR": 3,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 101,
-        "seed": 5314692086,
-        "rtp": 99.23049,
-        "total_bet": 5000000,
-        "total_won": 4961524.5,
-        "bonuses": 1361,
-        "jackpots": {
-            "MINI": 89,
-            "MINOR": 5,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 102,
-        "seed": 9748832869,
-        "rtp": 96.71341,
-        "total_bet": 5000000,
-        "total_won": 4835670.5,
-        "bonuses": 1243,
-        "jackpots": {
-            "MINI": 68,
-            "MINOR": 6,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 103,
-        "seed": 9620216610,
-        "rtp": 97.28043,
-        "total_bet": 5000000,
-        "total_won": 4864021.5,
-        "bonuses": 1348,
-        "jackpots": {
-            "MINI": 76,
-            "MINOR": 6,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 104,
-        "seed": 9308973591,
-        "rtp": 98.76888000000001,
-        "total_bet": 5000000,
-        "total_won": 4938444.0,
-        "bonuses": 1309,
-        "jackpots": {
-            "MINI": 73,
-            "MINOR": 4,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 105,
-        "seed": 4336656866,
-        "rtp": 94.56637,
-        "total_bet": 5000000,
-        "total_won": 4728318.5,
-        "bonuses": 1331,
-        "jackpots": {
-            "MINI": 74,
-            "MINOR": 3,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 106,
-        "seed": 6738960995,
-        "rtp": 96.9696,
-        "total_bet": 5000000,
-        "total_won": 4848480.0,
-        "bonuses": 1327,
-        "jackpots": {
-            "MINI": 81,
-            "MINOR": 5,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 107,
-        "seed": 6038994976,
-        "rtp": 98.99432,
-        "total_bet": 5000000,
-        "total_won": 4949716.0,
-        "bonuses": 1351,
-        "jackpots": {
-            "MINI": 78,
-            "MINOR": 3,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 108,
-        "seed": 4070464891,
-        "rtp": 93.71558,
-        "total_bet": 5000000,
-        "total_won": 4685779.0,
-        "bonuses": 1340,
-        "jackpots": {
-            "MINI": 86,
-            "MINOR": 2,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 109,
-        "seed": 8902341138,
-        "rtp": 98.45528999999999,
-        "total_bet": 5000000,
-        "total_won": 4922764.5,
-        "bonuses": 1335,
-        "jackpots": {
-            "MINI": 71,
-            "MINOR": 3,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 110,
-        "seed": 6185252994,
-        "rtp": 96.18132,
-        "total_bet": 5000000,
-        "total_won": 4809066.0,
-        "bonuses": 1320,
-        "jackpots": {
-            "MINI": 57,
-            "MINOR": 4,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 111,
-        "seed": 9196921848,
-        "rtp": 97.3857,
-        "total_bet": 5000000,
-        "total_won": 4869285.0,
-        "bonuses": 1361,
-        "jackpots": {
-            "MINI": 79,
-            "MINOR": 3,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 112,
-        "seed": 8639142668,
-        "rtp": 97.81222000000001,
-        "total_bet": 5000000,
-        "total_won": 4890611.0,
-        "bonuses": 1346,
-        "jackpots": {
-            "MINI": 72,
-            "MINOR": 1,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 113,
-        "seed": 3480359524,
-        "rtp": 97.11127,
-        "total_bet": 5000000,
-        "total_won": 4855563.5,
-        "bonuses": 1298,
-        "jackpots": {
-            "MINI": 85,
-            "MINOR": 4,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 114,
-        "seed": 4245726059,
-        "rtp": 96.44635000000001,
-        "total_bet": 5000000,
-        "total_won": 4822317.5,
-        "bonuses": 1297,
-        "jackpots": {
-            "MINI": 68,
-            "MINOR": 2,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 115,
-        "seed": 1651258876,
-        "rtp": 96.88708,
-        "total_bet": 5000000,
-        "total_won": 4844354.0,
-        "bonuses": 1295,
-        "jackpots": {
-            "MINI": 69,
-            "MINOR": 3,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 116,
-        "seed": 4816986446,
-        "rtp": 96.41355,
-        "total_bet": 5000000,
-        "total_won": 4820677.5,
-        "bonuses": 1318,
-        "jackpots": {
-            "MINI": 62,
-            "MINOR": 2,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 117,
-        "seed": 1696875497,
-        "rtp": 96.1798,
-        "total_bet": 5000000,
-        "total_won": 4808990.0,
-        "bonuses": 1232,
-        "jackpots": {
-            "MINI": 59,
-            "MINOR": 5,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 118,
-        "seed": 3793827170,
-        "rtp": 97.3071,
-        "total_bet": 5000000,
-        "total_won": 4865355.0,
-        "bonuses": 1359,
-        "jackpots": {
-            "MINI": 53,
-            "MINOR": 3,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 119,
-        "seed": 3563416041,
-        "rtp": 97.51912,
-        "total_bet": 5000000,
-        "total_won": 4875956.0,
-        "bonuses": 1334,
-        "jackpots": {
-            "MINI": 68,
-            "MINOR": 1,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 120,
-        "seed": 6221181804,
-        "rtp": 91.09022,
-        "total_bet": 5000000,
-        "total_won": 4554511.0,
-        "bonuses": 1189,
-        "jackpots": {
-            "MINI": 56,
-            "MINOR": 2,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 121,
-        "seed": 9043643711,
-        "rtp": 98.02446,
-        "total_bet": 5000000,
-        "total_won": 4901223.0,
-        "bonuses": 1348,
-        "jackpots": {
-            "MINI": 78,
-            "MINOR": 3,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 122,
-        "seed": 9481283950,
-        "rtp": 95.25209,
-        "total_bet": 5000000,
-        "total_won": 4762604.5,
-        "bonuses": 1293,
-        "jackpots": {
-            "MINI": 70,
-            "MINOR": 1,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 123,
-        "seed": 5986401440,
-        "rtp": 96.61032,
-        "total_bet": 5000000,
-        "total_won": 4830516.0,
-        "bonuses": 1314,
-        "jackpots": {
-            "MINI": 81,
-            "MINOR": 3,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 124,
-        "seed": 3142089568,
-        "rtp": 99.92097,
-        "total_bet": 5000000,
-        "total_won": 4996048.5,
-        "bonuses": 1399,
-        "jackpots": {
-            "MINI": 61,
-            "MINOR": 3,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 125,
-        "seed": 7098536123,
-        "rtp": 98.25677,
-        "total_bet": 5000000,
-        "total_won": 4912838.5,
-        "bonuses": 1368,
-        "jackpots": {
-            "MINI": 69,
-            "MINOR": 10,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 126,
-        "seed": 6590889694,
-        "rtp": 94.96907999999999,
-        "total_bet": 5000000,
-        "total_won": 4748454.0,
-        "bonuses": 1300,
-        "jackpots": {
-            "MINI": 75,
-            "MINOR": 4,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 127,
-        "seed": 7584366710,
-        "rtp": 97.87825,
-        "total_bet": 5000000,
-        "total_won": 4893912.5,
-        "bonuses": 1310,
-        "jackpots": {
-            "MINI": 73,
-            "MINOR": 4,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 128,
-        "seed": 2862816785,
-        "rtp": 94.91946999999999,
-        "total_bet": 5000000,
-        "total_won": 4745973.5,
-        "bonuses": 1326,
-        "jackpots": {
-            "MINI": 79,
-            "MINOR": 0,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 129,
-        "seed": 1252874091,
-        "rtp": 99.86907000000001,
-        "total_bet": 5000000,
-        "total_won": 4993453.5,
-        "bonuses": 1350,
-        "jackpots": {
-            "MINI": 68,
-            "MINOR": 5,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 130,
-        "seed": 9033468266,
-        "rtp": 97.93137,
-        "total_bet": 5000000,
-        "total_won": 4896568.5,
-        "bonuses": 1323,
-        "jackpots": {
-            "MINI": 78,
-            "MINOR": 3,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 131,
-        "seed": 8431471747,
-        "rtp": 99.33037999999999,
-        "total_bet": 5000000,
-        "total_won": 4966519.0,
-        "bonuses": 1379,
-        "jackpots": {
-            "MINI": 82,
-            "MINOR": 2,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 132,
-        "seed": 5599126590,
-        "rtp": 96.84283,
-        "total_bet": 5000000,
-        "total_won": 4842141.5,
-        "bonuses": 1297,
-        "jackpots": {
-            "MINI": 73,
-            "MINOR": 2,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 133,
-        "seed": 7340824812,
-        "rtp": 96.99136,
-        "total_bet": 5000000,
-        "total_won": 4849568.0,
-        "bonuses": 1295,
-        "jackpots": {
-            "MINI": 76,
-            "MINOR": 3,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 134,
-        "seed": 4020442866,
-        "rtp": 99.88177999999999,
-        "total_bet": 5000000,
-        "total_won": 4994089.0,
-        "bonuses": 1378,
-        "jackpots": {
-            "MINI": 94,
-            "MINOR": 3,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 135,
-        "seed": 9103987440,
-        "rtp": 100.63524,
-        "total_bet": 5000000,
-        "total_won": 5031762.0,
-        "bonuses": 1345,
-        "jackpots": {
-            "MINI": 74,
-            "MINOR": 3,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 136,
-        "seed": 1414635089,
-        "rtp": 95.86994,
-        "total_bet": 5000000,
-        "total_won": 4793497.0,
-        "bonuses": 1287,
-        "jackpots": {
-            "MINI": 64,
-            "MINOR": 1,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 137,
-        "seed": 5755629461,
-        "rtp": 93.26638,
-        "total_bet": 5000000,
-        "total_won": 4663319.0,
-        "bonuses": 1240,
-        "jackpots": {
-            "MINI": 71,
-            "MINOR": 3,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 138,
-        "seed": 6044393047,
-        "rtp": 98.4915,
-        "total_bet": 5000000,
-        "total_won": 4924575.0,
+        "total_won": 4809572.5,
         "bonuses": 1328,
         "jackpots": {
             "MINI": 79,
@@ -1794,77 +884,142 @@
         }
     },
     {
-        "session_id": 139,
-        "seed": 2221442561,
-        "rtp": 94.75317,
+        "session_id": 69,
+        "seed": 9774099413,
+        "rtp": 98.38128999999999,
         "total_bet": 5000000,
-        "total_won": 4737658.5,
-        "bonuses": 1259,
+        "total_won": 4919064.5,
+        "bonuses": 1363,
         "jackpots": {
-            "MINI": 52,
+            "MINI": 70,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 70,
+        "seed": 7221915102,
+        "rtp": 95.22351,
+        "total_bet": 5000000,
+        "total_won": 4761175.5,
+        "bonuses": 1289,
+        "jackpots": {
+            "MINI": 69,
+            "MINOR": 2,
+            "MAJOR": 1
+        }
+    },
+    {
+        "session_id": 71,
+        "seed": 2054826883,
+        "rtp": 98.93088,
+        "total_bet": 5000000,
+        "total_won": 4946544.0,
+        "bonuses": 1292,
+        "jackpots": {
+            "MINI": 84,
             "MINOR": 3,
             "MAJOR": 0
         }
     },
     {
-        "session_id": 140,
-        "seed": 2176058830,
-        "rtp": 98.24561,
+        "session_id": 72,
+        "seed": 1902042254,
+        "rtp": 98.54943,
         "total_bet": 5000000,
-        "total_won": 4912280.5,
-        "bonuses": 1318,
+        "total_won": 4927471.5,
+        "bonuses": 1352,
         "jackpots": {
-            "MINI": 74,
+            "MINI": 83,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 73,
+        "seed": 8671957526,
+        "rtp": 97.53917,
+        "total_bet": 5000000,
+        "total_won": 4876958.5,
+        "bonuses": 1315,
+        "jackpots": {
+            "MINI": 82,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 74,
+        "seed": 1398013448,
+        "rtp": 101.74107,
+        "total_bet": 5000000,
+        "total_won": 5087053.5,
+        "bonuses": 1371,
+        "jackpots": {
+            "MINI": 66,
             "MINOR": 8,
             "MAJOR": 0
         }
     },
     {
-        "session_id": 141,
-        "seed": 9308332721,
-        "rtp": 96.34375,
+        "session_id": 75,
+        "seed": 2166133347,
+        "rtp": 98.01712,
         "total_bet": 5000000,
-        "total_won": 4817187.5,
-        "bonuses": 1361,
+        "total_won": 4900856.0,
+        "bonuses": 1358,
         "jackpots": {
-            "MINI": 70,
-            "MINOR": 0,
-            "MAJOR": 0
-        }
-    },
-    {
-        "session_id": 142,
-        "seed": 1414559873,
-        "rtp": 97.33229,
-        "total_bet": 5000000,
-        "total_won": 4866614.5,
-        "bonuses": 1313,
-        "jackpots": {
-            "MINI": 70,
+            "MINI": 79,
             "MINOR": 4,
             "MAJOR": 0
         }
     },
     {
-        "session_id": 143,
-        "seed": 1496145444,
-        "rtp": 98.82491,
+        "session_id": 76,
+        "seed": 7151946842,
+        "rtp": 100.33270999999999,
         "total_bet": 5000000,
-        "total_won": 4941245.5,
-        "bonuses": 1325,
+        "total_won": 5016635.5,
+        "bonuses": 1344,
         "jackpots": {
-            "MINI": 72,
-            "MINOR": 5,
+            "MINI": 64,
+            "MINOR": 7,
             "MAJOR": 0
         }
     },
     {
-        "session_id": 144,
-        "seed": 6793069014,
-        "rtp": 99.24176,
+        "session_id": 77,
+        "seed": 5813886628,
+        "rtp": 98.46969,
         "total_bet": 5000000,
-        "total_won": 4962088.0,
-        "bonuses": 1355,
+        "total_won": 4923484.5,
+        "bonuses": 1337,
+        "jackpots": {
+            "MINI": 82,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 78,
+        "seed": 7129117392,
+        "rtp": 99.62035,
+        "total_bet": 5000000,
+        "total_won": 4981017.5,
+        "bonuses": 1398,
+        "jackpots": {
+            "MINI": 76,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 79,
+        "seed": 1264910321,
+        "rtp": 97.47555,
+        "total_bet": 5000000,
+        "total_won": 4873777.5,
+        "bonuses": 1373,
         "jackpots": {
             "MINI": 71,
             "MINOR": 4,
@@ -1872,64 +1027,623 @@
         }
     },
     {
-        "session_id": 145,
-        "seed": 6479585408,
-        "rtp": 96.37264,
+        "session_id": 80,
+        "seed": 3279162080,
+        "rtp": 101.34890999999999,
         "total_bet": 5000000,
-        "total_won": 4818632.0,
-        "bonuses": 1331,
+        "total_won": 5067445.5,
+        "bonuses": 1353,
+        "jackpots": {
+            "MINI": 65,
+            "MINOR": 6,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 81,
+        "seed": 5705208002,
+        "rtp": 94.47528,
+        "total_bet": 5000000,
+        "total_won": 4723764.0,
+        "bonuses": 1297,
         "jackpots": {
             "MINI": 79,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 82,
+        "seed": 6288764654,
+        "rtp": 98.82327,
+        "total_bet": 5000000,
+        "total_won": 4941163.5,
+        "bonuses": 1388,
+        "jackpots": {
+            "MINI": 70,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 83,
+        "seed": 3571755738,
+        "rtp": 93.56527,
+        "total_bet": 5000000,
+        "total_won": 4678263.5,
+        "bonuses": 1284,
+        "jackpots": {
+            "MINI": 56,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 84,
+        "seed": 3343703754,
+        "rtp": 91.71016,
+        "total_bet": 5000000,
+        "total_won": 4585508.0,
+        "bonuses": 1228,
+        "jackpots": {
+            "MINI": 62,
             "MINOR": 4,
             "MAJOR": 0
         }
     },
     {
-        "session_id": 146,
-        "seed": 9034570972,
-        "rtp": 95.2412,
+        "session_id": 85,
+        "seed": 4432056406,
+        "rtp": 98.72767,
         "total_bet": 5000000,
-        "total_won": 4762060.0,
-        "bonuses": 1347,
+        "total_won": 4936383.5,
+        "bonuses": 1327,
         "jackpots": {
-            "MINI": 79,
+            "MINI": 74,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 86,
+        "seed": 7351601971,
+        "rtp": 97.73686000000001,
+        "total_bet": 5000000,
+        "total_won": 4886843.0,
+        "bonuses": 1314,
+        "jackpots": {
+            "MINI": 71,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 87,
+        "seed": 4507898999,
+        "rtp": 97.07775,
+        "total_bet": 5000000,
+        "total_won": 4853887.5,
+        "bonuses": 1336,
+        "jackpots": {
+            "MINI": 91,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 88,
+        "seed": 7467692441,
+        "rtp": 95.80882,
+        "total_bet": 5000000,
+        "total_won": 4790441.0,
+        "bonuses": 1292,
+        "jackpots": {
+            "MINI": 81,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 89,
+        "seed": 3042026257,
+        "rtp": 95.28929000000001,
+        "total_bet": 5000000,
+        "total_won": 4764464.5,
+        "bonuses": 1294,
+        "jackpots": {
+            "MINI": 71,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 90,
+        "seed": 1910812599,
+        "rtp": 99.48241,
+        "total_bet": 5000000,
+        "total_won": 4974120.5,
+        "bonuses": 1344,
+        "jackpots": {
+            "MINI": 76,
+            "MINOR": 6,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 91,
+        "seed": 8023104600,
+        "rtp": 95.89227,
+        "total_bet": 5000000,
+        "total_won": 4794613.5,
+        "bonuses": 1293,
+        "jackpots": {
+            "MINI": 73,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 92,
+        "seed": 8975431879,
+        "rtp": 101.13302,
+        "total_bet": 5000000,
+        "total_won": 5056651.0,
+        "bonuses": 1373,
+        "jackpots": {
+            "MINI": 74,
+            "MINOR": 7,
+            "MAJOR": 1
+        }
+    },
+    {
+        "session_id": 93,
+        "seed": 2305066701,
+        "rtp": 95.09398999999999,
+        "total_bet": 5000000,
+        "total_won": 4754699.5,
+        "bonuses": 1281,
+        "jackpots": {
+            "MINI": 76,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 94,
+        "seed": 1436096062,
+        "rtp": 91.75584,
+        "total_bet": 5000000,
+        "total_won": 4587792.0,
+        "bonuses": 1261,
+        "jackpots": {
+            "MINI": 49,
             "MINOR": 0,
             "MAJOR": 0
         }
     },
     {
-        "session_id": 147,
-        "seed": 4765076562,
-        "rtp": 96.91716,
+        "session_id": 95,
+        "seed": 2335556197,
+        "rtp": 98.32370999999999,
         "total_bet": 5000000,
-        "total_won": 4845858.0,
-        "bonuses": 1314,
+        "total_won": 4916185.5,
+        "bonuses": 1365,
         "jackpots": {
-            "MINI": 67,
+            "MINI": 72,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 96,
+        "seed": 3878591379,
+        "rtp": 96.65173,
+        "total_bet": 5000000,
+        "total_won": 4832586.5,
+        "bonuses": 1298,
+        "jackpots": {
+            "MINI": 78,
             "MINOR": 3,
             "MAJOR": 0
         }
     },
     {
-        "session_id": 148,
-        "seed": 7755779150,
-        "rtp": 96.86021,
+        "session_id": 97,
+        "seed": 3745938234,
+        "rtp": 95.5732,
         "total_bet": 5000000,
-        "total_won": 4843010.5,
-        "bonuses": 1311,
+        "total_won": 4778660.0,
+        "bonuses": 1283,
         "jackpots": {
-            "MINI": 72,
+            "MINI": 66,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 98,
+        "seed": 4408196929,
+        "rtp": 95.39493999999999,
+        "total_bet": 5000000,
+        "total_won": 4769747.0,
+        "bonuses": 1307,
+        "jackpots": {
+            "MINI": 70,
+            "MINOR": 7,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 99,
+        "seed": 4811117825,
+        "rtp": 97.62433,
+        "total_bet": 5000000,
+        "total_won": 4881216.5,
+        "bonuses": 1355,
+        "jackpots": {
+            "MINI": 73,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 100,
+        "seed": 8218871078,
+        "rtp": 98.87764,
+        "total_bet": 5000000,
+        "total_won": 4943882.0,
+        "bonuses": 1357,
+        "jackpots": {
+            "MINI": 77,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 101,
+        "seed": 7321963791,
+        "rtp": 95.61388,
+        "total_bet": 5000000,
+        "total_won": 4780694.0,
+        "bonuses": 1291,
+        "jackpots": {
+            "MINI": 61,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 102,
+        "seed": 6471593386,
+        "rtp": 98.63923,
+        "total_bet": 5000000,
+        "total_won": 4931961.5,
+        "bonuses": 1326,
+        "jackpots": {
+            "MINI": 91,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 103,
+        "seed": 9851345162,
+        "rtp": 97.44249,
+        "total_bet": 5000000,
+        "total_won": 4872124.5,
+        "bonuses": 1314,
+        "jackpots": {
+            "MINI": 63,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 104,
+        "seed": 3411470171,
+        "rtp": 99.16559000000001,
+        "total_bet": 5000000,
+        "total_won": 4958279.5,
+        "bonuses": 1374,
+        "jackpots": {
+            "MINI": 65,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 105,
+        "seed": 9906813147,
+        "rtp": 95.41206,
+        "total_bet": 5000000,
+        "total_won": 4770603.0,
+        "bonuses": 1304,
+        "jackpots": {
+            "MINI": 67,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 106,
+        "seed": 7394658002,
+        "rtp": 99.52812,
+        "total_bet": 5000000,
+        "total_won": 4976406.0,
+        "bonuses": 1363,
+        "jackpots": {
+            "MINI": 78,
+            "MINOR": 6,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 107,
+        "seed": 4805025531,
+        "rtp": 95.86692,
+        "total_bet": 5000000,
+        "total_won": 4793346.0,
+        "bonuses": 1284,
+        "jackpots": {
+            "MINI": 74,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 108,
+        "seed": 6623641680,
+        "rtp": 95.16946,
+        "total_bet": 5000000,
+        "total_won": 4758473.0,
+        "bonuses": 1329,
+        "jackpots": {
+            "MINI": 62,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 109,
+        "seed": 9415522852,
+        "rtp": 95.37326,
+        "total_bet": 5000000,
+        "total_won": 4768663.0,
+        "bonuses": 1262,
+        "jackpots": {
+            "MINI": 55,
             "MINOR": 4,
             "MAJOR": 0
         }
     },
     {
-        "session_id": 149,
-        "seed": 2354149297,
-        "rtp": 96.60029999999999,
+        "session_id": 110,
+        "seed": 9143564690,
+        "rtp": 99.71076,
         "total_bet": 5000000,
-        "total_won": 4830015.0,
-        "bonuses": 1284,
+        "total_won": 4985538.0,
+        "bonuses": 1320,
+        "jackpots": {
+            "MINI": 76,
+            "MINOR": 7,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 111,
+        "seed": 2695081598,
+        "rtp": 98.33916,
+        "total_bet": 5000000,
+        "total_won": 4916958.0,
+        "bonuses": 1362,
+        "jackpots": {
+            "MINI": 80,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 112,
+        "seed": 6392432062,
+        "rtp": 100.45182,
+        "total_bet": 5000000,
+        "total_won": 5022591.0,
+        "bonuses": 1378,
+        "jackpots": {
+            "MINI": 56,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 113,
+        "seed": 4510726162,
+        "rtp": 94.52842,
+        "total_bet": 5000000,
+        "total_won": 4726421.0,
+        "bonuses": 1291,
+        "jackpots": {
+            "MINI": 75,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 114,
+        "seed": 5188778727,
+        "rtp": 94.98559,
+        "total_bet": 5000000,
+        "total_won": 4749279.5,
+        "bonuses": 1304,
+        "jackpots": {
+            "MINI": 70,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 115,
+        "seed": 9263633836,
+        "rtp": 99.34448,
+        "total_bet": 5000000,
+        "total_won": 4967224.0,
+        "bonuses": 1360,
+        "jackpots": {
+            "MINI": 70,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 116,
+        "seed": 1941358703,
+        "rtp": 97.91691999999999,
+        "total_bet": 5000000,
+        "total_won": 4895846.0,
+        "bonuses": 1338,
+        "jackpots": {
+            "MINI": 71,
+            "MINOR": 8,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 117,
+        "seed": 5595555003,
+        "rtp": 96.27404,
+        "total_bet": 5000000,
+        "total_won": 4813702.0,
+        "bonuses": 1337,
+        "jackpots": {
+            "MINI": 88,
+            "MINOR": 0,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 118,
+        "seed": 7084691560,
+        "rtp": 96.74937,
+        "total_bet": 5000000,
+        "total_won": 4837468.5,
+        "bonuses": 1316,
+        "jackpots": {
+            "MINI": 62,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 119,
+        "seed": 2430141813,
+        "rtp": 97.61296,
+        "total_bet": 5000000,
+        "total_won": 4880648.0,
+        "bonuses": 1289,
+        "jackpots": {
+            "MINI": 64,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 120,
+        "seed": 7648022866,
+        "rtp": 96.91973,
+        "total_bet": 5000000,
+        "total_won": 4845986.5,
+        "bonuses": 1291,
+        "jackpots": {
+            "MINI": 66,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 121,
+        "seed": 2251003455,
+        "rtp": 99.0783,
+        "total_bet": 5000000,
+        "total_won": 4953915.0,
+        "bonuses": 1333,
+        "jackpots": {
+            "MINI": 57,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 122,
+        "seed": 1699776469,
+        "rtp": 99.15251,
+        "total_bet": 5000000,
+        "total_won": 4957625.5,
+        "bonuses": 1332,
+        "jackpots": {
+            "MINI": 76,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 123,
+        "seed": 6237331313,
+        "rtp": 97.39050999999999,
+        "total_bet": 5000000,
+        "total_won": 4869525.5,
+        "bonuses": 1357,
+        "jackpots": {
+            "MINI": 62,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 124,
+        "seed": 1328474189,
+        "rtp": 97.9184,
+        "total_bet": 5000000,
+        "total_won": 4895920.0,
+        "bonuses": 1302,
+        "jackpots": {
+            "MINI": 78,
+            "MINOR": 6,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 125,
+        "seed": 5549409143,
+        "rtp": 94.82173,
+        "total_bet": 5000000,
+        "total_won": 4741086.5,
+        "bonuses": 1267,
+        "jackpots": {
+            "MINI": 65,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 126,
+        "seed": 4185725617,
+        "rtp": 94.44364,
+        "total_bet": 5000000,
+        "total_won": 4722182.0,
+        "bonuses": 1300,
+        "jackpots": {
+            "MINI": 65,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 127,
+        "seed": 7587068333,
+        "rtp": 96.63148,
+        "total_bet": 5000000,
+        "total_won": 4831574.0,
+        "bonuses": 1312,
         "jackpots": {
             "MINI": 69,
             "MINOR": 3,
@@ -1937,15 +1651,3551 @@
         }
     },
     {
-        "session_id": 150,
-        "seed": 8188150723,
-        "rtp": 95.18951,
+        "session_id": 128,
+        "seed": 3660099830,
+        "rtp": 95.78401,
         "total_bet": 5000000,
-        "total_won": 4759475.5,
+        "total_won": 4789200.5,
+        "bonuses": 1314,
+        "jackpots": {
+            "MINI": 79,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 129,
+        "seed": 9413755117,
+        "rtp": 93.25959,
+        "total_bet": 5000000,
+        "total_won": 4662979.5,
+        "bonuses": 1285,
+        "jackpots": {
+            "MINI": 74,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 130,
+        "seed": 3313021698,
+        "rtp": 98.06136,
+        "total_bet": 5000000,
+        "total_won": 4903068.0,
+        "bonuses": 1358,
+        "jackpots": {
+            "MINI": 74,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 131,
+        "seed": 8267552379,
+        "rtp": 92.61671,
+        "total_bet": 5000000,
+        "total_won": 4630835.5,
+        "bonuses": 1269,
+        "jackpots": {
+            "MINI": 70,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 132,
+        "seed": 5992276037,
+        "rtp": 96.47513,
+        "total_bet": 5000000,
+        "total_won": 4823756.5,
+        "bonuses": 1312,
+        "jackpots": {
+            "MINI": 80,
+            "MINOR": 0,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 133,
+        "seed": 4628716210,
+        "rtp": 92.89079,
+        "total_bet": 5000000,
+        "total_won": 4644539.5,
+        "bonuses": 1271,
+        "jackpots": {
+            "MINI": 81,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 134,
+        "seed": 1599760184,
+        "rtp": 95.20156,
+        "total_bet": 5000000,
+        "total_won": 4760078.0,
+        "bonuses": 1266,
+        "jackpots": {
+            "MINI": 73,
+            "MINOR": 0,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 135,
+        "seed": 3582850919,
+        "rtp": 97.95589,
+        "total_bet": 5000000,
+        "total_won": 4897794.5,
+        "bonuses": 1372,
+        "jackpots": {
+            "MINI": 77,
+            "MINOR": 4,
+            "MAJOR": 1
+        }
+    },
+    {
+        "session_id": 136,
+        "seed": 3415421074,
+        "rtp": 98.64536000000001,
+        "total_bet": 5000000,
+        "total_won": 4932268.0,
+        "bonuses": 1347,
+        "jackpots": {
+            "MINI": 84,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 137,
+        "seed": 8570094037,
+        "rtp": 96.88792000000001,
+        "total_bet": 5000000,
+        "total_won": 4844396.0,
+        "bonuses": 1352,
+        "jackpots": {
+            "MINI": 74,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 138,
+        "seed": 4950905892,
+        "rtp": 95.45656,
+        "total_bet": 5000000,
+        "total_won": 4772828.0,
+        "bonuses": 1280,
+        "jackpots": {
+            "MINI": 67,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 139,
+        "seed": 5418979606,
+        "rtp": 94.95975,
+        "total_bet": 5000000,
+        "total_won": 4747987.5,
+        "bonuses": 1295,
+        "jackpots": {
+            "MINI": 72,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 140,
+        "seed": 9500579709,
+        "rtp": 95.1712,
+        "total_bet": 5000000,
+        "total_won": 4758560.0,
+        "bonuses": 1326,
+        "jackpots": {
+            "MINI": 76,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 141,
+        "seed": 5876974537,
+        "rtp": 96.6456,
+        "total_bet": 5000000,
+        "total_won": 4832280.0,
+        "bonuses": 1291,
+        "jackpots": {
+            "MINI": 61,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 142,
+        "seed": 3192782397,
+        "rtp": 99.97346,
+        "total_bet": 5000000,
+        "total_won": 4998673.0,
+        "bonuses": 1366,
+        "jackpots": {
+            "MINI": 72,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 143,
+        "seed": 3097709750,
+        "rtp": 97.77968,
+        "total_bet": 5000000,
+        "total_won": 4888984.0,
+        "bonuses": 1324,
+        "jackpots": {
+            "MINI": 58,
+            "MINOR": 1,
+            "MAJOR": 1
+        }
+    },
+    {
+        "session_id": 144,
+        "seed": 2902243661,
+        "rtp": 99.09707,
+        "total_bet": 5000000,
+        "total_won": 4954853.5,
+        "bonuses": 1352,
+        "jackpots": {
+            "MINI": 75,
+            "MINOR": 7,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 145,
+        "seed": 6080734026,
+        "rtp": 95.98470999999999,
+        "total_bet": 5000000,
+        "total_won": 4799235.5,
+        "bonuses": 1312,
+        "jackpots": {
+            "MINI": 91,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 146,
+        "seed": 3522086913,
+        "rtp": 97.23991,
+        "total_bet": 5000000,
+        "total_won": 4861995.5,
+        "bonuses": 1288,
+        "jackpots": {
+            "MINI": 66,
+            "MINOR": 6,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 147,
+        "seed": 3093263141,
+        "rtp": 94.28023,
+        "total_bet": 5000000,
+        "total_won": 4714011.5,
+        "bonuses": 1295,
+        "jackpots": {
+            "MINI": 65,
+            "MINOR": 0,
+            "MAJOR": 1
+        }
+    },
+    {
+        "session_id": 148,
+        "seed": 2886998317,
+        "rtp": 97.52543,
+        "total_bet": 5000000,
+        "total_won": 4876271.5,
+        "bonuses": 1337,
+        "jackpots": {
+            "MINI": 73,
+            "MINOR": 8,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 149,
+        "seed": 8833357345,
+        "rtp": 97.53612000000001,
+        "total_bet": 5000000,
+        "total_won": 4876806.0,
+        "bonuses": 1345,
+        "jackpots": {
+            "MINI": 64,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 150,
+        "seed": 8782909869,
+        "rtp": 97.78653,
+        "total_bet": 5000000,
+        "total_won": 4889326.5,
+        "bonuses": 1278,
+        "jackpots": {
+            "MINI": 78,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 151,
+        "seed": 2891835324,
+        "rtp": 97.64005,
+        "total_bet": 5000000,
+        "total_won": 4882002.5,
+        "bonuses": 1303,
+        "jackpots": {
+            "MINI": 72,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 152,
+        "seed": 1628420954,
+        "rtp": 99.13887,
+        "total_bet": 5000000,
+        "total_won": 4956943.5,
+        "bonuses": 1336,
+        "jackpots": {
+            "MINI": 94,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 153,
+        "seed": 6932886043,
+        "rtp": 94.9237,
+        "total_bet": 5000000,
+        "total_won": 4746185.0,
+        "bonuses": 1296,
+        "jackpots": {
+            "MINI": 58,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 154,
+        "seed": 5031374786,
+        "rtp": 98.42163000000001,
+        "total_bet": 5000000,
+        "total_won": 4921081.5,
+        "bonuses": 1331,
+        "jackpots": {
+            "MINI": 72,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 155,
+        "seed": 7781407885,
+        "rtp": 100.01100999999998,
+        "total_bet": 5000000,
+        "total_won": 5000550.5,
+        "bonuses": 1338,
+        "jackpots": {
+            "MINI": 83,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 156,
+        "seed": 6764045298,
+        "rtp": 97.19624,
+        "total_bet": 5000000,
+        "total_won": 4859812.0,
+        "bonuses": 1299,
+        "jackpots": {
+            "MINI": 77,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 157,
+        "seed": 1625193654,
+        "rtp": 97.39416,
+        "total_bet": 5000000,
+        "total_won": 4869708.0,
+        "bonuses": 1307,
+        "jackpots": {
+            "MINI": 68,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 158,
+        "seed": 7642949431,
+        "rtp": 94.15985,
+        "total_bet": 5000000,
+        "total_won": 4707992.5,
+        "bonuses": 1279,
+        "jackpots": {
+            "MINI": 61,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 159,
+        "seed": 4236048367,
+        "rtp": 93.05234999999999,
+        "total_bet": 5000000,
+        "total_won": 4652617.5,
+        "bonuses": 1296,
+        "jackpots": {
+            "MINI": 64,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 160,
+        "seed": 4440219108,
+        "rtp": 93.82592,
+        "total_bet": 5000000,
+        "total_won": 4691296.0,
+        "bonuses": 1253,
+        "jackpots": {
+            "MINI": 65,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 161,
+        "seed": 4574831840,
+        "rtp": 97.83087,
+        "total_bet": 5000000,
+        "total_won": 4891543.5,
+        "bonuses": 1332,
+        "jackpots": {
+            "MINI": 62,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 162,
+        "seed": 2076289303,
+        "rtp": 96.47316000000001,
+        "total_bet": 5000000,
+        "total_won": 4823658.0,
+        "bonuses": 1329,
+        "jackpots": {
+            "MINI": 83,
+            "MINOR": 0,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 163,
+        "seed": 5444429480,
+        "rtp": 91.9419,
+        "total_bet": 5000000,
+        "total_won": 4597095.0,
+        "bonuses": 1306,
+        "jackpots": {
+            "MINI": 66,
+            "MINOR": 0,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 164,
+        "seed": 5009916482,
+        "rtp": 95.23803,
+        "total_bet": 5000000,
+        "total_won": 4761901.5,
+        "bonuses": 1281,
+        "jackpots": {
+            "MINI": 79,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 165,
+        "seed": 4064459334,
+        "rtp": 96.71042,
+        "total_bet": 5000000,
+        "total_won": 4835521.0,
+        "bonuses": 1330,
+        "jackpots": {
+            "MINI": 64,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 166,
+        "seed": 8616855642,
+        "rtp": 96.61099,
+        "total_bet": 5000000,
+        "total_won": 4830549.5,
+        "bonuses": 1296,
+        "jackpots": {
+            "MINI": 79,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 167,
+        "seed": 1285926066,
+        "rtp": 95.23623,
+        "total_bet": 5000000,
+        "total_won": 4761811.5,
+        "bonuses": 1281,
+        "jackpots": {
+            "MINI": 104,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 168,
+        "seed": 6299655408,
+        "rtp": 99.35305,
+        "total_bet": 5000000,
+        "total_won": 4967652.5,
+        "bonuses": 1403,
+        "jackpots": {
+            "MINI": 70,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 169,
+        "seed": 8877621814,
+        "rtp": 98.89756,
+        "total_bet": 5000000,
+        "total_won": 4944878.0,
+        "bonuses": 1339,
+        "jackpots": {
+            "MINI": 75,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 170,
+        "seed": 5887994779,
+        "rtp": 95.48367,
+        "total_bet": 5000000,
+        "total_won": 4774183.5,
+        "bonuses": 1312,
+        "jackpots": {
+            "MINI": 76,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 171,
+        "seed": 8924191442,
+        "rtp": 101.25695999999999,
+        "total_bet": 5000000,
+        "total_won": 5062848.0,
+        "bonuses": 1371,
+        "jackpots": {
+            "MINI": 81,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 172,
+        "seed": 9874770589,
+        "rtp": 98.61423,
+        "total_bet": 5000000,
+        "total_won": 4930711.5,
+        "bonuses": 1366,
+        "jackpots": {
+            "MINI": 87,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 173,
+        "seed": 1796762690,
+        "rtp": 96.18368000000001,
+        "total_bet": 5000000,
+        "total_won": 4809184.0,
         "bonuses": 1335,
+        "jackpots": {
+            "MINI": 64,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 174,
+        "seed": 7951291250,
+        "rtp": 94.99838,
+        "total_bet": 5000000,
+        "total_won": 4749919.0,
+        "bonuses": 1318,
+        "jackpots": {
+            "MINI": 53,
+            "MINOR": 7,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 175,
+        "seed": 4367782393,
+        "rtp": 94.61773,
+        "total_bet": 5000000,
+        "total_won": 4730886.5,
+        "bonuses": 1287,
+        "jackpots": {
+            "MINI": 65,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 176,
+        "seed": 2002154569,
+        "rtp": 94.08818,
+        "total_bet": 5000000,
+        "total_won": 4704409.0,
+        "bonuses": 1256,
+        "jackpots": {
+            "MINI": 66,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 177,
+        "seed": 2540800863,
+        "rtp": 94.34406,
+        "total_bet": 5000000,
+        "total_won": 4717203.0,
+        "bonuses": 1295,
+        "jackpots": {
+            "MINI": 73,
+            "MINOR": 0,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 178,
+        "seed": 7551450921,
+        "rtp": 98.43079,
+        "total_bet": 5000000,
+        "total_won": 4921539.5,
+        "bonuses": 1303,
+        "jackpots": {
+            "MINI": 76,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 179,
+        "seed": 7712520269,
+        "rtp": 94.74193,
+        "total_bet": 5000000,
+        "total_won": 4737096.5,
+        "bonuses": 1311,
+        "jackpots": {
+            "MINI": 66,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 180,
+        "seed": 5261088697,
+        "rtp": 96.54956,
+        "total_bet": 5000000,
+        "total_won": 4827478.0,
+        "bonuses": 1311,
         "jackpots": {
             "MINI": 72,
             "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 181,
+        "seed": 6672650807,
+        "rtp": 96.84512,
+        "total_bet": 5000000,
+        "total_won": 4842256.0,
+        "bonuses": 1293,
+        "jackpots": {
+            "MINI": 64,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 182,
+        "seed": 3906760243,
+        "rtp": 96.01901000000001,
+        "total_bet": 5000000,
+        "total_won": 4800950.5,
+        "bonuses": 1305,
+        "jackpots": {
+            "MINI": 79,
+            "MINOR": 7,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 183,
+        "seed": 8665633992,
+        "rtp": 99.51927,
+        "total_bet": 5000000,
+        "total_won": 4975963.5,
+        "bonuses": 1336,
+        "jackpots": {
+            "MINI": 80,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 184,
+        "seed": 9053700105,
+        "rtp": 95.15820000000001,
+        "total_bet": 5000000,
+        "total_won": 4757910.0,
+        "bonuses": 1242,
+        "jackpots": {
+            "MINI": 73,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 185,
+        "seed": 7437066366,
+        "rtp": 98.98085,
+        "total_bet": 5000000,
+        "total_won": 4949042.5,
+        "bonuses": 1384,
+        "jackpots": {
+            "MINI": 76,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 186,
+        "seed": 3140656619,
+        "rtp": 98.39012,
+        "total_bet": 5000000,
+        "total_won": 4919506.0,
+        "bonuses": 1343,
+        "jackpots": {
+            "MINI": 85,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 187,
+        "seed": 7462504509,
+        "rtp": 98.01787,
+        "total_bet": 5000000,
+        "total_won": 4900893.5,
+        "bonuses": 1358,
+        "jackpots": {
+            "MINI": 82,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 188,
+        "seed": 2686934265,
+        "rtp": 96.23248,
+        "total_bet": 5000000,
+        "total_won": 4811624.0,
+        "bonuses": 1301,
+        "jackpots": {
+            "MINI": 80,
+            "MINOR": 6,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 189,
+        "seed": 1146209425,
+        "rtp": 95.82924,
+        "total_bet": 5000000,
+        "total_won": 4791462.0,
+        "bonuses": 1336,
+        "jackpots": {
+            "MINI": 73,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 190,
+        "seed": 1751983569,
+        "rtp": 98.11962,
+        "total_bet": 5000000,
+        "total_won": 4905981.0,
+        "bonuses": 1350,
+        "jackpots": {
+            "MINI": 67,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 191,
+        "seed": 4061773964,
+        "rtp": 95.50646,
+        "total_bet": 5000000,
+        "total_won": 4775323.0,
+        "bonuses": 1339,
+        "jackpots": {
+            "MINI": 65,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 192,
+        "seed": 3818391258,
+        "rtp": 98.51318,
+        "total_bet": 5000000,
+        "total_won": 4925659.0,
+        "bonuses": 1318,
+        "jackpots": {
+            "MINI": 66,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 193,
+        "seed": 2755474502,
+        "rtp": 95.38806,
+        "total_bet": 5000000,
+        "total_won": 4769403.0,
+        "bonuses": 1310,
+        "jackpots": {
+            "MINI": 59,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 194,
+        "seed": 5154692531,
+        "rtp": 100.50460000000001,
+        "total_bet": 5000000,
+        "total_won": 5025230.0,
+        "bonuses": 1383,
+        "jackpots": {
+            "MINI": 68,
+            "MINOR": 2,
+            "MAJOR": 2
+        }
+    },
+    {
+        "session_id": 195,
+        "seed": 9629039659,
+        "rtp": 95.69801,
+        "total_bet": 5000000,
+        "total_won": 4784900.5,
+        "bonuses": 1301,
+        "jackpots": {
+            "MINI": 66,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 196,
+        "seed": 1098515542,
+        "rtp": 95.97925000000001,
+        "total_bet": 5000000,
+        "total_won": 4798962.5,
+        "bonuses": 1294,
+        "jackpots": {
+            "MINI": 61,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 197,
+        "seed": 2105069053,
+        "rtp": 96.91219,
+        "total_bet": 5000000,
+        "total_won": 4845609.5,
+        "bonuses": 1350,
+        "jackpots": {
+            "MINI": 89,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 198,
+        "seed": 3665594849,
+        "rtp": 97.49424,
+        "total_bet": 5000000,
+        "total_won": 4874712.0,
+        "bonuses": 1331,
+        "jackpots": {
+            "MINI": 92,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 199,
+        "seed": 9580682300,
+        "rtp": 99.42463000000001,
+        "total_bet": 5000000,
+        "total_won": 4971231.5,
+        "bonuses": 1341,
+        "jackpots": {
+            "MINI": 85,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 200,
+        "seed": 1107185070,
+        "rtp": 99.44693,
+        "total_bet": 5000000,
+        "total_won": 4972346.5,
+        "bonuses": 1395,
+        "jackpots": {
+            "MINI": 75,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 201,
+        "seed": 6338420394,
+        "rtp": 100.04398,
+        "total_bet": 5000000,
+        "total_won": 5002199.0,
+        "bonuses": 1358,
+        "jackpots": {
+            "MINI": 83,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 202,
+        "seed": 6503032191,
+        "rtp": 95.91919,
+        "total_bet": 5000000,
+        "total_won": 4795959.5,
+        "bonuses": 1316,
+        "jackpots": {
+            "MINI": 73,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 203,
+        "seed": 5683377922,
+        "rtp": 97.29133,
+        "total_bet": 5000000,
+        "total_won": 4864566.5,
+        "bonuses": 1331,
+        "jackpots": {
+            "MINI": 79,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 204,
+        "seed": 7283933457,
+        "rtp": 96.35137,
+        "total_bet": 5000000,
+        "total_won": 4817568.5,
+        "bonuses": 1339,
+        "jackpots": {
+            "MINI": 70,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 205,
+        "seed": 3209851911,
+        "rtp": 95.56226,
+        "total_bet": 5000000,
+        "total_won": 4778113.0,
+        "bonuses": 1304,
+        "jackpots": {
+            "MINI": 71,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 206,
+        "seed": 9510360248,
+        "rtp": 96.92052,
+        "total_bet": 5000000,
+        "total_won": 4846026.0,
+        "bonuses": 1321,
+        "jackpots": {
+            "MINI": 83,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 207,
+        "seed": 3877274429,
+        "rtp": 95.26047,
+        "total_bet": 5000000,
+        "total_won": 4763023.5,
+        "bonuses": 1309,
+        "jackpots": {
+            "MINI": 72,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 208,
+        "seed": 3095428940,
+        "rtp": 97.43464,
+        "total_bet": 5000000,
+        "total_won": 4871732.0,
+        "bonuses": 1330,
+        "jackpots": {
+            "MINI": 91,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 209,
+        "seed": 7338971339,
+        "rtp": 96.32976,
+        "total_bet": 5000000,
+        "total_won": 4816488.0,
+        "bonuses": 1319,
+        "jackpots": {
+            "MINI": 73,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 210,
+        "seed": 2314126904,
+        "rtp": 99.21212,
+        "total_bet": 5000000,
+        "total_won": 4960606.0,
+        "bonuses": 1343,
+        "jackpots": {
+            "MINI": 62,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 211,
+        "seed": 8753733709,
+        "rtp": 98.95658,
+        "total_bet": 5000000,
+        "total_won": 4947829.0,
+        "bonuses": 1363,
+        "jackpots": {
+            "MINI": 85,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 212,
+        "seed": 5861452625,
+        "rtp": 96.96145,
+        "total_bet": 5000000,
+        "total_won": 4848072.5,
+        "bonuses": 1320,
+        "jackpots": {
+            "MINI": 74,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 213,
+        "seed": 2295865150,
+        "rtp": 95.06694,
+        "total_bet": 5000000,
+        "total_won": 4753347.0,
+        "bonuses": 1289,
+        "jackpots": {
+            "MINI": 72,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 214,
+        "seed": 4422583140,
+        "rtp": 97.90441,
+        "total_bet": 5000000,
+        "total_won": 4895220.5,
+        "bonuses": 1304,
+        "jackpots": {
+            "MINI": 78,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 215,
+        "seed": 9852864911,
+        "rtp": 97.33057000000001,
+        "total_bet": 5000000,
+        "total_won": 4866528.5,
+        "bonuses": 1310,
+        "jackpots": {
+            "MINI": 84,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 216,
+        "seed": 8084298224,
+        "rtp": 97.81113,
+        "total_bet": 5000000,
+        "total_won": 4890556.5,
+        "bonuses": 1344,
+        "jackpots": {
+            "MINI": 66,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 217,
+        "seed": 7434638617,
+        "rtp": 95.69596,
+        "total_bet": 5000000,
+        "total_won": 4784798.0,
+        "bonuses": 1298,
+        "jackpots": {
+            "MINI": 69,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 218,
+        "seed": 3522296310,
+        "rtp": 96.69744999999999,
+        "total_bet": 5000000,
+        "total_won": 4834872.5,
+        "bonuses": 1300,
+        "jackpots": {
+            "MINI": 74,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 219,
+        "seed": 4707199923,
+        "rtp": 96.43142,
+        "total_bet": 5000000,
+        "total_won": 4821571.0,
+        "bonuses": 1330,
+        "jackpots": {
+            "MINI": 76,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 220,
+        "seed": 3690351441,
+        "rtp": 100.18374999999999,
+        "total_bet": 5000000,
+        "total_won": 5009187.5,
+        "bonuses": 1385,
+        "jackpots": {
+            "MINI": 68,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 221,
+        "seed": 3531555946,
+        "rtp": 100.00747999999999,
+        "total_bet": 5000000,
+        "total_won": 5000374.0,
+        "bonuses": 1305,
+        "jackpots": {
+            "MINI": 78,
+            "MINOR": 7,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 222,
+        "seed": 2059394284,
+        "rtp": 99.18932000000001,
+        "total_bet": 5000000,
+        "total_won": 4959466.0,
+        "bonuses": 1369,
+        "jackpots": {
+            "MINI": 69,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 223,
+        "seed": 7985977369,
+        "rtp": 95.97981,
+        "total_bet": 5000000,
+        "total_won": 4798990.5,
+        "bonuses": 1325,
+        "jackpots": {
+            "MINI": 55,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 224,
+        "seed": 4322004031,
+        "rtp": 94.22034000000001,
+        "total_bet": 5000000,
+        "total_won": 4711017.0,
+        "bonuses": 1281,
+        "jackpots": {
+            "MINI": 67,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 225,
+        "seed": 8117676470,
+        "rtp": 95.55574999999999,
+        "total_bet": 5000000,
+        "total_won": 4777787.5,
+        "bonuses": 1275,
+        "jackpots": {
+            "MINI": 58,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 226,
+        "seed": 7326075631,
+        "rtp": 97.69524000000001,
+        "total_bet": 5000000,
+        "total_won": 4884762.0,
+        "bonuses": 1305,
+        "jackpots": {
+            "MINI": 68,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 227,
+        "seed": 8964900909,
+        "rtp": 97.66906,
+        "total_bet": 5000000,
+        "total_won": 4883453.0,
+        "bonuses": 1324,
+        "jackpots": {
+            "MINI": 69,
+            "MINOR": 2,
+            "MAJOR": 1
+        }
+    },
+    {
+        "session_id": 228,
+        "seed": 4084995507,
+        "rtp": 96.73239,
+        "total_bet": 5000000,
+        "total_won": 4836619.5,
+        "bonuses": 1325,
+        "jackpots": {
+            "MINI": 71,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 229,
+        "seed": 4768401185,
+        "rtp": 95.75641,
+        "total_bet": 5000000,
+        "total_won": 4787820.5,
+        "bonuses": 1314,
+        "jackpots": {
+            "MINI": 70,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 230,
+        "seed": 9707682180,
+        "rtp": 96.55625,
+        "total_bet": 5000000,
+        "total_won": 4827812.5,
+        "bonuses": 1292,
+        "jackpots": {
+            "MINI": 69,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 231,
+        "seed": 2904346332,
+        "rtp": 97.01687,
+        "total_bet": 5000000,
+        "total_won": 4850843.5,
+        "bonuses": 1331,
+        "jackpots": {
+            "MINI": 90,
+            "MINOR": 6,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 232,
+        "seed": 1234663250,
+        "rtp": 95.39075,
+        "total_bet": 5000000,
+        "total_won": 4769537.5,
+        "bonuses": 1255,
+        "jackpots": {
+            "MINI": 73,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 233,
+        "seed": 6027370114,
+        "rtp": 96.82777999999999,
+        "total_bet": 5000000,
+        "total_won": 4841389.0,
+        "bonuses": 1320,
+        "jackpots": {
+            "MINI": 66,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 234,
+        "seed": 5311401439,
+        "rtp": 96.56508000000001,
+        "total_bet": 5000000,
+        "total_won": 4828254.0,
+        "bonuses": 1309,
+        "jackpots": {
+            "MINI": 68,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 235,
+        "seed": 1707906739,
+        "rtp": 95.44286,
+        "total_bet": 5000000,
+        "total_won": 4772143.0,
+        "bonuses": 1306,
+        "jackpots": {
+            "MINI": 71,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 236,
+        "seed": 5483382665,
+        "rtp": 96.55236000000001,
+        "total_bet": 5000000,
+        "total_won": 4827618.0,
+        "bonuses": 1305,
+        "jackpots": {
+            "MINI": 68,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 237,
+        "seed": 2982475827,
+        "rtp": 96.85724,
+        "total_bet": 5000000,
+        "total_won": 4842862.0,
+        "bonuses": 1315,
+        "jackpots": {
+            "MINI": 68,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 238,
+        "seed": 4859389653,
+        "rtp": 97.44734000000001,
+        "total_bet": 5000000,
+        "total_won": 4872367.0,
+        "bonuses": 1315,
+        "jackpots": {
+            "MINI": 69,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 239,
+        "seed": 9950285142,
+        "rtp": 99.95009999999999,
+        "total_bet": 5000000,
+        "total_won": 4997505.0,
+        "bonuses": 1387,
+        "jackpots": {
+            "MINI": 69,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 240,
+        "seed": 7995671202,
+        "rtp": 97.90408000000001,
+        "total_bet": 5000000,
+        "total_won": 4895204.0,
+        "bonuses": 1332,
+        "jackpots": {
+            "MINI": 69,
+            "MINOR": 8,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 241,
+        "seed": 7443060080,
+        "rtp": 94.38689,
+        "total_bet": 5000000,
+        "total_won": 4719344.5,
+        "bonuses": 1275,
+        "jackpots": {
+            "MINI": 56,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 242,
+        "seed": 7874002062,
+        "rtp": 94.65093,
+        "total_bet": 5000000,
+        "total_won": 4732546.5,
+        "bonuses": 1266,
+        "jackpots": {
+            "MINI": 74,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 243,
+        "seed": 4674656449,
+        "rtp": 97.1897,
+        "total_bet": 5000000,
+        "total_won": 4859485.0,
+        "bonuses": 1317,
+        "jackpots": {
+            "MINI": 77,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 244,
+        "seed": 6845712286,
+        "rtp": 98.69951999999999,
+        "total_bet": 5000000,
+        "total_won": 4934976.0,
+        "bonuses": 1350,
+        "jackpots": {
+            "MINI": 73,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 245,
+        "seed": 6004384447,
+        "rtp": 94.6973,
+        "total_bet": 5000000,
+        "total_won": 4734865.0,
+        "bonuses": 1282,
+        "jackpots": {
+            "MINI": 80,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 246,
+        "seed": 8774488462,
+        "rtp": 95.48141,
+        "total_bet": 5000000,
+        "total_won": 4774070.5,
+        "bonuses": 1357,
+        "jackpots": {
+            "MINI": 80,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 247,
+        "seed": 7904703706,
+        "rtp": 96.98257,
+        "total_bet": 5000000,
+        "total_won": 4849128.5,
+        "bonuses": 1339,
+        "jackpots": {
+            "MINI": 85,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 248,
+        "seed": 6205070400,
+        "rtp": 99.30071000000001,
+        "total_bet": 5000000,
+        "total_won": 4965035.5,
+        "bonuses": 1404,
+        "jackpots": {
+            "MINI": 67,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 249,
+        "seed": 6776808217,
+        "rtp": 98.1461,
+        "total_bet": 5000000,
+        "total_won": 4907305.0,
+        "bonuses": 1359,
+        "jackpots": {
+            "MINI": 67,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 250,
+        "seed": 8791488340,
+        "rtp": 95.03502999999999,
+        "total_bet": 5000000,
+        "total_won": 4751751.5,
+        "bonuses": 1299,
+        "jackpots": {
+            "MINI": 72,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 251,
+        "seed": 6850186357,
+        "rtp": 94.80082,
+        "total_bet": 5000000,
+        "total_won": 4740041.0,
+        "bonuses": 1229,
+        "jackpots": {
+            "MINI": 73,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 252,
+        "seed": 7245221531,
+        "rtp": 98.36643000000001,
+        "total_bet": 5000000,
+        "total_won": 4918321.5,
+        "bonuses": 1354,
+        "jackpots": {
+            "MINI": 68,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 253,
+        "seed": 5383008758,
+        "rtp": 96.55498,
+        "total_bet": 5000000,
+        "total_won": 4827749.0,
+        "bonuses": 1277,
+        "jackpots": {
+            "MINI": 75,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 254,
+        "seed": 3403966052,
+        "rtp": 92.55425000000001,
+        "total_bet": 5000000,
+        "total_won": 4627712.5,
+        "bonuses": 1328,
+        "jackpots": {
+            "MINI": 74,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 255,
+        "seed": 8295995365,
+        "rtp": 101.07088,
+        "total_bet": 5000000,
+        "total_won": 5053544.0,
+        "bonuses": 1370,
+        "jackpots": {
+            "MINI": 86,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 256,
+        "seed": 9330365804,
+        "rtp": 95.2332,
+        "total_bet": 5000000,
+        "total_won": 4761660.0,
+        "bonuses": 1323,
+        "jackpots": {
+            "MINI": 62,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 257,
+        "seed": 2599115106,
+        "rtp": 97.71573000000001,
+        "total_bet": 5000000,
+        "total_won": 4885786.5,
+        "bonuses": 1289,
+        "jackpots": {
+            "MINI": 67,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 258,
+        "seed": 1103207200,
+        "rtp": 94.30547,
+        "total_bet": 5000000,
+        "total_won": 4715273.5,
+        "bonuses": 1258,
+        "jackpots": {
+            "MINI": 61,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 259,
+        "seed": 8359425646,
+        "rtp": 98.05807,
+        "total_bet": 5000000,
+        "total_won": 4902903.5,
+        "bonuses": 1317,
+        "jackpots": {
+            "MINI": 74,
+            "MINOR": 2,
+            "MAJOR": 1
+        }
+    },
+    {
+        "session_id": 260,
+        "seed": 4788644728,
+        "rtp": 100.81184999999999,
+        "total_bet": 5000000,
+        "total_won": 5040592.5,
+        "bonuses": 1330,
+        "jackpots": {
+            "MINI": 62,
+            "MINOR": 6,
+            "MAJOR": 1
+        }
+    },
+    {
+        "session_id": 261,
+        "seed": 7111369921,
+        "rtp": 94.42498,
+        "total_bet": 5000000,
+        "total_won": 4721249.0,
+        "bonuses": 1260,
+        "jackpots": {
+            "MINI": 55,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 262,
+        "seed": 9454998579,
+        "rtp": 94.88597,
+        "total_bet": 5000000,
+        "total_won": 4744298.5,
+        "bonuses": 1259,
+        "jackpots": {
+            "MINI": 51,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 263,
+        "seed": 3145698704,
+        "rtp": 97.03028,
+        "total_bet": 5000000,
+        "total_won": 4851514.0,
+        "bonuses": 1379,
+        "jackpots": {
+            "MINI": 61,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 264,
+        "seed": 8436424346,
+        "rtp": 97.22765,
+        "total_bet": 5000000,
+        "total_won": 4861382.5,
+        "bonuses": 1351,
+        "jackpots": {
+            "MINI": 69,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 265,
+        "seed": 4722275275,
+        "rtp": 96.91169,
+        "total_bet": 5000000,
+        "total_won": 4845584.5,
+        "bonuses": 1321,
+        "jackpots": {
+            "MINI": 72,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 266,
+        "seed": 5705850770,
+        "rtp": 97.88735,
+        "total_bet": 5000000,
+        "total_won": 4894367.5,
+        "bonuses": 1350,
+        "jackpots": {
+            "MINI": 69,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 267,
+        "seed": 7386559050,
+        "rtp": 97.95559,
+        "total_bet": 5000000,
+        "total_won": 4897779.5,
+        "bonuses": 1340,
+        "jackpots": {
+            "MINI": 91,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 268,
+        "seed": 6291969085,
+        "rtp": 96.92573,
+        "total_bet": 5000000,
+        "total_won": 4846286.5,
+        "bonuses": 1340,
+        "jackpots": {
+            "MINI": 68,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 269,
+        "seed": 7692465705,
+        "rtp": 96.54632,
+        "total_bet": 5000000,
+        "total_won": 4827316.0,
+        "bonuses": 1291,
+        "jackpots": {
+            "MINI": 67,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 270,
+        "seed": 4364889873,
+        "rtp": 97.31569,
+        "total_bet": 5000000,
+        "total_won": 4865784.5,
+        "bonuses": 1334,
+        "jackpots": {
+            "MINI": 60,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 271,
+        "seed": 1668434004,
+        "rtp": 94.17513,
+        "total_bet": 5000000,
+        "total_won": 4708756.5,
+        "bonuses": 1301,
+        "jackpots": {
+            "MINI": 60,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 272,
+        "seed": 8621409463,
+        "rtp": 97.08271,
+        "total_bet": 5000000,
+        "total_won": 4854135.5,
+        "bonuses": 1327,
+        "jackpots": {
+            "MINI": 58,
+            "MINOR": 3,
+            "MAJOR": 1
+        }
+    },
+    {
+        "session_id": 273,
+        "seed": 6194282463,
+        "rtp": 94.7018,
+        "total_bet": 5000000,
+        "total_won": 4735090.0,
+        "bonuses": 1286,
+        "jackpots": {
+            "MINI": 56,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 274,
+        "seed": 2345935956,
+        "rtp": 96.14107,
+        "total_bet": 5000000,
+        "total_won": 4807053.5,
+        "bonuses": 1366,
+        "jackpots": {
+            "MINI": 73,
+            "MINOR": 0,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 275,
+        "seed": 7746956053,
+        "rtp": 97.40379,
+        "total_bet": 5000000,
+        "total_won": 4870189.5,
+        "bonuses": 1331,
+        "jackpots": {
+            "MINI": 88,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 276,
+        "seed": 1448258383,
+        "rtp": 96.70809,
+        "total_bet": 5000000,
+        "total_won": 4835404.5,
+        "bonuses": 1325,
+        "jackpots": {
+            "MINI": 58,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 277,
+        "seed": 1884607683,
+        "rtp": 99.93466,
+        "total_bet": 5000000,
+        "total_won": 4996733.0,
+        "bonuses": 1350,
+        "jackpots": {
+            "MINI": 92,
+            "MINOR": 5,
+            "MAJOR": 1
+        }
+    },
+    {
+        "session_id": 278,
+        "seed": 2282917801,
+        "rtp": 95.96223,
+        "total_bet": 5000000,
+        "total_won": 4798111.5,
+        "bonuses": 1307,
+        "jackpots": {
+            "MINI": 76,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 279,
+        "seed": 1464357821,
+        "rtp": 96.31836,
+        "total_bet": 5000000,
+        "total_won": 4815918.0,
+        "bonuses": 1252,
+        "jackpots": {
+            "MINI": 75,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 280,
+        "seed": 1895877580,
+        "rtp": 96.01821000000001,
+        "total_bet": 5000000,
+        "total_won": 4800910.5,
+        "bonuses": 1323,
+        "jackpots": {
+            "MINI": 86,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 281,
+        "seed": 2002909252,
+        "rtp": 94.17625,
+        "total_bet": 5000000,
+        "total_won": 4708812.5,
+        "bonuses": 1268,
+        "jackpots": {
+            "MINI": 71,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 282,
+        "seed": 9706885990,
+        "rtp": 95.29686000000001,
+        "total_bet": 5000000,
+        "total_won": 4764843.0,
+        "bonuses": 1286,
+        "jackpots": {
+            "MINI": 64,
+            "MINOR": 1,
+            "MAJOR": 1
+        }
+    },
+    {
+        "session_id": 283,
+        "seed": 2519650535,
+        "rtp": 98.421,
+        "total_bet": 5000000,
+        "total_won": 4921050.0,
+        "bonuses": 1356,
+        "jackpots": {
+            "MINI": 63,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 284,
+        "seed": 9261158626,
+        "rtp": 95.09446,
+        "total_bet": 5000000,
+        "total_won": 4754723.0,
+        "bonuses": 1306,
+        "jackpots": {
+            "MINI": 78,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 285,
+        "seed": 6942185156,
+        "rtp": 99.3379,
+        "total_bet": 5000000,
+        "total_won": 4966895.0,
+        "bonuses": 1379,
+        "jackpots": {
+            "MINI": 83,
+            "MINOR": 6,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 286,
+        "seed": 6176088354,
+        "rtp": 96.3394,
+        "total_bet": 5000000,
+        "total_won": 4816970.0,
+        "bonuses": 1280,
+        "jackpots": {
+            "MINI": 67,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 287,
+        "seed": 5032411391,
+        "rtp": 95.28881,
+        "total_bet": 5000000,
+        "total_won": 4764440.5,
+        "bonuses": 1259,
+        "jackpots": {
+            "MINI": 67,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 288,
+        "seed": 4529672107,
+        "rtp": 99.2109,
+        "total_bet": 5000000,
+        "total_won": 4960545.0,
+        "bonuses": 1404,
+        "jackpots": {
+            "MINI": 83,
+            "MINOR": 8,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 289,
+        "seed": 6226702065,
+        "rtp": 98.9535,
+        "total_bet": 5000000,
+        "total_won": 4947675.0,
+        "bonuses": 1330,
+        "jackpots": {
+            "MINI": 81,
+            "MINOR": 2,
+            "MAJOR": 1
+        }
+    },
+    {
+        "session_id": 290,
+        "seed": 3121017672,
+        "rtp": 97.68739,
+        "total_bet": 5000000,
+        "total_won": 4884369.5,
+        "bonuses": 1345,
+        "jackpots": {
+            "MINI": 63,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 291,
+        "seed": 8374759490,
+        "rtp": 95.79881999999999,
+        "total_bet": 5000000,
+        "total_won": 4789941.0,
+        "bonuses": 1341,
+        "jackpots": {
+            "MINI": 68,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 292,
+        "seed": 7734295791,
+        "rtp": 97.31779,
+        "total_bet": 5000000,
+        "total_won": 4865889.5,
+        "bonuses": 1327,
+        "jackpots": {
+            "MINI": 73,
+            "MINOR": 8,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 293,
+        "seed": 8617452380,
+        "rtp": 97.46154,
+        "total_bet": 5000000,
+        "total_won": 4873077.0,
+        "bonuses": 1318,
+        "jackpots": {
+            "MINI": 87,
+            "MINOR": 5,
+            "MAJOR": 1
+        }
+    },
+    {
+        "session_id": 294,
+        "seed": 6246387794,
+        "rtp": 94.58308,
+        "total_bet": 5000000,
+        "total_won": 4729154.0,
+        "bonuses": 1287,
+        "jackpots": {
+            "MINI": 62,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 295,
+        "seed": 4541696484,
+        "rtp": 98.18946,
+        "total_bet": 5000000,
+        "total_won": 4909473.0,
+        "bonuses": 1333,
+        "jackpots": {
+            "MINI": 65,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 296,
+        "seed": 7249534417,
+        "rtp": 98.59093,
+        "total_bet": 5000000,
+        "total_won": 4929546.5,
+        "bonuses": 1315,
+        "jackpots": {
+            "MINI": 71,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 297,
+        "seed": 4604178785,
+        "rtp": 95.17891,
+        "total_bet": 5000000,
+        "total_won": 4758945.5,
+        "bonuses": 1325,
+        "jackpots": {
+            "MINI": 80,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 298,
+        "seed": 1580439246,
+        "rtp": 98.1227,
+        "total_bet": 5000000,
+        "total_won": 4906135.0,
+        "bonuses": 1330,
+        "jackpots": {
+            "MINI": 94,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 299,
+        "seed": 7780489801,
+        "rtp": 98.25777,
+        "total_bet": 5000000,
+        "total_won": 4912888.5,
+        "bonuses": 1315,
+        "jackpots": {
+            "MINI": 64,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 300,
+        "seed": 5487720359,
+        "rtp": 98.85494,
+        "total_bet": 5000000,
+        "total_won": 4942747.0,
+        "bonuses": 1315,
+        "jackpots": {
+            "MINI": 75,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 301,
+        "seed": 8823167207,
+        "rtp": 101.57052,
+        "total_bet": 5000000,
+        "total_won": 5078526.0,
+        "bonuses": 1341,
+        "jackpots": {
+            "MINI": 85,
+            "MINOR": 9,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 302,
+        "seed": 2070267029,
+        "rtp": 98.00037999999999,
+        "total_bet": 5000000,
+        "total_won": 4900019.0,
+        "bonuses": 1323,
+        "jackpots": {
+            "MINI": 59,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 303,
+        "seed": 2840614186,
+        "rtp": 93.78573,
+        "total_bet": 5000000,
+        "total_won": 4689286.5,
+        "bonuses": 1271,
+        "jackpots": {
+            "MINI": 73,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 304,
+        "seed": 5064635672,
+        "rtp": 99.11679,
+        "total_bet": 5000000,
+        "total_won": 4955839.5,
+        "bonuses": 1345,
+        "jackpots": {
+            "MINI": 68,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 305,
+        "seed": 7204274088,
+        "rtp": 94.75186,
+        "total_bet": 5000000,
+        "total_won": 4737593.0,
+        "bonuses": 1359,
+        "jackpots": {
+            "MINI": 74,
+            "MINOR": 0,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 306,
+        "seed": 5806248326,
+        "rtp": 98.81134,
+        "total_bet": 5000000,
+        "total_won": 4940567.0,
+        "bonuses": 1369,
+        "jackpots": {
+            "MINI": 72,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 307,
+        "seed": 9762508211,
+        "rtp": 98.55791,
+        "total_bet": 5000000,
+        "total_won": 4927895.5,
+        "bonuses": 1330,
+        "jackpots": {
+            "MINI": 70,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 308,
+        "seed": 5655612826,
+        "rtp": 98.35745,
+        "total_bet": 5000000,
+        "total_won": 4917872.5,
+        "bonuses": 1335,
+        "jackpots": {
+            "MINI": 71,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 309,
+        "seed": 2636517402,
+        "rtp": 99.17994,
+        "total_bet": 5000000,
+        "total_won": 4958997.0,
+        "bonuses": 1352,
+        "jackpots": {
+            "MINI": 99,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 310,
+        "seed": 3439913615,
+        "rtp": 98.82543,
+        "total_bet": 5000000,
+        "total_won": 4941271.5,
+        "bonuses": 1307,
+        "jackpots": {
+            "MINI": 90,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 311,
+        "seed": 3833080211,
+        "rtp": 99.21463,
+        "total_bet": 5000000,
+        "total_won": 4960731.5,
+        "bonuses": 1329,
+        "jackpots": {
+            "MINI": 61,
+            "MINOR": 2,
+            "MAJOR": 1
+        }
+    },
+    {
+        "session_id": 312,
+        "seed": 2525280341,
+        "rtp": 98.02255,
+        "total_bet": 5000000,
+        "total_won": 4901127.5,
+        "bonuses": 1275,
+        "jackpots": {
+            "MINI": 79,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 313,
+        "seed": 4194739657,
+        "rtp": 97.4922,
+        "total_bet": 5000000,
+        "total_won": 4874610.0,
+        "bonuses": 1304,
+        "jackpots": {
+            "MINI": 78,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 314,
+        "seed": 9054695884,
+        "rtp": 98.9472,
+        "total_bet": 5000000,
+        "total_won": 4947360.0,
+        "bonuses": 1351,
+        "jackpots": {
+            "MINI": 84,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 315,
+        "seed": 4622621430,
+        "rtp": 97.09248000000001,
+        "total_bet": 5000000,
+        "total_won": 4854624.0,
+        "bonuses": 1342,
+        "jackpots": {
+            "MINI": 81,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 316,
+        "seed": 2850651473,
+        "rtp": 99.00601,
+        "total_bet": 5000000,
+        "total_won": 4950300.5,
+        "bonuses": 1343,
+        "jackpots": {
+            "MINI": 73,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 317,
+        "seed": 7705716281,
+        "rtp": 97.029,
+        "total_bet": 5000000,
+        "total_won": 4851450.0,
+        "bonuses": 1358,
+        "jackpots": {
+            "MINI": 66,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 318,
+        "seed": 5298361727,
+        "rtp": 95.1345,
+        "total_bet": 5000000,
+        "total_won": 4756725.0,
+        "bonuses": 1299,
+        "jackpots": {
+            "MINI": 55,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 319,
+        "seed": 1291845281,
+        "rtp": 98.13769,
+        "total_bet": 5000000,
+        "total_won": 4906884.5,
+        "bonuses": 1364,
+        "jackpots": {
+            "MINI": 59,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 320,
+        "seed": 3118776824,
+        "rtp": 96.39299,
+        "total_bet": 5000000,
+        "total_won": 4819649.5,
+        "bonuses": 1257,
+        "jackpots": {
+            "MINI": 74,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 321,
+        "seed": 5973504941,
+        "rtp": 96.22036,
+        "total_bet": 5000000,
+        "total_won": 4811018.0,
+        "bonuses": 1309,
+        "jackpots": {
+            "MINI": 76,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 322,
+        "seed": 8864690462,
+        "rtp": 96.33465,
+        "total_bet": 5000000,
+        "total_won": 4816732.5,
+        "bonuses": 1301,
+        "jackpots": {
+            "MINI": 76,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 323,
+        "seed": 2197572208,
+        "rtp": 94.66882,
+        "total_bet": 5000000,
+        "total_won": 4733441.0,
+        "bonuses": 1296,
+        "jackpots": {
+            "MINI": 61,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 324,
+        "seed": 3992960547,
+        "rtp": 95.87355,
+        "total_bet": 5000000,
+        "total_won": 4793677.5,
+        "bonuses": 1276,
+        "jackpots": {
+            "MINI": 80,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 325,
+        "seed": 8144900969,
+        "rtp": 94.69434,
+        "total_bet": 5000000,
+        "total_won": 4734717.0,
+        "bonuses": 1275,
+        "jackpots": {
+            "MINI": 64,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 326,
+        "seed": 7540266671,
+        "rtp": 98.39473,
+        "total_bet": 5000000,
+        "total_won": 4919736.5,
+        "bonuses": 1350,
+        "jackpots": {
+            "MINI": 67,
+            "MINOR": 7,
+            "MAJOR": 1
+        }
+    },
+    {
+        "session_id": 327,
+        "seed": 1847866673,
+        "rtp": 96.37943,
+        "total_bet": 5000000,
+        "total_won": 4818971.5,
+        "bonuses": 1305,
+        "jackpots": {
+            "MINI": 65,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 328,
+        "seed": 8432142391,
+        "rtp": 96.29404000000001,
+        "total_bet": 5000000,
+        "total_won": 4814702.0,
+        "bonuses": 1273,
+        "jackpots": {
+            "MINI": 70,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 329,
+        "seed": 9858002878,
+        "rtp": 92.55134000000001,
+        "total_bet": 5000000,
+        "total_won": 4627567.0,
+        "bonuses": 1307,
+        "jackpots": {
+            "MINI": 73,
+            "MINOR": 0,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 330,
+        "seed": 4371490225,
+        "rtp": 97.5266,
+        "total_bet": 5000000,
+        "total_won": 4876330.0,
+        "bonuses": 1343,
+        "jackpots": {
+            "MINI": 75,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 331,
+        "seed": 7652988950,
+        "rtp": 99.36166,
+        "total_bet": 5000000,
+        "total_won": 4968083.0,
+        "bonuses": 1345,
+        "jackpots": {
+            "MINI": 75,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 332,
+        "seed": 9593995779,
+        "rtp": 98.05568,
+        "total_bet": 5000000,
+        "total_won": 4902784.0,
+        "bonuses": 1331,
+        "jackpots": {
+            "MINI": 78,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 333,
+        "seed": 8659355459,
+        "rtp": 96.67738,
+        "total_bet": 5000000,
+        "total_won": 4833869.0,
+        "bonuses": 1313,
+        "jackpots": {
+            "MINI": 87,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 334,
+        "seed": 1887137590,
+        "rtp": 99.16445,
+        "total_bet": 5000000,
+        "total_won": 4958222.5,
+        "bonuses": 1362,
+        "jackpots": {
+            "MINI": 78,
+            "MINOR": 6,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 335,
+        "seed": 7766566280,
+        "rtp": 95.79145,
+        "total_bet": 5000000,
+        "total_won": 4789572.5,
+        "bonuses": 1352,
+        "jackpots": {
+            "MINI": 64,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 336,
+        "seed": 4777939415,
+        "rtp": 94.58925,
+        "total_bet": 5000000,
+        "total_won": 4729462.5,
+        "bonuses": 1314,
+        "jackpots": {
+            "MINI": 67,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 337,
+        "seed": 9856086258,
+        "rtp": 95.65166,
+        "total_bet": 5000000,
+        "total_won": 4782583.0,
+        "bonuses": 1315,
+        "jackpots": {
+            "MINI": 66,
+            "MINOR": 2,
+            "MAJOR": 1
+        }
+    },
+    {
+        "session_id": 338,
+        "seed": 4211278679,
+        "rtp": 95.90653999999999,
+        "total_bet": 5000000,
+        "total_won": 4795327.0,
+        "bonuses": 1302,
+        "jackpots": {
+            "MINI": 72,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 339,
+        "seed": 7923676186,
+        "rtp": 97.28679,
+        "total_bet": 5000000,
+        "total_won": 4864339.5,
+        "bonuses": 1335,
+        "jackpots": {
+            "MINI": 57,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 340,
+        "seed": 2133195300,
+        "rtp": 98.94585000000001,
+        "total_bet": 5000000,
+        "total_won": 4947292.5,
+        "bonuses": 1319,
+        "jackpots": {
+            "MINI": 78,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 341,
+        "seed": 3765325264,
+        "rtp": 97.29609,
+        "total_bet": 5000000,
+        "total_won": 4864804.5,
+        "bonuses": 1351,
+        "jackpots": {
+            "MINI": 81,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 342,
+        "seed": 3478092224,
+        "rtp": 100.45824,
+        "total_bet": 5000000,
+        "total_won": 5022912.0,
+        "bonuses": 1353,
+        "jackpots": {
+            "MINI": 59,
+            "MINOR": 1,
+            "MAJOR": 1
+        }
+    },
+    {
+        "session_id": 343,
+        "seed": 1845294763,
+        "rtp": 101.00015,
+        "total_bet": 5000000,
+        "total_won": 5050007.5,
+        "bonuses": 1366,
+        "jackpots": {
+            "MINI": 83,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 344,
+        "seed": 3219932842,
+        "rtp": 96.92663,
+        "total_bet": 5000000,
+        "total_won": 4846331.5,
+        "bonuses": 1331,
+        "jackpots": {
+            "MINI": 60,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 345,
+        "seed": 9599156182,
+        "rtp": 100.29741000000001,
+        "total_bet": 5000000,
+        "total_won": 5014870.5,
+        "bonuses": 1371,
+        "jackpots": {
+            "MINI": 75,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 346,
+        "seed": 5714953449,
+        "rtp": 95.85625,
+        "total_bet": 5000000,
+        "total_won": 4792812.5,
+        "bonuses": 1283,
+        "jackpots": {
+            "MINI": 66,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 347,
+        "seed": 9998881500,
+        "rtp": 98.00596,
+        "total_bet": 5000000,
+        "total_won": 4900298.0,
+        "bonuses": 1344,
+        "jackpots": {
+            "MINI": 68,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 348,
+        "seed": 9638499625,
+        "rtp": 96.01414,
+        "total_bet": 5000000,
+        "total_won": 4800707.0,
+        "bonuses": 1280,
+        "jackpots": {
+            "MINI": 67,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 349,
+        "seed": 1259613049,
+        "rtp": 95.47078,
+        "total_bet": 5000000,
+        "total_won": 4773539.0,
+        "bonuses": 1267,
+        "jackpots": {
+            "MINI": 59,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 350,
+        "seed": 9129054985,
+        "rtp": 96.35811,
+        "total_bet": 5000000,
+        "total_won": 4817905.5,
+        "bonuses": 1261,
+        "jackpots": {
+            "MINI": 51,
+            "MINOR": 7,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 351,
+        "seed": 7985677112,
+        "rtp": 97.09572,
+        "total_bet": 5000000,
+        "total_won": 4854786.0,
+        "bonuses": 1349,
+        "jackpots": {
+            "MINI": 73,
+            "MINOR": 1,
+            "MAJOR": 2
+        }
+    },
+    {
+        "session_id": 352,
+        "seed": 3958221381,
+        "rtp": 99.53417,
+        "total_bet": 5000000,
+        "total_won": 4976708.5,
+        "bonuses": 1351,
+        "jackpots": {
+            "MINI": 74,
+            "MINOR": 6,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 353,
+        "seed": 7900345558,
+        "rtp": 97.86708,
+        "total_bet": 5000000,
+        "total_won": 4893354.0,
+        "bonuses": 1328,
+        "jackpots": {
+            "MINI": 63,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 354,
+        "seed": 7318841519,
+        "rtp": 95.5741,
+        "total_bet": 5000000,
+        "total_won": 4778705.0,
+        "bonuses": 1267,
+        "jackpots": {
+            "MINI": 72,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 355,
+        "seed": 5831475750,
+        "rtp": 95.28174,
+        "total_bet": 5000000,
+        "total_won": 4764087.0,
+        "bonuses": 1379,
+        "jackpots": {
+            "MINI": 78,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 356,
+        "seed": 3289062308,
+        "rtp": 98.30272,
+        "total_bet": 5000000,
+        "total_won": 4915136.0,
+        "bonuses": 1358,
+        "jackpots": {
+            "MINI": 77,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 357,
+        "seed": 9196769887,
+        "rtp": 97.72488,
+        "total_bet": 5000000,
+        "total_won": 4886244.0,
+        "bonuses": 1330,
+        "jackpots": {
+            "MINI": 66,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 358,
+        "seed": 4718830546,
+        "rtp": 96.93397,
+        "total_bet": 5000000,
+        "total_won": 4846698.5,
+        "bonuses": 1320,
+        "jackpots": {
+            "MINI": 75,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 359,
+        "seed": 6043845172,
+        "rtp": 98.44355,
+        "total_bet": 5000000,
+        "total_won": 4922177.5,
+        "bonuses": 1363,
+        "jackpots": {
+            "MINI": 93,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 360,
+        "seed": 4341644678,
+        "rtp": 96.86873,
+        "total_bet": 5000000,
+        "total_won": 4843436.5,
+        "bonuses": 1343,
+        "jackpots": {
+            "MINI": 80,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 361,
+        "seed": 9838468116,
+        "rtp": 96.02699,
+        "total_bet": 5000000,
+        "total_won": 4801349.5,
+        "bonuses": 1322,
+        "jackpots": {
+            "MINI": 60,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 362,
+        "seed": 1485085483,
+        "rtp": 95.7146,
+        "total_bet": 5000000,
+        "total_won": 4785730.0,
+        "bonuses": 1361,
+        "jackpots": {
+            "MINI": 67,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 363,
+        "seed": 9844506994,
+        "rtp": 95.39092,
+        "total_bet": 5000000,
+        "total_won": 4769546.0,
+        "bonuses": 1272,
+        "jackpots": {
+            "MINI": 62,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 364,
+        "seed": 9013969417,
+        "rtp": 98.0167,
+        "total_bet": 5000000,
+        "total_won": 4900835.0,
+        "bonuses": 1319,
+        "jackpots": {
+            "MINI": 70,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 365,
+        "seed": 5767216961,
+        "rtp": 100.98518000000001,
+        "total_bet": 5000000,
+        "total_won": 5049259.0,
+        "bonuses": 1371,
+        "jackpots": {
+            "MINI": 83,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 366,
+        "seed": 3232913500,
+        "rtp": 98.76826,
+        "total_bet": 5000000,
+        "total_won": 4938413.0,
+        "bonuses": 1336,
+        "jackpots": {
+            "MINI": 81,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 367,
+        "seed": 5460333265,
+        "rtp": 93.62456,
+        "total_bet": 5000000,
+        "total_won": 4681228.0,
+        "bonuses": 1284,
+        "jackpots": {
+            "MINI": 63,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 368,
+        "seed": 1404860306,
+        "rtp": 98.48022,
+        "total_bet": 5000000,
+        "total_won": 4924011.0,
+        "bonuses": 1338,
+        "jackpots": {
+            "MINI": 69,
+            "MINOR": 7,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 369,
+        "seed": 2596796327,
+        "rtp": 96.13028,
+        "total_bet": 5000000,
+        "total_won": 4806514.0,
+        "bonuses": 1311,
+        "jackpots": {
+            "MINI": 57,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 370,
+        "seed": 5434021946,
+        "rtp": 97.74024999999999,
+        "total_bet": 5000000,
+        "total_won": 4887012.5,
+        "bonuses": 1327,
+        "jackpots": {
+            "MINI": 66,
+            "MINOR": 6,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 371,
+        "seed": 8276858424,
+        "rtp": 96.54188,
+        "total_bet": 5000000,
+        "total_won": 4827094.0,
+        "bonuses": 1331,
+        "jackpots": {
+            "MINI": 76,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 372,
+        "seed": 3253726566,
+        "rtp": 100.20201,
+        "total_bet": 5000000,
+        "total_won": 5010100.5,
+        "bonuses": 1385,
+        "jackpots": {
+            "MINI": 74,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 373,
+        "seed": 2786727098,
+        "rtp": 96.57249999999999,
+        "total_bet": 5000000,
+        "total_won": 4828625.0,
+        "bonuses": 1296,
+        "jackpots": {
+            "MINI": 80,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 374,
+        "seed": 1418911778,
+        "rtp": 98.88154,
+        "total_bet": 5000000,
+        "total_won": 4944077.0,
+        "bonuses": 1369,
+        "jackpots": {
+            "MINI": 65,
+            "MINOR": 6,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 375,
+        "seed": 2709693034,
+        "rtp": 96.87631,
+        "total_bet": 5000000,
+        "total_won": 4843815.5,
+        "bonuses": 1331,
+        "jackpots": {
+            "MINI": 71,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 376,
+        "seed": 6811169450,
+        "rtp": 99.15962999999999,
+        "total_bet": 5000000,
+        "total_won": 4957981.5,
+        "bonuses": 1336,
+        "jackpots": {
+            "MINI": 82,
+            "MINOR": 10,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 377,
+        "seed": 5357431878,
+        "rtp": 97.03621,
+        "total_bet": 5000000,
+        "total_won": 4851810.5,
+        "bonuses": 1343,
+        "jackpots": {
+            "MINI": 72,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 378,
+        "seed": 2114111230,
+        "rtp": 95.50014,
+        "total_bet": 5000000,
+        "total_won": 4775007.0,
+        "bonuses": 1273,
+        "jackpots": {
+            "MINI": 76,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 379,
+        "seed": 8996034550,
+        "rtp": 96.03726999999999,
+        "total_bet": 5000000,
+        "total_won": 4801863.5,
+        "bonuses": 1297,
+        "jackpots": {
+            "MINI": 65,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 380,
+        "seed": 8384177978,
+        "rtp": 95.14717999999999,
+        "total_bet": 5000000,
+        "total_won": 4757359.0,
+        "bonuses": 1288,
+        "jackpots": {
+            "MINI": 63,
+            "MINOR": 6,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 381,
+        "seed": 4241796178,
+        "rtp": 94.1964,
+        "total_bet": 5000000,
+        "total_won": 4709820.0,
+        "bonuses": 1254,
+        "jackpots": {
+            "MINI": 67,
+            "MINOR": 6,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 382,
+        "seed": 7691354959,
+        "rtp": 100.09418000000001,
+        "total_bet": 5000000,
+        "total_won": 5004709.0,
+        "bonuses": 1396,
+        "jackpots": {
+            "MINI": 78,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 383,
+        "seed": 8968618962,
+        "rtp": 97.1512,
+        "total_bet": 5000000,
+        "total_won": 4857560.0,
+        "bonuses": 1367,
+        "jackpots": {
+            "MINI": 68,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 384,
+        "seed": 9159652765,
+        "rtp": 93.65795,
+        "total_bet": 5000000,
+        "total_won": 4682897.5,
+        "bonuses": 1283,
+        "jackpots": {
+            "MINI": 54,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 385,
+        "seed": 8910981554,
+        "rtp": 90.57369,
+        "total_bet": 5000000,
+        "total_won": 4528684.5,
+        "bonuses": 1253,
+        "jackpots": {
+            "MINI": 56,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 386,
+        "seed": 9196990561,
+        "rtp": 99.20102,
+        "total_bet": 5000000,
+        "total_won": 4960051.0,
+        "bonuses": 1319,
+        "jackpots": {
+            "MINI": 73,
+            "MINOR": 6,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 387,
+        "seed": 2515486283,
+        "rtp": 97.93625,
+        "total_bet": 5000000,
+        "total_won": 4896812.5,
+        "bonuses": 1315,
+        "jackpots": {
+            "MINI": 68,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 388,
+        "seed": 1176632174,
+        "rtp": 95.54089,
+        "total_bet": 5000000,
+        "total_won": 4777044.5,
+        "bonuses": 1294,
+        "jackpots": {
+            "MINI": 65,
+            "MINOR": 6,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 389,
+        "seed": 6119463218,
+        "rtp": 95.26418,
+        "total_bet": 5000000,
+        "total_won": 4763209.0,
+        "bonuses": 1311,
+        "jackpots": {
+            "MINI": 70,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 390,
+        "seed": 7711023328,
+        "rtp": 96.02707000000001,
+        "total_bet": 5000000,
+        "total_won": 4801353.5,
+        "bonuses": 1329,
+        "jackpots": {
+            "MINI": 67,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 391,
+        "seed": 2711548793,
+        "rtp": 98.04208,
+        "total_bet": 5000000,
+        "total_won": 4902104.0,
+        "bonuses": 1342,
+        "jackpots": {
+            "MINI": 71,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 392,
+        "seed": 1734868609,
+        "rtp": 94.15143,
+        "total_bet": 5000000,
+        "total_won": 4707571.5,
+        "bonuses": 1297,
+        "jackpots": {
+            "MINI": 58,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 393,
+        "seed": 8261792740,
+        "rtp": 94.86977,
+        "total_bet": 5000000,
+        "total_won": 4743488.5,
+        "bonuses": 1331,
+        "jackpots": {
+            "MINI": 80,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 394,
+        "seed": 7156775403,
+        "rtp": 100.42342,
+        "total_bet": 5000000,
+        "total_won": 5021171.0,
+        "bonuses": 1415,
+        "jackpots": {
+            "MINI": 73,
+            "MINOR": 1,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 395,
+        "seed": 5045756731,
+        "rtp": 97.16579,
+        "total_bet": 5000000,
+        "total_won": 4858289.5,
+        "bonuses": 1348,
+        "jackpots": {
+            "MINI": 72,
+            "MINOR": 2,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 396,
+        "seed": 7247306695,
+        "rtp": 99.70591,
+        "total_bet": 5000000,
+        "total_won": 4985295.5,
+        "bonuses": 1394,
+        "jackpots": {
+            "MINI": 64,
+            "MINOR": 4,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 397,
+        "seed": 5959077915,
+        "rtp": 97.35821999999999,
+        "total_bet": 5000000,
+        "total_won": 4867911.0,
+        "bonuses": 1328,
+        "jackpots": {
+            "MINI": 65,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 398,
+        "seed": 3249627701,
+        "rtp": 96.83908,
+        "total_bet": 5000000,
+        "total_won": 4841954.0,
+        "bonuses": 1330,
+        "jackpots": {
+            "MINI": 64,
+            "MINOR": 5,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 399,
+        "seed": 2197186403,
+        "rtp": 96.22135,
+        "total_bet": 5000000,
+        "total_won": 4811067.5,
+        "bonuses": 1313,
+        "jackpots": {
+            "MINI": 60,
+            "MINOR": 3,
+            "MAJOR": 0
+        }
+    },
+    {
+        "session_id": 400,
+        "seed": 1116542763,
+        "rtp": 94.66687999999999,
+        "total_bet": 5000000,
+        "total_won": 4733344.0,
+        "bonuses": 1281,
+        "jackpots": {
+            "MINI": 78,
+            "MINOR": 2,
             "MAJOR": 0
         }
     }

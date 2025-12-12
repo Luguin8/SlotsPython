@@ -1,188 +1,264 @@
 import xlsxwriter
 import config
 
-# Función auxiliar para calcular matemática combinatoria (tomada de theory_check)
-def calculate_fs_ev(strips, paytable, wild_id, mult):
-    reel_lengths = [len(s) for s in strips]
-    # Mapear probabilidades
-    sym_probs = []
-    wild_probs = []
-    for col in range(5):
-        counts = {}
-        w_count = 0
-        for s in strips[col]:
-            if s == wild_id: w_count += 1
-            else: counts[s] = counts.get(s, 0) + 1
-        probs = {k: v / reel_lengths[col] for k, v in counts.items()}
-        sym_probs.append(probs)
-        wild_probs.append(w_count / reel_lengths[col])
-
-    total_ev = 0.0
-    for sym, pays in paytable.items():
-        if sym in [config.SYM_SCATTER, config.SYM_SCATTER_JP, wild_id]: continue
-        p_hit = [(sym_probs[i].get(sym, 0) + wild_probs[i]) for i in range(5)]
-        p_pure = [sym_probs[i].get(sym, 0) for i in range(5)]
-        
-        # Probabilidades exactas
-        prob5 = (p_hit[0]*p_hit[1]*p_hit[2]*p_hit[3]*p_hit[4])
-        prob5_pure = (p_pure[0]*p_pure[1]*p_pure[2]*p_pure[3]*p_pure[4])
-        prob5_wild = prob5 - prob5_pure
-        
-        prob4 = (p_hit[0]*p_hit[1]*p_hit[2]*p_hit[3]*(1-p_hit[4]))
-        prob4_pure = (p_pure[0]*p_pure[1]*p_pure[2]*p_pure[3]*(1-p_pure[4]))
-        prob4_wild = prob4 - prob4_pure
-        
-        prob3 = (p_hit[0]*p_hit[1]*p_hit[2]*(1-p_hit[3]))
-        prob3_pure = (p_pure[0]*p_pure[1]*p_pure[2]*(1-p_pure[3]))
-        prob3_wild = prob3 - prob3_pure
-        
-        # Pagos
-        ev = 0
-        ev += (prob5_pure * pays.get(5,0)) + (prob5_wild * pays.get(5,0) * mult)
-        ev += (prob4_pure * pays.get(4,0)) + (prob4_wild * pays.get(4,0) * mult)
-        ev += (prob3_pure * pays.get(3,0)) + (prob3_wild * pays.get(3,0) * mult)
-        total_ev += ev
-        
-    # Pago solo Wilds
-    p5_wilds = wild_probs[0]*wild_probs[1]*wild_probs[2]*wild_probs[3]*wild_probs[4]
-    original_pay = paytable[wild_id][5]
-    total_ev += (p5_wilds * original_pay * mult)
+def get_counts_for_scenario(strips, sym_id, wild_id=None):
+    """Retorna los conteos por riel para un símbolo y el wild (si aplica)."""
+    counts_sym = []
+    counts_wild = []
+    lengths = []
     
-    return total_ev * 100 # Retorno en %
+    for col in range(5):
+        strip = strips[col]
+        lengths.append(len(strip))
+        
+        # Conteo del símbolo objetivo
+        c_s = strip.count(sym_id)
+        # Conteo del Wild (si existe en este escenario)
+        c_w = strip.count(wild_id) if wild_id is not None else 0
+        
+        # Si el símbolo objetivo ES el que se transforma en Wild, ajustamos
+        if sym_id == wild_id:
+            # En el riel transformado, el símbolo original YA ES Wild.
+            # Así que técnicamente el "símbolo base" desaparece y todo es Wild.
+            c_w = c_s 
+            c_s = 0 
+            
+        counts_sym.append(c_s)
+        counts_wild.append(c_w)
+        
+    return counts_sym, counts_wild, lengths
+
+def add_math_sheet(workbook, sheet_name, strips, wild_id=None, multiplier=1):
+    ws = workbook.add_worksheet(sheet_name)
+    
+    # Formatos
+    header = workbook.add_format({'bold': True, 'font_color': 'white', 'bg_color': '#366092', 'border': 1, 'align': 'center'})
+    cell = workbook.add_format({'border': 1, 'align': 'center'})
+    percent = workbook.add_format({'num_format': '0.000000%', 'border': 1})
+    currency = workbook.add_format({'num_format': '0.00', 'border': 1})
+    
+    # Encabezados
+    cols = ["Symbol", "Pay 5", "Pay 4", "Pay 3", 
+            "R1 Sym", "R2 Sym", "R3 Sym", "R4 Sym", "R5 Sym", 
+            "R1 Wild", "R2 Wild", "R3 Wild", "R4 Wild", "R5 Wild",
+            "Prob 5 Hit", "Prob 5 Pure", "EV 5", 
+            "Prob 4 Hit", "Prob 4 Pure", "EV 4",
+            "Prob 3 Hit", "Prob 3 Pure", "EV 3",
+            "TOTAL EV %"]
+            
+    ws.write_row(0, 0, cols, header)
+    
+    # Datos de Rieles (Largos) para usar en fórmulas
+    lengths = [len(s) for s in strips]
+    # Escribimos los largos arriba para referencia (Fila 0, Columnas Z en adelante ocultas o lejos)
+    # Mejor los hardcodeamos en las fórmulas para que sea legible o usamos celdas auxiliares
+    
+    row = 1
+    # Nombres para mostrar
+    names = {1:"L1", 2:"L2", 3:"L3", 4:"L4", 5:"H1", 6:"H2", 7:"H3", 8:"H4"}
+    
+    total_ev_ref = []
+    
+    for sym_id in config.PAYTABLE:
+        if sym_id >= 10: continue # Ignoramos scatters aquí para simplificar la vista combinatoria
+        if wild_id is not None and sym_id == wild_id: continue # El símbolo que se vuelve wild se trata diferente (es el Wild)
+
+        pays = config.PAYTABLE[sym_id]
+        c_sym, c_wild, _ = get_counts_for_scenario(strips, sym_id, wild_id)
+        
+        # Col A-D: Info Básica
+        ws.write(row, 0, names.get(sym_id, str(sym_id)), cell)
+        ws.write(row, 1, pays.get(5,0), cell)
+        ws.write(row, 2, pays.get(4,0), cell)
+        ws.write(row, 3, pays.get(3,0), cell)
+        
+        # Col E-I: Counts Symbol
+        for i in range(5): ws.write(row, 4+i, c_sym[i], cell)
+        # Col J-N: Counts Wild
+        for i in range(5): ws.write(row, 9+i, c_wild[i], cell)
+        
+        # --- FÓRMULAS DE PROBABILIDAD (CAJA BLANCA) ---
+        # Prob Hit (Sym + Wild) / Len
+        # Prob Pure (Sym) / Len
+        
+        # Helpers para las celdas de Counts y Lengths
+        # R1_Sym = E{row+1}, R1_Wild = J{row+1}, Len1 = {lengths[0]}
+        
+        # Definimos las probabilidades por riel como strings de fórmula
+        p_hit = []
+        p_pure = []
+        
+        chars = ['E','F','G','H','I'] # Columnas Sym
+        charw = ['J','K','L','M','N'] # Columnas Wild
+        
+        for i in range(5):
+            # (Sym + Wild) / Len
+            p_hit.append(f"(({chars[i]}{row+1}+{charw[i]}{row+1})/{lengths[i]})")
+            # (Sym) / Len
+            p_pure.append(f"({chars[i]}{row+1}/{lengths[i]})")
+
+        # --- 5 OF A KIND ---
+        # Prob Total 5 = P1*P2*P3*P4*P5
+        f_p5_hit = "=" + "*".join(p_hit)
+        ws.write_formula(row, 14, f_p5_hit, percent)
+        
+        # Prob Pure 5 = P1_pure * ...
+        f_p5_pure = "=" + "*".join(p_pure)
+        ws.write_formula(row, 15, f_p5_pure, percent)
+        
+        # EV 5 = (Pure * Pay) + ((Hit - Pure) * Pay * Mult)
+        # O15 = Hit, P15 = Pure, B15 = Pay
+        f_ev5 = f"=(P{row+1}*B{row+1}) + ((O{row+1}-P{row+1})*B{row+1}*{multiplier})"
+        ws.write_formula(row, 16, f_ev5, percent) # EV como %
+        
+        # --- 4 OF A KIND ---
+        # Prob 4 = P1*P2*P3*P4*(1-P5)
+        f_p4_hit = "=" + "*".join(p_hit[:4]) + f"*(1-{p_hit[4]})"
+        ws.write_formula(row, 17, f_p4_hit, percent)
+        
+        f_p4_pure = "=" + "*".join(p_pure[:4]) + f"*(1-{p_pure[4]})"
+        ws.write_formula(row, 18, f_p4_pure, percent)
+        
+        # EV 4
+        f_ev4 = f"=(S{row+1}*C{row+1}) + ((R{row+1}-S{row+1})*C{row+1}*{multiplier})"
+        ws.write_formula(row, 19, f_ev4, percent)
+
+        # --- 3 OF A KIND ---
+        # Prob 3 = P1*P2*P3*(1-P4)
+        f_p3_hit = "=" + "*".join(p_hit[:3]) + f"*(1-{p_hit[3]})"
+        ws.write_formula(row, 20, f_p3_hit, percent)
+        
+        f_p3_pure = "=" + "*".join(p_pure[:3]) + f"*(1-{p_pure[3]})"
+        ws.write_formula(row, 21, f_p3_pure, percent)
+        
+        # EV 3
+        f_ev3 = f"=(V{row+1}*D{row+1}) + ((U{row+1}-V{row+1})*D{row+1}*{multiplier})"
+        ws.write_formula(row, 22, f_ev3, percent)
+        
+        # TOTAL EV LINE
+        ws.write_formula(row, 23, f"=Q{row+1}+T{row+1}+W{row+1}", percent)
+        total_ev_ref.append(f"X{row+1}")
+        
+        row += 1
+        
+    # --- LÍNEA DE 5 WILDS (Solo si hay Wilds) ---
+    if wild_id is not None:
+        ws.write(row, 0, "ONLY WILDS", cell)
+        
+        # Counts solo de wilds
+        c_sym, c_wild, _ = get_counts_for_scenario(strips, wild_id, wild_id) # Trick to get counts
+        for i in range(5): ws.write(row, 9+i, c_wild[i], cell)
+        
+        # Prob 5 Wilds
+        p_wilds = []
+        charw = ['J','K','L','M','N']
+        for i in range(5): p_wilds.append(f"({charw[i]}{row+1}/{lengths[i]})")
+        
+        ws.write_formula(row, 14, "="+"*".join(p_wilds), percent)
+        
+        # Pago (Simbolo original * Mult)
+        orig_pay = config.PAYTABLE[wild_id][5]
+        ws.write(row, 1, orig_pay, cell)
+        
+        # EV (Prob * Pay * Mult)
+        ws.write_formula(row, 23, f"=O{row+1}*B{row+1}*{multiplier}", percent)
+        total_ev_ref.append(f"X{row+1}")
+        row += 1
+
+    # SUMA TOTAL DEL ESCENARIO
+    ws.write(row, 22, "TOTAL ESCENARIO:", header)
+    ws.write_formula(row, 23, f"=SUM({','.join(total_ev_ref)})", percent)
+    
+    return f"'{sheet_name}'!X{row+1}" # Retornamos la referencia a la celda total
 
 def generate_excel_parsheet():
     filename = "../01_Excels_Rieles_Pagos/Slot_Parsheet_Teorico.xlsx"
     workbook = xlsxwriter.Workbook(filename)
     
-    # Estilos
-    bold = workbook.add_format({'bold': True, 'bg_color': '#D7E4BC', 'border': 1})
-    header = workbook.add_format({'bold': True, 'font_color': 'white', 'bg_color': '#366092', 'border': 1, 'align': 'center'})
-    cell = workbook.add_format({'border': 1})
-    percent = workbook.add_format({'num_format': '0.00%', 'border': 1})
-    num_fmt = workbook.add_format({'num_format': '0.00', 'border': 1})
-    
-    # --- 1. HOJA RESUMEN ---
+    # Hoja Resumen
     ws_summ = workbook.add_worksheet("Resumen RTP")
-    ws_summ.set_column('A:B', 25)
+    header = workbook.add_format({'bold': True, 'font_color': 'white', 'bg_color': '#366092', 'border': 1})
+    percent = workbook.add_format({'num_format': '0.00%', 'border': 1})
     
-    ws_summ.write(0, 0, "PARÁMETRO", header)
-    ws_summ.write(0, 1, "VALOR", header)
+    # 1. Generar Hojas de Detalle
+    ref_base = add_math_sheet(workbook, "Base Game", config.FIXED_STRIPS_BASE)
     
-    # Aquí usamos fórmulas simples para sumar, mostrando transparencia
-    ws_summ.write(1, 0, "RTP Teórico Total", bold)
-    ws_summ.write_formula(1, 1, "=B4+B5+B6", percent, 0.9617) 
+    refs_fs = []
+    weights_fs = []
     
-    ws_summ.write(3, 0, "RTP Juego Base", cell)
-    ws_summ.write(3, 1, 0.4634, percent) # Valor de theory_check
-    
-    ws_summ.write(4, 0, "RTP Free Spins (Ponderado)", cell)
-    ws_summ.write_formula(4, 1, "='Desglose Free Spins'!E8", percent, 0.4383) # Link a la hoja de FS
-    
-    ws_summ.write(5, 0, "RTP Jackpot", cell)
-    ws_summ.write(5, 1, 0.0600, percent)
-    
-    ws_summ.write(7, 0, "Contribución Jackpot", cell)
-    ws_summ.write(7, 1, config.JP_CONTRIBUTION)
-    ws_summ.write(8, 0, "Apuesta Base", cell)
-    ws_summ.write(8, 1, config.PAYLINES_COUNT)
-
-    # --- 2. HOJA DESGLOSE FREE SPINS (¡LO QUE PIDE EL CLIENTE!) ---
-    ws_fs = workbook.add_worksheet("Desglose Free Spins")
-    ws_fs.set_column('A:A', 20)
-    ws_fs.set_column('B:E', 15)
-    
-    headers_fs = ["Escenario (Wild)", "Probabilidad (Peso)", "EV por Giro (%)", "EV Ponderado", "Contribución Final"]
-    ws_fs.write_row(0, 0, headers_fs, header)
-    
-    row = 1
-    weighted_sum_ref = []
-    
-    # Calculamos los valores reales para ponerlos en el Excel
     for feat in config.FEATURE_WEIGHTS:
         sym_id, mult, weight = feat
-        ev = calculate_fs_ev(config.FIXED_STRIPS_FS, config.PAYTABLE, sym_id, mult)
-        
-        ws_fs.write(row, 0, f"Simbolo {sym_id} (x{mult})", cell)
-        ws_fs.write(row, 1, weight/100, percent)
-        ws_fs.write(row, 2, ev/100, percent) # Escribimos el % (ej 5.32)
-        
-        # Fórmula de Excel: Peso * EV
-        ws_fs.write_formula(row, 3, f"=B{row+1}*C{row+1}", percent)
-        weighted_sum_ref.append(f"D{row+1}")
-        row += 1
-        
-    # Suma de ponderados (EV promedio por giro)
-    ws_fs.write(row, 2, "EV PROMEDIO:", bold)
-    formula_sum = f"=SUM({':'.join(weighted_sum_ref)})" if len(weighted_sum_ref) > 1 else f"={weighted_sum_ref[0]}"
-    ws_fs.write_formula(row, 3, f"=SUM(D2:D5)", percent)
-    ev_avg_cell = f"D{row+1}"
-    
-    row += 2
-    # Cálculo Final con Frecuencia
-    # Datos fijos tomados de la teoría (aprox)
-    prob_trigger = 0.006050 
-    avg_spins = 10.24
-    
-    ws_fs.write(row, 0, "Probabilidad Entrada", cell)
-    ws_fs.write(row, 1, prob_trigger, percent)
-    prob_cell = f"B{row+1}"
-    
-    ws_fs.write(row+1, 0, "Giros Promedio", cell)
-    ws_fs.write(row+1, 1, avg_spins, num_fmt)
-    spins_cell = f"B{row+2}"
-    
-    ws_fs.write(row+2, 0, "RTP TOTAL FS", bold)
-    # Fórmula Maestra: EV_Promedio * Prob * Giros / Apuesta (EV ya está en % de apuesta en theory_check logic, ajustamos)
-    # En theory_check: (weighted_rtp * avg_spins * prob_trigger)
-    # Aquí weighted_rtp (D6) es % payout (ej 500%).
-    # RTP Contribution = D6 * Prob * Spins.
-    ws_fs.write_formula(row+2, 1, f"={ev_avg_cell}*{prob_cell}*{spins_cell}", percent)
-    
-    # Linkeamos la celda E8 (aprox) para el resumen
-    ws_fs.write(7, 4, f"={f'B{row+3}'}", percent) # Celda helper para el link
+        sheet_name = f"FS_Wild{sym_id}_x{mult}"
+        ref = add_math_sheet(workbook, sheet_name, config.FIXED_STRIPS_FS, wild_id=sym_id, multiplier=mult)
+        refs_fs.append(ref)
+        weights_fs.append(weight/100.0)
 
-    # --- 3. HOJA MATEMÁTICA BASE ---
-    ws_base = workbook.add_worksheet("Matemática Base")
-    headers = ["Symbol", "Reel 1", "Reel 2", "Reel 3", "Reel 4", "Reel 5", "Hits 5", "Hits 4", "Hits 3", "Total Pay", "Contrib %"]
-    ws_base.write_row(0, 0, headers, header)
+    # 2. Llenar Resumen con Fórmulas Vinculadas
+    ws_summ.set_column('A:B', 30)
+    ws_summ.write(0, 0, "COMPONENTE", header)
+    ws_summ.write(0, 1, "RTP %", header)
     
-    strips = config.FIXED_STRIPS_BASE
-    lengths = [len(s) for s in strips]
-    total_combos = lengths[0]*lengths[1]*lengths[2]*lengths[3]*lengths[4]
+    # RTP Base
+    ws_summ.write(1, 0, "RTP Juego Base")
+    ws_summ.write_formula(1, 1, f"={ref_base}", percent)
     
-    row = 1
-    names = {1:"L1", 2:"L2", 3:"L3", 4:"L4", 5:"H1", 6:"H2", 7:"H3", 8:"H4", 10:"Scatter", 11:"ScatterJP"}
+    # RTP FS (Ponderado)
+    # Fórmula: (EV1*W1 + EV2*W2...) * ProbTrigger * AvgSpins / Bet
+    # Nota: Los EVs de las hojas ya son % sobre la apuesta unitaria si asumimos 1 linea, 
+    # pero aquí el EV calculado es SUM(Prob*Pay). 
+    # Si Pay es creditos y Prob es absoluta, EV es creditos promedio ganados por giro.
+    # Para RTP hay que dividir por Apuesta Total.
+    # En add_math_sheet, EV3 = Prob * Pay. Si Pay = 100 creditos. EV = 0.01 * 100 = 1 credito.
+    # Entonces el TOTAL ESCENARIO es Creditos Promedio por Giro.
     
-    for sym_id in config.PAYTABLE:
-        if sym_id >= 10: continue
+    # Corrección rápida: En add_math_sheet usé "percent" para visualizar, pero el valor numérico es créditos ganados.
+    # Para convertir a RTP hay que dividir por config.PAYLINES_COUNT
+    
+    # Vamos a hacerlo explícito en el Resumen
+    row = 5
+    ws_summ.write(row, 0, "CÁLCULO FREE SPINS", header)
+    
+    weighted_sum_parts = []
+    for i, ref in enumerate(refs_fs):
+        ws_summ.write(row+1+i, 0, f"EV Escenario {i+1} (Peso {weights_fs[i]:.2%})")
+        # Traemos el valor de la hoja
+        ws_summ.write_formula(row+1+i, 1, f"={ref}", workbook.add_format({'num_format': '0.00'})) # Creditos
+        weighted_sum_parts.append(f"B{row+2+i}*{weights_fs[i]}")
         
-        counts = [s.count(sym_id) for s in strips]
-        pays = config.PAYTABLE[sym_id]
-        
-        ws_base.write(row, 0, names.get(sym_id, str(sym_id)), cell)
-        # Escribimos Counts
-        for i in range(5): ws_base.write(row, i+1, counts[i], cell)
-        
-        # Escribimos Fórmulas de Combinatoria (Lo que pidió el cliente)
-        # Hits 5 = R1*R2*R3*R4*R5
-        ws_base.write_formula(row, 6, f"=PRODUCT(B{row+1}:F{row+1})", cell)
-        
-        # Hits 4 = R1*R2*R3*R4*(L5-R5)
-        ws_base.write_formula(row, 7, f"=B{row+1}*C{row+1}*D{row+1}*E{row+1}*({lengths[4]}-F{row+1})", cell)
-        
-        # Hits 3 = R1*R2*R3*(L4-R4)*L5
-        ws_base.write_formula(row, 8, f"=B{row+1}*C{row+1}*D{row+1}*({lengths[3]}-E{row+1})*{lengths[4]}", cell)
-        
-        # Total Pay = (H5*Pay5 + H4*Pay4 + H3*Pay3)
-        ws_base.write_formula(row, 9, f"=(G{row+1}*{pays[5]})+(H{row+1}*{pays[4]})+(I{row+1}*{pays[3]})", cell)
-        
-        # RTP Contribution = (Total Pay / Total Combos) / Bet
-        ws_base.write_formula(row, 10, f"=(J{row+1}/{total_combos})/{config.PAYLINES_COUNT}", percent)
-        
-        row += 1
+    row += 5
+    ws_summ.write(row, 0, "EV Promedio por Giro FS")
+    ws_summ.write_formula(row, 1, f"={'+'.join(weighted_sum_parts)}", workbook.add_format({'num_format': '0.00'}))
+    cell_ev_avg = f"B{row+1}"
+    
+    ws_summ.write(row+1, 0, "Probabilidad Entrada")
+    ws_summ.write(row+1, 1, 0.006050, workbook.add_format({'num_format': '0.000000'}))
+    cell_prob = f"B{row+2}"
+    
+    ws_summ.write(row+2, 0, "Giros Promedio")
+    ws_summ.write(row+2, 1, 10.24, workbook.add_format({'num_format': '0.00'}))
+    cell_spins = f"B{row+3}"
+    
+    ws_summ.write(row+3, 0, "Apuesta Total")
+    ws_summ.write(row+3, 1, config.PAYLINES_COUNT)
+    cell_bet = f"B{row+4}"
+    
+    # RTP FINAL FS
+    ws_summ.write(2, 0, "RTP Free Spins")
+    # (EV_Avg * Prob * Spins) / Bet
+    ws_summ.write_formula(2, 1, f"=({cell_ev_avg}*{cell_prob}*{cell_spins})/{cell_bet}", percent)
+    
+    # RTP Jackpot
+    ws_summ.write(3, 0, "RTP Jackpot")
+    ws_summ.write(3, 1, 0.06, percent)
+    
+    # RTP TOTAL
+    ws_summ.write(4, 0, "RTP TOTAL TEÓRICO", header)
+    # Suma de Base (ajustado por apuesta) + FS + JP
+    # Ojo: ref_base trae créditos, hay que dividir por apuesta
+    ws_summ.write_formula(4, 1, f"=(B2/{cell_bet}) + B3 + B4", percent)
 
-    print(f"Excel PAR Sheet generado en: {filename}")
     workbook.close()
+    print(f"[OK] Excel Detallado generado: {filename}")
 
 if __name__ == "__main__":
     generate_excel_parsheet()
